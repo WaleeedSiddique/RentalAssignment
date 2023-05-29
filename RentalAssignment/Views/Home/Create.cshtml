@@ -1,0 +1,43 @@
+﻿@using RentalAssignment.Enums
+@model Vehicle
+
+@{
+    ViewBag.Title = "Add Vehicle";
+}
+<form asp-controller="Home" asp-action="Create" method="post" class="form-group">
+    <div class="form-group">
+        <label asp-for="OwnerName"></label>
+        <input asp-for="OwnerName" class="form-control" placeholder="Owned By" />
+    </div>
+    <div class="form-group">
+        <label asp-for="VehicleModel"></label>
+        <input asp-for="VehicleModel" class="form-control" placeholder="Model" />
+    </div>
+    <div class="form-group">
+        <label asp-for="VehicleType"></label>
+        <select class="form-select" asp-for="VehicleType" asp-items="Html.GetEnumSelectList<VehicleType>()">
+            <option>Please Select</option>
+        </select>
+        <span asp-validation-for="VehicleType" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VehicleNumberPlate"></label>
+        <input asp-for="VehicleNumberPlate" class="form-control" placeholder="License Plate Number" />
+        <span asp-validation-for="VehicleNumberPlate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ChassisNumber"></label>
+        <input asp-for="ChassisNumber" class="form-control" placeholder="Engine Number" />
+        <span asp-validation-for="ChassisNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VehicleColour"></label>
+        <input asp-for="VehicleColour" class="form-control" placeholder="Colour" />
+    </div>
+    <div>
+        <button type="submit">Add Vehicle</button>
+    </div>
+
+
+
+</form>
