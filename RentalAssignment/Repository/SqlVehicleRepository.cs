@@ -22,7 +22,7 @@ namespace RentalAssignment.Repository
 
         public Vehicle Delete(int VehicleId)
         {
-            var result =_context.vehicles.Find(VehicleId);
+            Vehicle result =_context.vehicles.Find(VehicleId);
             if(result != null)
             {
                  _context.vehicles.Remove(result);

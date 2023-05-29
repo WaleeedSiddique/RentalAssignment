@@ -1,0 +1,21 @@
+﻿@model Employee
+<h1>Employee Details</h1>
+
+<div class="card" style="width: 18rem;">
+
+    <div class="card-body text-center">
+
+
+
+        <div>Employee Name : @Model.EmployeeName</div>
+        <div>Employee FatherName : @Model.EmployeeFatherName</div>
+        <div>Employee CNIC : @Model.EmployeeCNIC </div>
+        <div>Employee Experience: @Model.EmployeeExperience</div>
+        <div>Employee Age : @Model.EmployeeAge</div>
+        <div>Employee Occupation : @Model.EmployeeOccupation</div>
+        <a asp-controller="Employee" asp-action="index" class="btn btn-info">Back</a>
+        <a asp-controller="Employee" asp-action="Edit" asp-route-id="@Model.EmployeeId" class="btn btn-primary">Edit</a>
+        <a asp-controller="Employee" asp-action="Delete" asp-route-id="@Model.EmployeeId"  class="btn btn-danger">Delete</a>
+
+    </div>
+</div>

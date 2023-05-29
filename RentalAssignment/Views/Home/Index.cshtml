@@ -31,7 +31,7 @@
                     <td>@vehicle.VehicleColour</td>
                     <td><a asp-controller="home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-primary">View</a></td>
                     <td><a asp-controller="home" asp-action="Edit" asp-route-id="@vehicle.VehicleId" class="btn btn-info">Edit</a></td>
-                    <td><a asp-controller="home" asp-action="Delete" asp-route-id="@vehicle.VehicleId" class="btn btn-danger">Delete</a></td>
+                    <td><a asp-controller="home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-danger">Delete</a></td>
 
                 </tr>
             }

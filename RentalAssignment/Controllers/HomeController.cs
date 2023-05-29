@@ -12,11 +12,13 @@ namespace RentalAssignment.Controllers
     {
         
         private readonly IVehicleInterface _vehicleInterface;
+        
 
         public HomeController(IVehicleInterface vehicleInterface)
         {
            
             this._vehicleInterface = vehicleInterface;
+            
         }
 
         public IActionResult Index()
@@ -63,11 +65,18 @@ namespace RentalAssignment.Controllers
             };
             return View(editVehicleViewModel);
         }
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit(EditVehicleViewModel model)
         {
             if (ModelState.IsValid) {
-                Vehicle result = _vehicleInterface.GetVehicle(model.VehicleId);
+                Vehicle result = _vehicleInterface.GetVehicle(model.id);
+                result.OwnerName = model.OwnerName;
+                result.VehicleColour = model.VehicleColour;
+                result.VehicleModel = model.VehicleModel;
+                result.VehicleNumberPlate = model.VehicleNumberPlate;
+                result.VehicleType = model.VehicleType;
+                result.ChassisNumber = model.ChassisNumber;
+                
                 
                 Vehicle newVehicle = new Vehicle()
                 {
@@ -79,18 +88,18 @@ namespace RentalAssignment.Controllers
                  ChassisNumber= model.ChassisNumber,
                 };
 
-                _vehicleInterface.CreateVehicle(newVehicle);
+                _vehicleInterface.Update(newVehicle);
                 return RedirectToAction("Details", new {id = newVehicle.VehicleId});
             }
             return View();
 
         }
-        [HttpDelete]
+        [HttpGet]
         public IActionResult Delete(int id)
         {
 
-            _vehicleInterface.Delete(id);
-                return RedirectToAction("Index");
+           var model = _vehicleInterface.Delete(id);
+             return Ok(model);
             
         }
         public IActionResult Privacy()

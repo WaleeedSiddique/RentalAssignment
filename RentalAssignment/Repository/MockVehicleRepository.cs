@@ -1,4 +1,5 @@
-﻿using RentalAssignment.Enums;
+﻿using Microsoft.AspNetCore.Mvc;
+using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 
@@ -22,6 +23,7 @@ namespace RentalAssignment.Repository
             _VehicleList.Add(vehicle);
             return vehicle;
         }
+        
 
         public Vehicle Delete(int VehicleId)
         {
@@ -46,6 +48,7 @@ namespace RentalAssignment.Repository
             
             return result;
         }
+        
 
         public Vehicle Update(Vehicle VehicleChanges)
         {

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Bike>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Bike Model</td>                
+                <td>Bike Number</td>
+                <td>Chassis Number</td>
+                <td>Owner Name</td>
+                <td>Bike Colour</td>
+                <td>Bike Details</td>
+                <td>Edit Bike Details</td>
+                <td>Delete Bike</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bike in Model)
+            {
+
+                <tr>
+                    <td>@bike.OwnerName</td>
+                    <td>@bike.BikeModel</td>
+
+                    <td>@bike.BikeNumberPlate</td>
+                    <td>@bike.ChassisNumber</td>
+                    <td>@bike.BikeColour</td>
+                    <td><a asp-controller="Bike" asp-action="Details" asp-route-id="@bike.BikeId" class="btn btn-primary">View</a></td>
+                    <td><a asp-controller="Bike" asp-action="Edit" asp-route-id="@bike.BikeId" class="btn btn-info">Edit</a></td>
+                    <td><a asp-controller="Bike" asp-action="Delete" asp-route-id="@bike.BikeId" class="btn btn-danger">Delete</a></td>
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
