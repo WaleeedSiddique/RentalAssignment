@@ -7,10 +7,12 @@
     <table class="table">
         <thead>
             <tr>
+                <td>Owner Name</td>
+                <td>Owner Phone</td>
                 <td>Bike Model</td>                
                 <td>Bike Number</td>
                 <td>Chassis Number</td>
-                <td>Owner Name</td>
+                <td>Sitting Capacity</td>
                 <td>Bike Colour</td>
                 <td>Bike Details</td>
                 <td>Edit Bike Details</td>
@@ -23,10 +25,11 @@
 
                 <tr>
                     <td>@bike.OwnerName</td>
+                    <td>@bike.OwnerPhone</td>
                     <td>@bike.BikeModel</td>
-
                     <td>@bike.BikeNumberPlate</td>
                     <td>@bike.ChassisNumber</td>
+                    <td>@bike.sittingCapacity</td>
                     <td>@bike.BikeColour</td>
                     <td><a asp-controller="Bike" asp-action="Details" asp-route-id="@bike.BikeId" class="btn btn-primary">View</a></td>
                     <td><a asp-controller="Bike" asp-action="Edit" asp-route-id="@bike.BikeId" class="btn btn-info">Edit</a></td>

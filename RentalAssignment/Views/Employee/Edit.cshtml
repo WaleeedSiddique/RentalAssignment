@@ -1,9 +1,10 @@
-﻿@model Employee
+﻿@using RentalAssignment.ViewModels
+@model EditEmployeeViewModel
 
 @{
     ViewBag.Title = "Edit Employee Details";
 }
-<form asp-controller="Employee" asp-action="Edit" method="put" class="form-group">
+<form asp-controller="Employee" asp-action="Edit" method="post" class="form-group">
     <input hidden asp-for="EmployeeId" />
     <div class="form-group">
         <label asp-for="EmployeeName"></label>

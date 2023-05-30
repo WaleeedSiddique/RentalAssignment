@@ -65,28 +65,22 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         public IActionResult Edit(EditEmployeeViewModel model)
         {
+            Employee result = _EmployeeInterface.GetEmployee(model.id);
             if (ModelState.IsValid)
             {
-                Employee result = _EmployeeInterface.GetEmployee(model.EmployeeId);
-
-                Employee newEmployee = new Employee()
-                {
-                EmployeeName = model.EmployeeName,
-                EmployeeFatherName = model.EmployeeFatherName,
-                EmployeeCNIC = model.EmployeeCNIC,
-                EmployeeOccupation = model.EmployeeOccupation,
-                EmployeeAge = model.EmployeeAge,
-                EmployeeExperience = model.EmployeeExperience,
-                
-            };
-
-                _EmployeeInterface.CreateEmployee(newEmployee);
-                return RedirectToAction("Details", new { id = newEmployee.EmployeeId });
+                result.EmployeeName = model.EmployeeName;
+                result.EmployeeFatherName = model.EmployeeFatherName;
+                result.EmployeeCNIC = model.EmployeeCNIC;
+                result.EmployeeOccupation = model.EmployeeOccupation;
+                result.EmployeeAge = model.EmployeeAge;
+                result.EmployeeExperience = model.EmployeeExperience;                
+                Employee UpdatedEmployee = _EmployeeInterface.Update(result);
+                return RedirectToAction("Index");
             }
-            return View();
+            return View(model);
 
         }
-        [HttpDelete]
+        [HttpGet]
         public IActionResult Delete(int id)
         {
 

@@ -2,8 +2,8 @@
 
 namespace RentalAssignment.ViewModels
 {
-    public class EditVehicleViewModel: Vehicle
+    public class EditVehicleViewModel : Vehicle
     {
-        public int id { get; set; }
+        public int id   { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
+using RentalAssignment.Repository;
 using RentalAssignment.ViewModels;
 using System.Diagnostics;
 
@@ -65,33 +66,24 @@ namespace RentalAssignment.Controllers
             };
             return View(editVehicleViewModel);
         }
-        [HttpPut]
+
+        
+        [HttpPost]
         public IActionResult Edit(EditVehicleViewModel model)
         {
+           
+                 Vehicle result = _vehicleInterface.GetVehicle(model.id);
             if (ModelState.IsValid) {
-                Vehicle result = _vehicleInterface.GetVehicle(model.id);
                 result.OwnerName = model.OwnerName;
                 result.VehicleColour = model.VehicleColour;
                 result.VehicleModel = model.VehicleModel;
                 result.VehicleNumberPlate = model.VehicleNumberPlate;
                 result.VehicleType = model.VehicleType;
                 result.ChassisNumber = model.ChassisNumber;
-                
-                
-                Vehicle newVehicle = new Vehicle()
-                {
-                 OwnerName = model.OwnerName,
-                 VehicleColour= model.VehicleColour,
-                 VehicleModel= model.VehicleModel,
-                 VehicleNumberPlate= model.VehicleNumberPlate,
-                 VehicleType= model.VehicleType,
-                 ChassisNumber= model.ChassisNumber,
-                };
-
-                _vehicleInterface.Update(newVehicle);
-                return RedirectToAction("Details", new {id = newVehicle.VehicleId});
-            }
-            return View();
+                Vehicle UpdatedVehicle =  _vehicleInterface.Update(result);
+                 return RedirectToAction("Index");
+             }
+             return View(model);
 
         }
         [HttpGet]
@@ -99,7 +91,7 @@ namespace RentalAssignment.Controllers
         {
 
            var model = _vehicleInterface.Delete(id);
-             return Ok(model);
+             return RedirectToAction("Index");
             
         }
         public IActionResult Privacy()

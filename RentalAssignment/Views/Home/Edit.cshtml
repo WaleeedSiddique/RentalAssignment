@@ -1,11 +1,12 @@
 ﻿@using RentalAssignment.Enums
-@model Vehicle
+@using RentalAssignment.ViewModels
+@model EditVehicleViewModel
 
 @{
     ViewBag.Title = "Edit Vehicle Details";
 }
-<form asp-controller="Home" asp-action="Edit" method="post" class="form-group">
-    <input hidden asp-for="VehicleId" />
+<form asp-controller="Home" asp-action="Edit" method="post" class="form-group" enctype="multipart/form-data">
+    
     <div class="form-group">
         <label asp-for="OwnerName"></label>
         <input asp-for="OwnerName" class="form-control" placeholder="Owned By" />
@@ -34,6 +35,10 @@
     <div class="form-group">
         <label asp-for="VehicleColour"></label>
         <input asp-for="VehicleColour" class="form-control" placeholder="Colour" />
+    </div>
+    <div class="form-group">
+        <label asp-for="OwnerPhone"></label>
+        <input asp-for="OwnerPhone" class="form-control" placeholder="Colour" />
     </div>
     <div>
         <button class="btn btn-primary" type="submit">Update Changes</button>

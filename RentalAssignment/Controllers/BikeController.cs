@@ -65,29 +65,23 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         public IActionResult Edit(EditBikeViewModel model)
         {
+            Bike result = _BikeInterface.GetBike(model.id);
             if (ModelState.IsValid)
             {
-                Bike result = _BikeInterface.GetBike(model.BikeId);
+                result.OwnerName = model.OwnerName;
+                result.BikeNumberPlate = model.BikeNumberPlate;
+                result.BikeEngine = model.BikeEngine;
+                result.sittingCapacity = model.sittingCapacity;
+                result.OwnerPhone = model.OwnerPhone;
+                result.BikeModel = model.BikeModel;
 
-                Bike newBike = new Bike()
-                {
-                    OwnerName = model.OwnerName,
-                    BikeColour = model.BikeColour,
-                    BikeModel = model.BikeModel,
-                    BikeNumberPlate = model.BikeNumberPlate,                    
-                    ChassisNumber = model.ChassisNumber,
-                    BikeEngine = model.BikeEngine,
-                    sittingCapacity = model.sittingCapacity,
-                    OwnerPhone = model.OwnerPhone,
-                };
-
-                _BikeInterface.CreateBike(newBike);
-                return RedirectToAction("Details", new { id = newBike.BikeId });
+                Bike UpdatedBike = _BikeInterface.Update(result);
+                return RedirectToAction("Index");
             }
-            return View();
+            return View(model);
 
         }
-        [HttpDelete]
+        [HttpGet]
         public IActionResult Delete(int id)
         {
 
