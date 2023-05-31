@@ -3,42 +3,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Owner Name</td>
-                <td>Owner Phone</td>
-                <td>Vehicle Model</td>
-                <td>Vehicle Type</td>
-                <td>Vehicle Number</td>
-                <td>Chassis Number</td>
-                <td>Vehicle Colour</td>
-                <td>Vehicle Details</td>
-                <td>Edit Vehicle Details</td>
-                <td>Delete Vehicle</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var vehicle in Model)
-            {
+<div class="row card-deck mx-auto">
+    @foreach (var vehicle in Model)
+    {
+        var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
+        <div class="card main-card m-3 p-4"  style="min-width: 18rem; max-width:30.5%; ">
+           
 
-                <tr>
-                    <td>@vehicle.OwnerName</td>
-                    <td>@vehicle.OwnerPhone</td>
-                    <td>@vehicle.VehicleModel</td>
-                    <td>@vehicle.VehicleType</td>
-                    <td>@vehicle.VehicleNumberPlate</td>
-                    <td>@vehicle.ChassisNumber</td>
-                    <td>@vehicle.VehicleColour</td>
-                    <td><a asp-controller="home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-primary">View</a></td>
-                    <td><a asp-controller="home" asp-action="Edit" asp-route-id="@vehicle.VehicleId" class="btn btn-info">Edit</a></td>
-                    <td><a asp-controller="home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-danger">Delete</a></td>
+            <img class="card-img-top imageThumbnail" src="@photoPath"
+             asp-append-version="true" height="200px" width="200px" />
+             <div class="card-body">
+            <h5 class="card-title  fw-bold">@vehicle.VehicleModel</h5>
+            <h6 class="card-subtitle pb-2 text-muted">@vehicle.VehicleType</h6>
+            <h5 class="card-subtitle fw-bold">PKR 3500 <span class="text-muted">/day</span> </h5>
+                <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId"
+           class="booking-btn m-1 float-right"><i class="fa-solid btn icon fa-arrow-right"></i></a>
+            </div>
 
-                </tr>
-            }
-        </tbody>
 
-    </table>
-
+           
+        </div>
+    }
 </div>

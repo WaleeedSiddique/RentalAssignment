@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Rental>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row card-deck mx-auto">
+    @foreach (var rental in Model)
+    {
+        
+        <div class="card main-card m-3 p-4" style="min-width: 18rem; max-width:30.5%; ">
+
+
+            <img class="card-img-top imageThumbnail" src="~/images/Civic.png"
+             asp-append-version="true" height="200px" width="200px" />
+            <div class="card-body">
+                <h5 class="card-title  fw-bold">@rental.RentalName</h5>
+                <h6 class="card-subtitle pb-2 text-muted">@rental.RentalPhone</h6>
+                <h6 class="card-subtitle pb-2 text-muted"> @rental.Pickup</h6>
+                <h6 class="card-subtitle pb-2 text-muted">@rental.Dropoff</h6>
+                <h5 class="card-subtitle fw-bold">PKR 3500 <span class="text-muted">/day</span> </h5>
+                <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@rental.RentalID"
+               class="booking-btn m-1 float-right"><i class="fa-solid btn icon fa-arrow-right"></i></a>
+            </div>
+
+
+
+        </div>
+    }
+</div>
+

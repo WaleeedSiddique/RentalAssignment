@@ -1,9 +1,9 @@
 ﻿using RentalAssignment.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace RentalAssignment.Models
+namespace RentalAssignment.ViewModels
 {
-    public class Vehicle
+    public class VehicleCreateViewModel
     {
         public int VehicleId { get; set; }
         [Required]
@@ -16,6 +16,6 @@ namespace RentalAssignment.Models
         public string ChassisNumber { get; set; }
         [Required]
         public VehicleType VehicleType { get; set; }
-        public string Photopath { get; set; }
+        public IFormFile Photo { get; set; }
     }
 }

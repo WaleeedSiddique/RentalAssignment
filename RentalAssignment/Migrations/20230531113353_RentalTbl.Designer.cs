@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RentalAssignment.DatabaseContext;
 
@@ -11,9 +12,10 @@ using RentalAssignment.DatabaseContext;
 namespace RentalAssignment.Migrations
 {
     [DbContext(typeof(AddDbContext))]
-    partial class AddDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230531113353_RentalTbl")]
+    partial class RentalTbl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -114,10 +116,6 @@ namespace RentalAssignment.Migrations
                     b.Property<DateTime>("Dropoff")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DropoffLocation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("Pickup")
                         .HasColumnType("datetime2");
 
@@ -130,10 +128,6 @@ namespace RentalAssignment.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RentalPhone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("pickupLocation")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

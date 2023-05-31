@@ -11,6 +11,8 @@ builder.Services.AddDbContext<AddDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddScoped<IVehicleInterface, SqlVehicleRepository>();
 builder.Services.AddScoped<IBikeInterface, SqlBikeRepository>();
 builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
+builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
+
 
 var app = builder.Build();
 

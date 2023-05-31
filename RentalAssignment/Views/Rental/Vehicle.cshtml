@@ -1,0 +1,96 @@
+﻿@using RentalAssignment.ViewModels
+@model VehicleRentalViewModel
+
+@{
+    ViewBag.Title = "Rent a Vehicle";
+    var photo = "~/images/" + (Model.Vehicle.Photopath);
+}
+<div class="container">
+    <div>
+        <table class="table">
+            <tr>
+                <td>
+                    <img src="@photo" asp-append-version="true" width="400px" height="500px" />
+                </td>
+            </tr>
+    </div>
+    <div>
+<form asp-controller="Rental" enctype="multipart/form-data" asp-action="Vehicle" method="post" class="form-group bg-light">
+   <tr><td> <input hidden asp-for="Vehicle.VehicleId" />
+    <div class="form-group">
+        <label asp-for="Vehicle.OwnerName">Driver Name</label>
+        <input asp-for="Vehicle.OwnerName" class="form-control" placeholder="Owned By" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Vehicle.VehicleType"></label>
+        <input asp-for="Vehicle.VehicleType" class="form-control" placeholder="Model" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Vehicle.VehicleNumberPlate"></label>
+        <input asp-for="Vehicle.VehicleNumberPlate" class="form-control" placeholder="License Plate Number" />
+        <span asp-validation-for="Vehicle.VehicleNumberPlate" class="text-danger"></span>
+    </div>
+                </td>
+            </tr>
+         <tr> <td>
+    <div class="form-group">
+        <label asp-for="Vehicle.ChassisNumber"></label>
+        <input asp-for="Vehicle.ChassisNumber" class="form-control" placeholder="Engine Number" />
+        <span asp-validation-for="Vehicle.ChassisNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Vehicle.OwnerPhone"></label>
+        <input asp-for="Vehicle.OwnerPhone" class="form-control" placeholder="Name" />
+    </div>
+    <div class="form-group">
+        <label asp-for="rental.RentalName"></label>
+                    <input asp-for="rental.RentalName" class="form-control" placeholder="Phone" />
+           
+    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+    <div class="form-group">
+        <label asp-for="rental.RentalEmail"></label>
+        <input asp-for="rental.RentalEmail" class="form-control" placeholder="Email" />
+    </div>
+    <div class="form-group">
+        <label asp-for="rental.RentalPhone"></label>
+        <input asp-for="rental.RentalPhone" class="form-control" placeholder="Phone" />
+    </div>
+           
+    <div class="form-group">
+        <label asp-for="rental.Pickup"></label>
+        <input asp-for="rental.Pickup" class="form-control" />
+    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <div class="form-group">
+                <label asp-for="rental.pickupLocation"></label>
+                <input asp-for="rental.pickupLocation" class="form-control" placeholder="Address" />
+            </div>
+    <div class="form-group">
+        <label asp-for="rental.Dropoff"></label>
+        <input asp-for="rental.Dropoff" class="form-control" />
+    </div>
+            <div class="form-group">
+                <label asp-for="rental.DropoffLocation"></label>
+                <input asp-for="rental.DropoffLocation" class="form-control" placeholder="Address" />
+            </div>
+                </td>
+            </tr>
+    <div>
+        <button class="btn btn-dark mt-1" type="submit">Book</button>
+    </div>
+
+
+
+</form>
+        </table>
+    </div>
+</div>
+
+

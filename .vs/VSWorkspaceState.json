@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\RentalAssignment",
-    "\\RentalAssignment\\Controllers",
     "\\RentalAssignment\\Interfaces",
-    "\\RentalAssignment\\Repository"
+    "\\RentalAssignment\\Views",
+    "\\RentalAssignment\\Views\\Employee"
   ],
   "SelectedNode": "\\RentalAssignment.sln",
   "PreviewInSolutionExplorer": false

@@ -6,6 +6,7 @@ using RentalAssignment.Models;
 using RentalAssignment.Repository;
 using RentalAssignment.ViewModels;
 using System.Diagnostics;
+using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace RentalAssignment.Controllers
 {
@@ -13,13 +14,13 @@ namespace RentalAssignment.Controllers
     {
         
         private readonly IVehicleInterface _vehicleInterface;
-        
+        private readonly IHostingEnvironment hostingEnvironment;
 
-        public HomeController(IVehicleInterface vehicleInterface)
+        public HomeController(IVehicleInterface vehicleInterface , IHostingEnvironment hostingEnvironment)
         {
            
             this._vehicleInterface = vehicleInterface;
-            
+            this.hostingEnvironment = hostingEnvironment;
         }
 
         public IActionResult Index()
@@ -39,12 +40,31 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Vehicle vehicle)
+        public IActionResult Create(VehicleCreateViewModel vehicle)
         {
             if (ModelState.IsValid)
             {
-            Vehicle model = _vehicleInterface.CreateVehicle(vehicle);
-            return RedirectToAction("Index", new {model.VehicleId});
+                string uniqueFileName = null;
+                if(vehicle.Photo != null)
+                {
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + vehicle.Photo.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    vehicle.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+                Vehicle newVehicle = new Vehicle
+                {
+                    OwnerName = vehicle.OwnerName,
+                    OwnerPhone = vehicle.OwnerPhone,
+                    VehicleColour = vehicle.VehicleColour,
+                    VehicleModel = vehicle.VehicleModel,
+                    VehicleNumberPlate = vehicle.VehicleNumberPlate,
+                    VehicleType = vehicle.VehicleType,
+                    ChassisNumber = vehicle.ChassisNumber,
+                    Photopath = uniqueFileName
+                };
+            _vehicleInterface.CreateVehicle(newVehicle);
+            return RedirectToAction("Details", new {id = newVehicle.VehicleId});
 
             }
             return View();

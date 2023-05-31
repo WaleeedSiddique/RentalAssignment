@@ -1,18 +1,22 @@
-﻿@model Vehicle
+﻿@using RentalAssignment.ViewModels
+@model Vehicle
 <h1>Car Details</h1>
-
+@{
+    var photopath = "~/images/" + (Model.Photopath);
+}
 <div class="card" style="width: 18rem;">
 
     <div class="card-body text-center">
 
+        <img class="card-img-top" src="@photopath" alt="" asp-append-version="true" />
+        
 
-
-        <div>Vehicle Owner : @Model.OwnerName</div>
-        <div>Vehicle Model : @Model.VehicleModel</div>
-        <div>Vehicle Type : @Model.VehicleType </div>
-        <div>Vehicle Number : @Model.VehicleNumberPlate</div>
-        <div>Vehicle Colour : @Model.VehicleColour</div>
-        <div>Vehicle Chassis : @Model.ChassisNumber</div>
+        <h4>Vehicle Owner : @Model.OwnerName</h4>
+        <h4>Vehicle Model : @Model.VehicleModel</h4>
+        <h4>Vehicle Type : @Model.VehicleType </h4>
+        <h4>Vehicle Number : @Model.VehicleNumberPlate</h4>
+        <h4>Vehicle Colour : @Model.VehicleColour</h4>
+        <h4>Vehicle Chassis : @Model.ChassisNumber</h4>
         <a asp-controller="home" asp-action="index" class="btn btn-info">Back</a>
         <a asp-controller="home" asp-action="Edit" asp-route-id="@Model.VehicleId" class="btn btn-primary">Edit</a>
         <a asp-controller="home" asp-action="Delete" asp-route-id="@Model.VehicleId" class="btn btn-danger">Delete</a>
