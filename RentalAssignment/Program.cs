@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AddDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Vehiclesdb")));
 builder.Services.AddScoped<IVehicleInterface, SqlVehicleRepository>();
-builder.Services.AddScoped<IBikeInterface, SqlBikeRepository>();
 builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
 builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
 

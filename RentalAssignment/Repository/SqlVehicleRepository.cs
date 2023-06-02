@@ -1,6 +1,8 @@
-﻿using RentalAssignment.DatabaseContext;
+﻿using Microsoft.AspNetCore.Mvc;
+using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
+using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Repository
 {
@@ -12,12 +14,15 @@ namespace RentalAssignment.Repository
         {
             this._context = context;
         }
-        public Vehicle CreateVehicle(Vehicle vehicle)
+      
+        public  Vehicle CreateVehicle(Vehicle vehicle)
         {
-            _context.vehicles.Add(vehicle);
-            _context.SaveChanges();
-            return vehicle;
             
+                _context.vehicles.Add(vehicle);
+                _context.SaveChanges();
+                return vehicle;
+           
+           
         }
 
         public Vehicle Delete(int VehicleId)

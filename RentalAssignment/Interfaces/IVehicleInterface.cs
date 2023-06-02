@@ -1,4 +1,5 @@
 ﻿using RentalAssignment.Models;
+using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Interfaces
 {
@@ -9,5 +10,6 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Vehicle> GetAllVehicles();
         public Vehicle Update(Vehicle VehicleChanges);
         public Vehicle Delete(int VehicleId);
+        
     }
 }

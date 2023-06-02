@@ -16,6 +16,8 @@ namespace RentalAssignment.Models
         public string ChassisNumber { get; set; }
         [Required]
         public VehicleType VehicleType { get; set; }
+        public string? sittingCapacity { get; set; }
+        public string? BikeModel { get; set; }
         public string Photopath { get; set; }
     }
 }

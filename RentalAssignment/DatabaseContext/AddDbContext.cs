@@ -10,7 +10,6 @@ namespace RentalAssignment.DatabaseContext
 
         }
         public DbSet<Vehicle> vehicles { get; set; }
-        public DbSet<Bike> Bikes { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Rental> rentals { get; set; }
 

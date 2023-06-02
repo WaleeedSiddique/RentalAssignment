@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\RentalAssignment",
+    "\\RentalAssignment\\Controllers",
     "\\RentalAssignment\\Interfaces",
     "\\RentalAssignment\\Views",
     "\\RentalAssignment\\Views\\Employee"

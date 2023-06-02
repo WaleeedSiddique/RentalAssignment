@@ -12,17 +12,17 @@ namespace RentalAssignment.Controllers
 {
     public class HomeController : Controller
     {
-        
+
         private readonly IVehicleInterface _vehicleInterface;
         private readonly IHostingEnvironment hostingEnvironment;
 
-        public HomeController(IVehicleInterface vehicleInterface , IHostingEnvironment hostingEnvironment)
+        public HomeController(IVehicleInterface vehicleInterface, IHostingEnvironment hostingEnvironment)
         {
-           
+
             this._vehicleInterface = vehicleInterface;
             this.hostingEnvironment = hostingEnvironment;
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
             var model = _vehicleInterface.GetAllVehicles();
@@ -42,10 +42,11 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         public IActionResult Create(VehicleCreateViewModel vehicle)
         {
+
             if (ModelState.IsValid)
             {
                 string uniqueFileName = null;
-                if(vehicle.Photo != null)
+                if (vehicle.Photo != null)
                 {
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + vehicle.Photo.FileName;
@@ -63,8 +64,9 @@ namespace RentalAssignment.Controllers
                     ChassisNumber = vehicle.ChassisNumber,
                     Photopath = uniqueFileName
                 };
-            _vehicleInterface.CreateVehicle(newVehicle);
-            return RedirectToAction("Details", new {id = newVehicle.VehicleId});
+                Vehicle vehicle1 = _vehicleInterface.CreateVehicle(newVehicle);
+
+                return RedirectToAction("Details", new { id = vehicle1.VehicleId });
 
             }
             return View();
@@ -82,37 +84,38 @@ namespace RentalAssignment.Controllers
                 VehicleModel = result.VehicleModel,
                 VehicleNumberPlate = result.VehicleNumberPlate,
                 VehicleType = result.VehicleType,
-                
+
             };
             return View(editVehicleViewModel);
         }
 
-        
+
         [HttpPost]
         public IActionResult Edit(EditVehicleViewModel model)
         {
-           
-                 Vehicle result = _vehicleInterface.GetVehicle(model.id);
-            if (ModelState.IsValid) {
+
+            Vehicle result = _vehicleInterface.GetVehicle(model.id);
+            if (ModelState.IsValid)
+            {
                 result.OwnerName = model.OwnerName;
                 result.VehicleColour = model.VehicleColour;
                 result.VehicleModel = model.VehicleModel;
                 result.VehicleNumberPlate = model.VehicleNumberPlate;
                 result.VehicleType = model.VehicleType;
                 result.ChassisNumber = model.ChassisNumber;
-                Vehicle UpdatedVehicle =  _vehicleInterface.Update(result);
-                 return RedirectToAction("Index");
-             }
-             return View(model);
+                Vehicle UpdatedVehicle = _vehicleInterface.Update(result);
+                return RedirectToAction("Index");
+            }
+            return View(model);
 
         }
         [HttpGet]
         public IActionResult Delete(int id)
         {
 
-           var model = _vehicleInterface.Delete(id);
-             return RedirectToAction("Index");
-            
+            var model = _vehicleInterface.Delete(id);
+            return RedirectToAction("Index");
+
         }
         public IActionResult Privacy()
         {

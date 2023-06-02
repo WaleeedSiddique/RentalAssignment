@@ -2,6 +2,7 @@
 using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
+using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Repository
 {
@@ -65,5 +66,7 @@ namespace RentalAssignment.Repository
             }
             return result;
         }
+
+       
     }
 }

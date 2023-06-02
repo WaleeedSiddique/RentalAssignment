@@ -5,6 +5,8 @@
         Sedan,
         Suv,
         Hatchback,
-        Van
+        Van,
+        Bike,
+        Truck
     }
 }
