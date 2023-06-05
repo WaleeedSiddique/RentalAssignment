@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AddDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Vehiclesdb")));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AddDbContext>();
 builder.Services.AddScoped<IVehicleInterface, SqlVehicleRepository>();
 builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
 builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
@@ -27,7 +29,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

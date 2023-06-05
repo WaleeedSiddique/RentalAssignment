@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
@@ -37,6 +38,7 @@ namespace RentalAssignment.Controllers
 
         }
         [HttpPost]
+        [Authorize]
         public IActionResult Vehicle(Rental rental)
         {
             if (ModelState.IsValid)

@@ -40,9 +40,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.5.1, )"
+            },
+            "LibGit2Sharp": {
+              "target": "Package",
+              "version": "[0.27.2, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

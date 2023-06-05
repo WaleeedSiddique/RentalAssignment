@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RentalAssignment.Models;
 
 namespace RentalAssignment.DatabaseContext
 {
-    public class AddDbContext :DbContext
+    public class AddDbContext : IdentityDbContext
     {
         public AddDbContext(DbContextOptions options) : base(options)
         {

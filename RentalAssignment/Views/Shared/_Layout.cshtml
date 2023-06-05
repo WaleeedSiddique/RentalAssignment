@@ -1,10 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> signInManager;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RentalAssignment</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/jquery/dist/jquery.min.map"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RentalAssignment.styles.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,12 +34,39 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Create">Add Vehicle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Bike" asp-action="Index">Bikes</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Index">Employees</a>
                         </li>
                     </ul>
+                        <ul class="navbar nav ml-auto">
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <form method="post" asp-controller="account" asp-action="logout">
+                                    <button type="submit" style="width:auto"
+                                        class="nav-link btn btn-link py-0">
+                                        Logout @User.Identity.Name
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <i class="fas fa-user fa-sm" style="position:relative;top:18px;"></i>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register" style="    position: relative;top: -14px;">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fas fa-user fa-sm" style="position:relative;top:18px;"></i> 
+                                <a style="position:relative;top:-14px;" class="nav-link text-dark" asp-controller="account" asp-action="login">
+                                    Login
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            
+                        </li>
+                        </ul>
+                    
                 </div>
             </div>
         </nav>

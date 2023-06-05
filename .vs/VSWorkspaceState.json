@@ -3,9 +3,13 @@
     "",
     "\\RentalAssignment",
     "\\RentalAssignment\\Controllers",
+    "\\RentalAssignment\\Enums",
     "\\RentalAssignment\\Interfaces",
+    "\\RentalAssignment\\Models",
+    "\\RentalAssignment\\Repository",
+    "\\RentalAssignment\\ViewModels",
     "\\RentalAssignment\\Views",
-    "\\RentalAssignment\\Views\\Employee"
+    "\\RentalAssignment\\Views\\Home"
   ],
   "SelectedNode": "\\RentalAssignment.sln",
   "PreviewInSolutionExplorer": false
