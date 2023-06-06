@@ -42,6 +42,16 @@ namespace RentalAssignment.Repository
             return _VehicleList.ToList();
         }
 
+        public List<Vehicle> GetAvailableVehicles()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Vehicle> GetRentedVehicles()
+        {
+            throw new NotImplementedException();
+        }
+
         public Vehicle GetVehicle(int Id)
         {
 
@@ -49,7 +59,11 @@ namespace RentalAssignment.Repository
             
             return result;
         }
-        
+
+        public Vehicle IsReserved()
+        {
+            throw new NotImplementedException();
+        }
 
         public Vehicle Update(Vehicle VehicleChanges)
         {

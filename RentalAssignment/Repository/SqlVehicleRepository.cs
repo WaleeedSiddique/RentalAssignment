@@ -41,11 +41,23 @@ namespace RentalAssignment.Repository
             return _context.vehicles;
         }
 
+        public List<Vehicle> GetAvailableVehicles()
+        {
+            return _context.vehicles.Where(c => !c.IsRented).ToList();
+        }
+
+        public List<Vehicle> GetRentedVehicles()
+        {
+            return _context.vehicles.Where(c => c.IsRented).ToList();
+        }
+
         public Vehicle GetVehicle(int id)
         {
             var model = _context.vehicles.FirstOrDefault(x => x.VehicleId == id);
             return model;
         }
+
+       
 
         public Vehicle Update(Vehicle VehicleChanges)
         {

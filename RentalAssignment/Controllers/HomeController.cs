@@ -117,6 +117,17 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("Index");
 
         }
+        public IActionResult AvailableCars()
+        {
+            List<Vehicle> availableCars = _vehicleInterface.GetAvailableVehicles();
+            return View(availableCars);
+        }
+
+        public IActionResult RentedCars()
+        {
+            List<Vehicle> rentedCars = _vehicleInterface.GetRentedVehicles();
+            return View(rentedCars);
+        }
         public IActionResult Privacy()
         {
             return View();

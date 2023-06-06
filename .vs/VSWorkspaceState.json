@@ -2,13 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\RentalAssignment",
-    "\\RentalAssignment\\Controllers",
     "\\RentalAssignment\\Enums",
     "\\RentalAssignment\\Interfaces",
     "\\RentalAssignment\\Models",
     "\\RentalAssignment\\Repository",
     "\\RentalAssignment\\ViewModels",
     "\\RentalAssignment\\Views",
+    "\\RentalAssignment\\Views\\Administration",
     "\\RentalAssignment\\Views\\Home"
   ],
   "SelectedNode": "\\RentalAssignment.sln",

@@ -1,27 +1,47 @@
 ﻿@model IEnumerable<Vehicle>
 @{
     ViewData["Title"] = "Home Page";
+    
 }
 
 <div class="row card-deck mx-auto">
-    @foreach (var vehicle in Model)
-    {
-        var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
-        <div class="card main-card m-3 p-4"  style="min-width: 18rem; max-width:30.5%; ">
-           
-
-            <img class="card-img-top imageThumbnail" src="@photoPath"
-             asp-append-version="true" height="200px" width="200px" />
-             <div class="card-body">
-            <h5 class="card-title  fw-bold">@vehicle.VehicleModel</h5>
-            <h6 class="card-subtitle pb-2 text-muted">@vehicle.VehicleType</h6>
-            <h5 class="card-subtitle fw-bold">PKR 3500 <span class="text-muted">/day</span> </h5>
-                <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId"
-           class="booking-btn m-1 float-right"><i class="fa-solid btn icon fa-arrow-right"></i></a>
+    <section class="ftco-section ftco-no-pt bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading">What we offer</span>
+                    <h2 class="mb-2">Feeatured Vehicles</h2>
+                </div>
             </div>
-
-
            
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel-car owl-carousel">
+                        @foreach (var vehicle in Model)
+                        {
+                            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
+                            <div class="item">
+                                <div class="car-wrap rounded ftco-animate">
+                                    <div class="img rounded d-flex align-items-end" style="background-image: url(@photoPath);">
+                                        <img src="@photoPath" asp-append-version="true">
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="mb-0"><a href="#">@vehicle.VehicleModel</a></h2>
+                                        <div class="d-flex mb-3">
+                                            <span class="cat">Cheverolet</span>
+                                            <p class="price ml-auto">$500 <span>/day</span></p>
+                                        </div>
+                                        <p class="d-flex mb-0 d-block">
+                                            <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" class="btn btn-primary py-2 mr-1">Book now</a>
+                                            <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-secondary py-2 ml-1">Details</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                </div>
+            
         </div>
-    }
-</div>
+
+    

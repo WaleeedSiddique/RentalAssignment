@@ -10,6 +10,9 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Vehicle> GetAllVehicles();
         public Vehicle Update(Vehicle VehicleChanges);
         public Vehicle Delete(int VehicleId);
+        public List<Vehicle> GetAvailableVehicles();
+        public List<Vehicle> GetRentedVehicles();
+       
         
     }
 }

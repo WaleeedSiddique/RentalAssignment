@@ -19,5 +19,7 @@ namespace RentalAssignment.Models
         public string? sittingCapacity { get; set; }
         public string? BikeModel { get; set; }
         public string Photopath { get; set; }
+        public bool IsRented { get; set; }
+       
     }
 }

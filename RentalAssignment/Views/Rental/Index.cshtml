@@ -6,11 +6,12 @@
 <div class="row card-deck mx-auto">
     @foreach (var rental in Model)
     {
+        var photoPath = "~/images/" + (rental.Photopath ?? "noimage.jpg");
         
         <div class="card main-card m-3 p-4" style="min-width: 18rem; max-width:30.5%; ">
 
 
-            <img class="card-img-top imageThumbnail" src="~/images/Civic.png"
+            <img class="card-img-top imageThumbnail" src="@photoPath"
              asp-append-version="true" height="200px" width="200px" />
             <div class="card-body">
                 <h5 class="card-title  fw-bold">@rental.RentalName</h5>

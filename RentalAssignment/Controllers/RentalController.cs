@@ -49,5 +49,10 @@ namespace RentalAssignment.Controllers
             }
             return View();
         }
+        public IActionResult RentedVehicles()
+        {
+            var model = _rentalInterface.GetAllRentalVehicles();
+            return View(model);
+        }
     }
 }
