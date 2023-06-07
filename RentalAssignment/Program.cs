@@ -13,6 +13,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkSto
 builder.Services.AddScoped<IVehicleInterface, SqlVehicleRepository>();
 builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
 builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
+builder.Services.AddScoped<IReviewInterface, SqlReviewRepository>();
 
 
 var app = builder.Build();

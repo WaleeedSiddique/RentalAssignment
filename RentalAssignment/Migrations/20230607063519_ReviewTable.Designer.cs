@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RentalAssignment.DatabaseContext;
 
@@ -11,9 +12,10 @@ using RentalAssignment.DatabaseContext;
 namespace RentalAssignment.Migrations
 {
     [DbContext(typeof(AddDbContext))]
-    partial class AddDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230607063519_ReviewTable")]
+    partial class ReviewTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -271,6 +273,10 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Photopath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("Pickup")
                         .HasColumnType("datetime2");
 
@@ -429,12 +435,17 @@ namespace RentalAssignment.Migrations
             modelBuilder.Entity("RentalAssignment.Models.Review", b =>
                 {
                     b.HasOne("RentalAssignment.Models.Rental", "Rental")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("RentalId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Rental");
+                });
+
+            modelBuilder.Entity("RentalAssignment.Models.Rental", b =>
+                {
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

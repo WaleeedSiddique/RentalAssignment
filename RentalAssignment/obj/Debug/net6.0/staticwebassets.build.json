@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KzGFOe3j+Gf9Et1PcimCuc88TrYBjvnq6Tp9nK2tGts=",
+  "Hash": "gMkU/ABTKH/YCS2dte6HqK0zDJAYOvDCRavX9WFGQ7o=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -695,6 +695,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f5e73c11-8635-4035-8849-1eff7e1bdc43_Civic.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\signup-image.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/signup-image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\signup-image.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\aos.js",

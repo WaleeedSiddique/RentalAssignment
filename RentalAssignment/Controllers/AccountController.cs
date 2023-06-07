@@ -66,7 +66,7 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel model,string returnUrl)
+        public async Task<IActionResult> Login(LoginViewModel model,string? returnUrl)
         {
             if (ModelState.IsValid)
             {

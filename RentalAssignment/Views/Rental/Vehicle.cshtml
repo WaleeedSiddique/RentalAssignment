@@ -1,100 +1,122 @@
-﻿@using RentalAssignment.ViewModels
-@model VehicleRentalViewModel
+﻿@model VehicleRentalViewModel
 
 @{
     ViewBag.Title = "Rent a Vehicle";
-    var photo = "~/images/" + (Model.Vehicle.Photopath);
+    var photo = "~/images/" + (Model?.Vehicle?.Photopath);
 }
-<div class="container">
-    <div>
-        <table class="table">
-            <tr>
-                <td>
-                    <img src="@photo" asp-append-version="true" width="400px" height="500px" />
-                </td>
-            </tr>
-    </div>
-    <div>
-<form asp-controller="Rental" enctype="multipart/form-data" asp-action="Vehicle" method="post" class="form-group bg-light">
-   <tr><td> <input hidden asp-for="Vehicle.VehicleId" />
-    <div class="form-group">
-        <label asp-for="Vehicle.OwnerName">Driver Name</label>
-        <input asp-for="Vehicle.OwnerName" class="form-control" placeholder="Owned By" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Vehicle.VehicleType"></label>
-        <input asp-for="Vehicle.VehicleType" class="form-control" placeholder="Model" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Vehicle.VehicleNumberPlate"></label>
-        <input asp-for="Vehicle.VehicleNumberPlate" class="form-control" placeholder="License Plate Number" />
-        <span asp-validation-for="Vehicle.VehicleNumberPlate" class="text-danger"></span>
-    </div>
-                </td>
-            </tr>
-         <tr> <td>
-    <div class="form-group">
-        <label asp-for="Vehicle.ChassisNumber"></label>
-        <input asp-for="Vehicle.ChassisNumber" class="form-control" placeholder="Engine Number" />
-        <span asp-validation-for="Vehicle.ChassisNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Vehicle.OwnerPhone"></label>
-        <input asp-for="Vehicle.OwnerPhone" class="form-control" placeholder="Name" />
-    </div>
-    <div class="form-group">
-        <label asp-for="rental.RentalName"></label>
-                    <input asp-for="rental.RentalName" class="form-control" placeholder="Phone" />
-           
-    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-    <div class="form-group">
-        <label asp-for="rental.RentalEmail"></label>
-        <input asp-for="rental.RentalEmail" class="form-control" placeholder="Email" />
-    </div>
-    <div class="form-group">
-        <label asp-for="rental.RentalPhone"></label>
-        <input asp-for="rental.RentalPhone" class="form-control" placeholder="Phone" />
-    </div>
-           
-    <div class="form-group">
-        <label asp-for="rental.Pickup"></label>
-        <input asp-for="rental.Pickup" class="form-control" />
-    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-            <div class="form-group">
-                <label asp-for="rental.pickupLocation"></label>
-                <input asp-for="rental.pickupLocation" class="form-control" placeholder="Address" />
-            </div>
-    <div class="form-group">
-        <label asp-for="rental.Dropoff"></label>
-        <input asp-for="rental.Dropoff" class="form-control" />
-    </div>
-            <div class="form-group">
-                <label asp-for="rental.DropoffLocation"></label>
-                <input asp-for="rental.DropoffLocation" class="form-control" placeholder="Address" />
-            </div>
-                </td>
-            </tr>
-            <tr>
-                <div>
-                    <button class="btn btn-dark mt-1" type="submit">Book</button>
+
+
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                                <form class="mx-1 mx-md-4" method="post">
+                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                    <input hidden asp-for="Vehicle.VehicleId" />
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="Vehicle.OwnerName" class="form-label">Driver Name</label>
+                                            <input asp-for="Vehicle.OwnerName" readonly class="form-control" />
+                                            <span asp-validation-for="Vehicle.OwnerName" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="Vehicle.VehicleType" class="form-label"></label>
+                                            <input asp-for="Vehicle.VehicleType" readonly class="form-control" />
+                                            <span asp-validation-for="Vehicle.VehicleType" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="Vehicle.VehicleNumberPlate" class="form-label"></label>
+                                            <input asp-for="Vehicle.VehicleNumberPlate" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="Vehicle.VehicleNumberPlate" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.RentalName" class="form-label"></label>
+                                            <input asp-for="rental.RentalName" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.RentalName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.RentalEmail" class="form-label"></label>
+                                            <input asp-for="rental.RentalEmail" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.RentalEmail" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.RentalPhone" class="form-label"></label>
+                                            <input asp-for="rental.RentalPhone" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.RentalEmail" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input hidden asp-for="rental.RentalID" />
+                                            <label asp-for="rental.Pickup" class="form-label">Pickup Date/Time</label>
+                                            <input asp-for="rental.Pickup" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.Pickup" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.pickupLocation" class="form-label">Pickup Location</label>
+                                            <input asp-for="rental.pickupLocation" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.pickupLocation" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.Dropoff" class="form-label">Drop Date/Time</label>
+                                            <input asp-for="rental.Dropoff" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.Dropoff" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.DropoffLocation" class="form-label">Drop Location Location</label>
+                                            <input asp-for="rental.DropoffLocation" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.DropoffLocation" class="text-danger"></span>
+                                        </div>
+                                    </div>                                  
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                        <button type="Submit" class="btn btn-primary btn-lg">Book a Ride</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">                                
+                                <img src="@photo" asp-append-version ="true" class="img-fluid" alt="Sample image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </tr>
-  
-
-
-
-</form>
-        </table>
+            </div>
+        </div>
     </div>
-</div>
-
-
+</section>

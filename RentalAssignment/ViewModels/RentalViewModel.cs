@@ -11,6 +11,6 @@
         public DateTime Dropoff { get; set; }
         public string pickupLocation { get; set; }
         public string DropoffLocation { get; set; }
-        public IFormFile Photo { get; set; }
+      
     }
 }

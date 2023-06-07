@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using com.sun.xml.@internal.bind.v2.model.core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
@@ -39,20 +40,77 @@ namespace RentalAssignment.Controllers
         }
         [HttpPost]
         [Authorize]
-        public IActionResult Vehicle(Rental rental)
+        public IActionResult Vehicle(VehicleRentalViewModel vehicleRentalViewModel)
         {
-            if (ModelState.IsValid)
-            {
+            
+                Rental rental = new Rental
+                {
+                    RentalName = vehicleRentalViewModel.rental.RentalName,
+                    RentalPhone = vehicleRentalViewModel.rental.RentalPhone,
+                    RentalEmail = vehicleRentalViewModel.rental.RentalEmail,
+                    Dropoff = vehicleRentalViewModel.rental.Dropoff,
+                    DropoffLocation = vehicleRentalViewModel.rental.DropoffLocation,
+                    pickupLocation = vehicleRentalViewModel.rental.pickupLocation,
+                    Pickup = vehicleRentalViewModel.rental.Pickup
+
+                };
                 Rental model = _rentalInterface.RentVehicle(rental);
                 return RedirectToAction("Index", new { model.RentalID });
+                          
 
-            }
-            return View();
+            
         }
+        [HttpGet]
         public IActionResult RentedVehicles()
         {
             var model = _rentalInterface.GetAllRentalVehicles();
             return View(model);
+        }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Rental result = _rentalInterface.GetRentalVehicle(id);
+            if(result != null)
+            {
+                EditRentalViewModel editRentalViewModel = new EditRentalViewModel
+                {
+                    RentalName=result.RentalName,
+                    RentalPhone=result.RentalPhone,
+                    RentalEmail=result.RentalEmail,
+                    Pickup = result.Pickup,
+                    pickupLocation =result.pickupLocation,
+                    Dropoff = result.Dropoff,
+                    DropoffLocation = result.DropoffLocation,                    
+                };
+                return View(editRentalViewModel);
+            }
+            return NotFound("Rental Not Found"); //404 error
+        }
+        [HttpPost]
+        public IActionResult Edit(EditRentalViewModel model)
+        {
+            Rental result = _rentalInterface.GetRentalVehicle(model.id);
+            if (ModelState.IsValid)
+            {
+                result.RentalName = model.RentalName;
+                result.RentalPhone = model.RentalPhone;
+                result.RentalEmail = model.RentalEmail;
+                result.Pickup = model.Pickup;
+                result.pickupLocation = model.pickupLocation;
+                result.Dropoff = model.Dropoff;
+                result.DropoffLocation = model.DropoffLocation;
+                result.VehicleID = model.VehicleID;
+                Rental Updatedrental = _rentalInterface.UpdateRentalVehicle(result);
+                return RedirectToAction("Index");
+            }
+            return View(model);
+
+        }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            _rentalInterface.DeleteRentedVehicle(id);
+            return RedirectToAction("Index");
         }
     }
 }
