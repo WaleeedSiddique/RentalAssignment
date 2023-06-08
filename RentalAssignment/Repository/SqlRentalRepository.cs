@@ -12,6 +12,14 @@ namespace RentalAssignment.Repository
         {
             this._context = context;
         }
+
+        public Review AddReview(Review review)
+        {
+            _context.reviews.Add(review);
+            _context.SaveChanges();
+            return review;
+        }
+
         public Rental DeleteRentedVehicle(int id)
         {
             Rental result = _context.rentals.Find(id);

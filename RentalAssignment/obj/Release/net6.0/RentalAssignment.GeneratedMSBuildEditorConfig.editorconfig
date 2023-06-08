@@ -15,12 +15,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Account/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Account/ListUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMaXN0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Account/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Administration/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Administration/CreateRole.cshtml]
@@ -83,12 +99,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJlbnRlZFZlaGljbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Rental/Vehicle.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFZlaGljbGUuY3NodG1s
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Rental/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Review/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XENyZWF0ZS5jc2h0bWw=
+[C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Rental/Vehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFZlaGljbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/OneDrive/Documents/Csharp-learning/RentalAssignment/RentalAssignment/Views/Shared/Error.cshtml]

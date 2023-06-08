@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gMkU/ABTKH/YCS2dte6HqK0zDJAYOvDCRavX9WFGQ7o=",
+  "Hash": "QnbM8rqH8D3MqU/d46yl0cU1JO1jg+lWh6IuvQmxTX0=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -306,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0cffc162-d305-45cf-90c0-f152352d6371_Civic.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
@@ -355,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\128cb5c0-33f0-4146-9dbc-2fbe3ee50927_Civic.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\28dea247-1750-4325-b420-811ee0454e55_Civic.png",
@@ -525,6 +559,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\adb5a228-3c4f-48d9-98dd-af9aa95cd30d_cultus.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Documents\\Csharp-learning\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Alto.png",

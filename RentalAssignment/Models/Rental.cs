@@ -16,7 +16,7 @@ namespace RentalAssignment.Models
         [Required]
         public DateTime Dropoff { get; set; }
         public string pickupLocation { get; set; }
-        public string DropoffLocation { get; set; }
+        public string DropoffLocation { get; set; }       
 
     }
 }

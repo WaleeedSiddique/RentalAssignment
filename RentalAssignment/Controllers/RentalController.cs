@@ -41,8 +41,7 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         [Authorize]
         public IActionResult Vehicle(VehicleRentalViewModel vehicleRentalViewModel)
-        {
-            
+        {                       
                 Rental rental = new Rental
                 {
                     RentalName = vehicleRentalViewModel.rental.RentalName,
@@ -55,9 +54,7 @@ namespace RentalAssignment.Controllers
 
                 };
                 Rental model = _rentalInterface.RentVehicle(rental);
-                return RedirectToAction("Index", new { model.RentalID });
-                          
-
+                return RedirectToAction("Review", new { model.RentalID });
             
         }
         [HttpGet]
@@ -111,6 +108,29 @@ namespace RentalAssignment.Controllers
         {
             _rentalInterface.DeleteRentedVehicle(id);
             return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult Review(int rentalid)
+        {
+            var result = _rentalInterface.GetRentalVehicle(rentalid);
+            if(result == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Review(ReviewViewModel model)
+        {
+            
+                Review result = new Review
+                {
+                    Rating = model.Rating,
+                    Comment = model.Comment
+                };
+                  _rentalInterface.AddReview(result);
+                    return RedirectToAction("index");            
+            
         }
     }
 }

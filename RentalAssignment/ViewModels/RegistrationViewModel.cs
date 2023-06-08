@@ -5,6 +5,7 @@ namespace RentalAssignment.ViewModels
 {
     public class RegistrationViewModel
     {
+        
         [Required]
         public string Name { get; set; }
         [Required]

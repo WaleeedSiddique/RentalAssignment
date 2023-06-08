@@ -42,5 +42,11 @@ namespace RentalAssignment.Controllers
 
             return View(model);
         }
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        
     }
 }

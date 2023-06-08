@@ -16,6 +16,12 @@ namespace RentalAssignment.Repository
                 new Rental()  {RentalID = 3,RentalName = "Ahmed Khan" , RentalEmail = "Ahmed@gmail.com",RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow},
             };
         }
+
+        public Review AddReview(Review review)
+        {
+            throw new NotImplementedException();
+        }
+
         public Rental DeleteRentedVehicle(int id)
         {
             var result = _RentalList.FirstOrDefault(x => x.RentalID == id);

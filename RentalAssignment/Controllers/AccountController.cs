@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Fluent.Infrastructure.FluentModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.ViewModels;
@@ -7,10 +8,10 @@ namespace RentalAssignment.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager,SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager,SignInManager<IdentityUser> signInManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
@@ -25,7 +26,12 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+                var user = new IdentityUser 
+                { 
+                    
+                    UserName = model.Name,
+                    Email = model.Email 
+                };
                 var result = await _userManager.CreateAsync(user,model.Password);
                 if (result.Succeeded)
                 {
@@ -87,6 +93,36 @@ namespace RentalAssignment.Controllers
                     ModelState.AddModelError(string.Empty, "Invalid User Input ");
             }
             return View(model);
+        }
+        [HttpGet]
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult ListUser()
+        {
+            var user = _userManager.Users;
+            return View(user);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Update(string Userid)
+        {
+            var user = await _userManager.FindByIdAsync(Userid);
+            if (user == null)
+            {
+                return View("Error");
+            }
+
+            var model = new EditUserViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                Password = user.PasswordHash
+            };
+            return View(model);
+            
         }
     }
 }
