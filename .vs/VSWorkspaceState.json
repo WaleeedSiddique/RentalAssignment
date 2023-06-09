@@ -2,14 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\RentalAssignment",
-    "\\RentalAssignment\\Models",
     "\\RentalAssignment\\Repository",
     "\\RentalAssignment\\ViewModels",
     "\\RentalAssignment\\Views",
-    "\\RentalAssignment\\Views\\Account",
-    "\\RentalAssignment\\Views\\Administration",
-    "\\RentalAssignment\\Views\\Home",
-    "\\RentalAssignment\\Views\\Rental"
+    "\\RentalAssignment\\Views\\Administration"
   ],
   "SelectedNode": "\\RentalAssignment.sln",
   "PreviewInSolutionExplorer": false

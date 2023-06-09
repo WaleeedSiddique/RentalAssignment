@@ -14,6 +14,7 @@ namespace RentalAssignment.DatabaseContext
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Rental> rentals { get; set; }
         public DbSet<Review> reviews { get; set; }
+        public DbSet<ApplicationUser> applicationusers { get; set; }
 
     }
 }

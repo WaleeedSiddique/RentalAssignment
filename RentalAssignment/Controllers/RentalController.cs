@@ -117,19 +117,24 @@ namespace RentalAssignment.Controllers
             {
                 return NotFound();
             }
-            return View();
+
+            ReviewViewModel model = new ReviewViewModel();
+            model.rental = result;
+            return View(model);
         }
         [HttpPost]
         public IActionResult Review(ReviewViewModel model)
         {
-            
-                Review result = new Review
-                {
-                    Rating = model.Rating,
-                    Comment = model.Comment
+
+            Review result = new Review
+            {
+                Rating = model.Rating,
+                Comment = model.Comment,
+                RentalId = model.rental.RentalID
                 };
-                  _rentalInterface.AddReview(result);
-                    return RedirectToAction("index");            
+            
+                 Review newReview =  _rentalInterface.AddReview(result);
+                    return RedirectToAction("index",new { newReview.Id });            
             
         }
     }

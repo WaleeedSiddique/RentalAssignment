@@ -443,3 +443,10 @@ C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignm
 C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
 C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Core.All.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Core.Application.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Core.Application.Interface.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Core.Common.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Core.Domain.dll
+C:\Users\Admin\OneDrive\Documents\Csharp-learning\RentalAssignment\RentalAssignment\bin\Debug\net6.0\Optivem.Framework.Infrastructure.FluentValidation.dll

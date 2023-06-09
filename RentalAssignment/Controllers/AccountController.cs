@@ -1,7 +1,7 @@
-﻿using Fluent.Infrastructure.FluentModel;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Controllers
@@ -9,9 +9,9 @@ namespace RentalAssignment.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager,SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signInManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
@@ -26,7 +26,7 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser 
+                var user = new ApplicationUser
                 { 
                     
                     UserName = model.Name,
@@ -99,12 +99,7 @@ namespace RentalAssignment.Controllers
         {
             return View();
         }
-        [HttpGet]
-        public IActionResult ListUser()
-        {
-            var user = _userManager.Users;
-            return View(user);
-        }
+       
         [HttpGet]
         public async Task<IActionResult> Update(string Userid)
         {
