@@ -11,8 +11,8 @@
                 <div class="navi">
                     <ul>
                         <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
-                        <li><a asp-controller="Account" asp-action="Update"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Edit Details</span></a></li>
-                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Statistics</span></a></li>
+                        <li><a asp-controller="Account" asp-action="Update" ><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Edit Details</span></a></li>
+                        <li><a asp-controller="Account" asp-action="delete"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Delete account</span></a></li>
                         <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calender</span></a></li>
                         <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
                         <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
@@ -23,7 +23,7 @@
                 <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
               
                 <div class="user-dashboard">
-                    <h1>Hello, JS</h1>
+                    <h1>Hello @User.Identity.Name</h1>
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-xs-12 gutter">
 
@@ -52,7 +52,7 @@
                                         <span>Period:</span> Last Year
                                     </button>
                                     <div class="dropdown-menu">
-                                        <a href="#">2012</a>
+                                        <a href="#">@User.Identity.Name</a>
                                         <a href="#">2014</a>
                                         <a href="#">2015</a>
                                         <a href="#">2016</a>

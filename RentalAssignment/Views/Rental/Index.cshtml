@@ -15,6 +15,10 @@
                 <th scope="col">PickUp Location</th>
                 <th scope="col">DropOff</th>
                 <th scope="col">DropOff Location</th>
+                <th scope="col">Review</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+                
             </tr>
         </thead>
 
@@ -22,7 +26,7 @@
         {
             <tbody>
                 <tr>
-                    <th scope="row">@rental.RentalID</th>
+                    <th scope="row">no</th>
                     <td>@rental.RentalName</td>
                     <td>@rental.RentalPhone</td>
                     <td>@rental.RentalEmail</td>
@@ -30,6 +34,7 @@
                     <td>@rental.pickupLocation</td>
                     <td>@rental.Dropoff</td>
                     <td>@rental.DropoffLocation</td>
+                    <td><a asp-controller="Rental" asp-action="Review" asp-route-id="@rental.RentalID" class="btn btn-primary">Review</a></td>
                     <td><a asp-controller="Rental" asp-action="Edit" asp-route-id="@rental.RentalID" class="btn btn-primary"  >Edit Details</a></td>
                     <td><a asp-controller="Rental" asp-action="Delete" asp-route-id="@rental.RentalID" class="btn btn-danger">Delete Reservation</a></td>
                 </tr>              

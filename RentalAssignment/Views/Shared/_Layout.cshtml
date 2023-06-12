@@ -81,6 +81,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Administration" asp-action="UpdateUser" asp-route-id="@User.Identity.Name">Manage account</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Dashboard">Account</a>
+                        </li>
                     </ul>
                         <ul class="navbar nav ml-auto">
                         @if (signInManager.IsSignedIn(User))

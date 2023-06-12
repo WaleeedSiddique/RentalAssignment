@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using java.lang;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
+using static com.sun.tools.@internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 namespace RentalAssignment.Controllers
 {
@@ -10,6 +12,7 @@ namespace RentalAssignment.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private Task<ApplicationUser> GetCurrentUserAsync() => _userManager.GetUserAsync(HttpContext.User);
 
         public AccountController(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signInManager)
         {
@@ -90,20 +93,22 @@ namespace RentalAssignment.Controllers
                 }
               
                 
-                    ModelState.AddModelError(string.Empty, "Invalid User Input ");
             }
+            ModelState.AddModelError(string.Empty, "Invalid User Input ");
             return View(model);
         }
         [HttpGet]
-        public IActionResult Dashboard()
-        {
-            return View();
+        public IActionResult Dashboard(RegistrationViewModel model)
+        {                               
+            return View(model);
         }
        
         [HttpGet]
-        public async Task<IActionResult> Update(string Userid)
+        public async Task<IActionResult> Update()
         {
-            var user = await _userManager.FindByIdAsync(Userid);
+            var user = GetCurrentUserAsync();
+            var userId = user?.Id;
+
             if (user == null)
             {
                 return View("Error");
@@ -111,13 +116,38 @@ namespace RentalAssignment.Controllers
 
             var model = new EditUserViewModel
             {
-                Id = user.Id,
-                UserName = user.UserName,
-                Email = user.Email,
-                Password = user.PasswordHash
+                Id = userId.ToString(),
+                UserName = user.Result.UserName,
+                Email = user.Result.Email,               
             };
-            return View(model);
+            return View(model);            
+        }
+        [HttpPost]
+        public async Task<IActionResult>  Update(EditUserViewModel model)
+        {
+            var user = GetCurrentUserAsync();
+            var userId = user?.Id;
+            if (user == null)
+            {
+                return View("Error");
+            };
             
+            user.Result.UserName = model.UserName;
+            user.Result.Email = model.Email;
+            return RedirectToAction("Dashboard");
+        }
+        [HttpGet]
+        public async Task<IActionResult> Delete(string name)
+        {
+            var user = GetCurrentUserAsync();
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User with id {user} does not exist";
+                return View("Not Found");
+            };
+            //await _userManager.DeleteAsync(user);
+            return RedirectToAction("Register");
+
         }
     }
 }

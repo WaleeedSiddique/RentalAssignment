@@ -50,13 +50,15 @@ namespace RentalAssignment.Controllers
                     Dropoff = vehicleRentalViewModel.rental.Dropoff,
                     DropoffLocation = vehicleRentalViewModel.rental.DropoffLocation,
                     pickupLocation = vehicleRentalViewModel.rental.pickupLocation,
-                    Pickup = vehicleRentalViewModel.rental.Pickup
+                    Pickup = vehicleRentalViewModel.rental.Pickup,
+                    VehicleID = vehicleRentalViewModel.Vehicle.VehicleId
+                    
 
                 };
                 Rental model = _rentalInterface.RentVehicle(rental);
-                return RedirectToAction("Review", new { model.RentalID });
+                return RedirectToAction("Index", new { model.RentalID });
             
-        }
+        }      
         [HttpGet]
         public IActionResult RentedVehicles()
         {
