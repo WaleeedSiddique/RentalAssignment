@@ -20,6 +20,8 @@ namespace RentalAssignment.Models
         public string? BikeModel { get; set; }
         public string Photopath { get; set; }
         public bool IsRented { get; set; }
+        public bool IsAvailable { get; set; }
+     
        
     }
 }

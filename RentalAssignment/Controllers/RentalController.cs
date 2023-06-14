@@ -41,20 +41,21 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         [Authorize]
         public IActionResult Vehicle(VehicleRentalViewModel vehicleRentalViewModel)
-        {                       
-                Rental rental = new Rental
-                {
-                    RentalName = vehicleRentalViewModel.rental.RentalName,
-                    RentalPhone = vehicleRentalViewModel.rental.RentalPhone,
-                    RentalEmail = vehicleRentalViewModel.rental.RentalEmail,
-                    Dropoff = vehicleRentalViewModel.rental.Dropoff,
-                    DropoffLocation = vehicleRentalViewModel.rental.DropoffLocation,
-                    pickupLocation = vehicleRentalViewModel.rental.pickupLocation,
-                    Pickup = vehicleRentalViewModel.rental.Pickup,
-                    VehicleID = vehicleRentalViewModel.Vehicle.VehicleId
-                    
+        {
+            Rental rental = new Rental
+            {
+                RentalName = vehicleRentalViewModel.rental.RentalName,
+                RentalPhone = vehicleRentalViewModel.rental.RentalPhone,
+                RentalEmail = vehicleRentalViewModel.rental.RentalEmail,
+                Dropoff = vehicleRentalViewModel.rental.Dropoff,
+                DropoffLocation = vehicleRentalViewModel.rental.DropoffLocation,
+                pickupLocation = vehicleRentalViewModel.rental.pickupLocation,
+                Pickup = vehicleRentalViewModel.rental.Pickup,
+                VehicleID = vehicleRentalViewModel.Vehicle.VehicleId
 
-                };
+
+            };
+            _vehicleInterface.UpdateAvailability(vehicleRentalViewModel.Vehicle.VehicleId ,false);
                 Rental model = _rentalInterface.RentVehicle(rental);
                 return RedirectToAction("Index", new { model.RentalID });
             

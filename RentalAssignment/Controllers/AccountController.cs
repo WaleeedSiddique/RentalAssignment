@@ -93,8 +93,8 @@ namespace RentalAssignment.Controllers
                 }
               
                 
-            }
             ModelState.AddModelError(string.Empty, "Invalid User Input ");
+            }
             return View(model);
         }
         [HttpGet]

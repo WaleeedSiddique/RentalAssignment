@@ -81,6 +81,9 @@ namespace RentalAssignment.Repository
             return result;
         }
 
-       
+        public void UpdateAvailability(int vehicleId, bool isavailable)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

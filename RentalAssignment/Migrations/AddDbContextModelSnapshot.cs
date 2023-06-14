@@ -344,6 +344,9 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsAvailable")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsRented")
                         .HasColumnType("bit");
 
