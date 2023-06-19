@@ -149,5 +149,28 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("Register");
 
         }
+        [HttpGet]
+        public async Task<IActionResult> AdminLogin()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AdminLogin(AdminLoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Dashboard");
+                }
+
+                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+            }
+            return View(model);
+        }
+
+
     }
 }

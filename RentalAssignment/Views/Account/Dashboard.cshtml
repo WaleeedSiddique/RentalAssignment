@@ -10,11 +10,12 @@
                 </div>
                 <div class="navi">
                     <ul>
-                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li class="active"><a asp-controller="Home" asp-action="Create"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Add Vehicle/Bike</span></a></li>
                         <li><a asp-controller="Account" asp-action="Update" ><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Edit Details</span></a></li>
                         <li><a asp-controller="Account" asp-action="delete"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Delete account</span></a></li>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calender</span></a></li>
-                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
+                        <li><a asp-controller="Employee" asp-action="Index"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Employees List</span></a></li>
+                        <li><a asp-controller="Employee" asp-action="Create"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Add Employee</span></a></li>
+                        <li><a asp-controller="Administration" asp-action="ListUsers"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
                         <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
                     </ul>
                 </div>

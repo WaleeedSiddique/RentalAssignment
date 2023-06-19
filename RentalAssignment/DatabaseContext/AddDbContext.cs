@@ -4,7 +4,7 @@ using RentalAssignment.Models;
 
 namespace RentalAssignment.DatabaseContext
 {
-    public class AddDbContext : IdentityDbContext
+    public class AddDbContext : IdentityDbContext<ApplicationUser>
     {
         public AddDbContext(DbContextOptions options) : base(options)
         {
