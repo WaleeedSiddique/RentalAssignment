@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using RentalAssignment.DatabaseContext;
 using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
@@ -15,18 +16,30 @@ namespace RentalAssignment.Controllers
 
         private readonly IVehicleInterface _vehicleInterface;
         private readonly IHostingEnvironment hostingEnvironment;
+        private readonly AddDbContext _context;
 
-        public HomeController(IVehicleInterface vehicleInterface, IHostingEnvironment hostingEnvironment)
+        public HomeController(IVehicleInterface vehicleInterface, IHostingEnvironment hostingEnvironment,AddDbContext context)
         {
 
             this._vehicleInterface = vehicleInterface;
             this.hostingEnvironment = hostingEnvironment;
+            this._context = context;
         }
         [HttpGet]
         public IActionResult Index()
         {
             var model = _vehicleInterface.GetAllVehicles();
             return View(model);
+        }
+        [HttpPost]
+        public IActionResult Index(string SearchText)
+        {
+            var users = _context.vehicles.ToList();
+            if (SearchText != null)
+            {
+                users = _context.vehicles.Where(x => x.VehicleModel.Contains(SearchText)).ToList();
+            }
+            return View(users);
         }
         [Route("Home/Details/{id?}")]
         public IActionResult Details(int? id)

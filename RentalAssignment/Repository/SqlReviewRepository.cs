@@ -4,7 +4,7 @@ using RentalAssignment.Models;
 
 namespace RentalAssignment.Repository
 {
-    public class SqlReviewRepository : IReviewInterface
+    public class SqlReviewRepository:IReviewInterface
     {
         private readonly AddDbContext _context;
 
