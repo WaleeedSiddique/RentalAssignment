@@ -11,6 +11,7 @@ namespace RentalAssignment.Models
         public string VehicleModel { get; set; }
         public string VehicleColour { get; set; }
         public string OwnerName { get; set; }
+        [MaxLength(11)]
         public string? OwnerPhone { get; set; }
         [Required]
         public string ChassisNumber { get; set; }
@@ -19,8 +20,8 @@ namespace RentalAssignment.Models
         public string? sittingCapacity { get; set; }
         public string? BikeModel { get; set; }
         public string Photopath { get; set; }
+     
         public bool IsRented { get; set; }
-        public bool IsAvailable { get; set; }
      
        
     }

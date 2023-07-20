@@ -1,0 +1,26 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace RentalAssignment.Migrations
+{
+    public partial class availabilitybooleanremoved : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropColumn(
+                name: "IsAvailable",
+                table: "vehicles");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddColumn<bool>(
+                name: "IsAvailable",
+                table: "vehicles",
+                type: "bit",
+                nullable: false,
+                defaultValue: false);
+        }
+    }
+}

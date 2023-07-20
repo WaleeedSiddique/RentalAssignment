@@ -9,6 +9,7 @@ namespace RentalAssignment.Models
         [Required]
         public string RentalName { get; set; }
         [Required]
+        [MaxLength(11)]
         public string RentalPhone { get; set; }
         public string RentalEmail { get; set; }
         [Required]

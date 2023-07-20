@@ -55,12 +55,19 @@ namespace RentalAssignment.Controllers
 
 
             };
-            _vehicleInterface.UpdateAvailability(vehicleRentalViewModel.Vehicle.VehicleId ,false);
+            bool isAvailable = _rentalInterface.IsCarAvailableForBooking(vehicleRentalViewModel.Vehicle.VehicleId, vehicleRentalViewModel.rental.Pickup, vehicleRentalViewModel.rental.Dropoff);
+            if (!isAvailable)
+            {
+                ModelState.AddModelError(string.Empty, "The car is already booked for the specified dates.");  
+                
+            }          
                 Rental model = _rentalInterface.RentVehicle(rental);
                 return RedirectToAction("Index", new { model.RentalID });
+
             
-        }      
-        [HttpGet]
+
+            }
+            [HttpGet]
         public IActionResult RentedVehicles()
         {
             var model = _rentalInterface.GetAllRentalVehicles();

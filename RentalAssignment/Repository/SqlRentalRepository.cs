@@ -20,6 +20,8 @@ namespace RentalAssignment.Repository
             return review;
         }
 
+        
+
         public Rental DeleteRentedVehicle(int id)
         {
             Rental result = _context.rentals.Find(id);
@@ -41,6 +43,17 @@ namespace RentalAssignment.Repository
             Rental result = _context.rentals.FirstOrDefault(x => x.RentalID == id);
             return result;
             
+        }
+
+        public bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate)
+        {
+            bool isAvailable = !_context.rentals.Any(b =>
+           b.VehicleID == carId &&
+           ((pickupDate >= b.Pickup && pickupDate <= b.Dropoff) ||
+            (dropoffDate >= b.Pickup && dropoffDate <= b.Dropoff) ||
+            (pickupDate <= b.Pickup && dropoffDate >= b.Dropoff)));
+
+            return isAvailable;
         }
 
         public Rental RentVehicle(Rental rental)

@@ -11,8 +11,7 @@ namespace RentalAssignment.Interfaces
         public Vehicle Update(Vehicle VehicleChanges);
         public Vehicle Delete(int VehicleId);
         public List<Vehicle> GetAvailableVehicles();
-        public List<Vehicle> GetRentedVehicles();
-        public void UpdateAvailability(int vehicleId, bool isavailable);
+        public List<Vehicle> GetRentedVehicles();  
        
         
     }

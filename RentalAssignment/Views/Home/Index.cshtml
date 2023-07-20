@@ -5,7 +5,7 @@
     }
     <div class="container-fluid">
         <div class="row">
-            (@Html.BeginForm("Index","Home",FormMethod.Post)){
+           @using(@Html.BeginForm("Index","Home",FormMethod.Post)){
             <div class="form-horizontal">
                 <div class="form-group">
                     <div class="col-md-6">
@@ -17,8 +17,9 @@
                 </div>
             </div>
 
-        </div>
+        }
     </div>
+        </div>
 
     <div class="row card-deck mx-auto">
         <section class="ftco-section ftco-no-pt bg-light">
@@ -45,14 +46,11 @@
                                     <div class="text">
                                         <h2 class="mb-0"><a href="#">@vehicle.VehicleModel</a></h2>
                                         <div class="d-flex mb-3">
-                                            <span class="cat">@vehicle.VehicleModel</span>
-                                            <span class="cat">Availability: @(vehicle.IsAvailable ? "Available" : "Unavailable")</span>
-
+                                            <span class="cat">@vehicle.VehicleModel</span>        
                                             <p class="price ml-auto">$500 <span>/day</span></p>
                                         </div>
                                         <p class="d-flex mb-0 d-block">
-                                            <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" class="btn btn-primary py-2 mr-1">Book now</a>
-                                            <button type="submit" @(vehicle.IsAvailable ? "" : "disabled")>Book</button>
+                                            <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" class="btn btn-primary py-2 mr-1">Book now</a>                                            
                                             <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-secondary py-2 ml-1">Details</a>
                                         </p>
                                     </div>

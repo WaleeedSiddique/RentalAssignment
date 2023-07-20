@@ -284,7 +284,8 @@ namespace RentalAssignment.Migrations
 
                     b.Property<string>("RentalPhone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int>("VehicleID")
                         .HasColumnType("int");
@@ -338,9 +339,6 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("IsRented")
                         .HasColumnType("bit");
 
@@ -349,7 +347,8 @@ namespace RentalAssignment.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OwnerPhone")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("Photopath")
                         .IsRequired()

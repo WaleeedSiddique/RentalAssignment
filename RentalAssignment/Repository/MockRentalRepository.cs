@@ -43,6 +43,11 @@ namespace RentalAssignment.Repository
             return rental;
         }
 
+        public bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate)
+        {
+            throw new NotImplementedException();
+        }
+
         public Rental RentVehicle(Rental rental)
         {
             rental.RentalID = _RentalList.Max(x => x.RentalID) + 1;

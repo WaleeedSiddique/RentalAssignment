@@ -66,15 +66,6 @@ namespace RentalAssignment.Repository
             _context.SaveChanges();
             return VehicleChanges;
         }
-
-        public void UpdateAvailability(int vehicleId, bool isavailable)
-        {
-            Vehicle vehicle = _context.vehicles.FirstOrDefault(x => x.VehicleId == vehicleId);
-            if(vehicle == null)
-            {
-                vehicle.IsAvailable = isavailable;
-                _context.SaveChanges();
-            }
-        }
+        
     }
 }

@@ -1,4 +1,5 @@
-﻿using RentalAssignment.Models;
+﻿using Microsoft.VisualBasic;
+using RentalAssignment.Models;
 
 namespace RentalAssignment.Interfaces
 {
@@ -10,5 +11,7 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Rental> GetAllRentalVehicles();
         public Rental UpdateRentalVehicle(Rental rentalChanges);
         public Review AddReview(Review review);
+
+        bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate);
     };
 }
