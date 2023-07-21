@@ -1,5 +1,6 @@
 ﻿using RentalAssignment.Enums;
 using System.ComponentModel.DataAnnotations;
+using static sun.security.provider.NativePRNG;
 
 namespace RentalAssignment.Models
 {
@@ -20,7 +21,8 @@ namespace RentalAssignment.Models
         public string? sittingCapacity { get; set; }
         public string? BikeModel { get; set; }
         public string Photopath { get; set; }
-     
+        public ICollection<Rental> Bookings { get; set; }
+
         public bool IsRented { get; set; }
      
        

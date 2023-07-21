@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
+using RentalAssignment.Repository;
 using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Controllers
@@ -11,11 +12,13 @@ namespace RentalAssignment.Controllers
     {
         private readonly IRentalInterface _rentalInterface;
         private readonly IVehicleInterface _vehicleInterface;
+        private readonly ICarBookingInterface _bookingService;
 
-        public RentalController(IRentalInterface rentalInterface, IVehicleInterface vehicleInterface)
+        public RentalController(IRentalInterface rentalInterface, IVehicleInterface vehicleInterface, ICarBookingInterface bookingService)
         {
             this._rentalInterface = rentalInterface;
             this._vehicleInterface = vehicleInterface;
+            this._bookingService = bookingService;
         }
         [HttpGet]
         public IActionResult Index()
@@ -55,18 +58,16 @@ namespace RentalAssignment.Controllers
 
 
             };
-            bool isAvailable = _rentalInterface.IsCarAvailableForBooking(vehicleRentalViewModel.Vehicle.VehicleId, vehicleRentalViewModel.rental.Pickup, vehicleRentalViewModel.rental.Dropoff);
-            if (!isAvailable)
-            {
-                ModelState.AddModelError(string.Empty, "The car is already booked for the specified dates.");  
-                
-            }          
+            if (_bookingService.IsCarAvailableForBooking(vehicleRentalViewModel.Vehicle.VehicleId,vehicleRentalViewModel.rental.Pickup,vehicleRentalViewModel.rental.Dropoff)){ 
                 Rental model = _rentalInterface.RentVehicle(rental);
                 return RedirectToAction("Index", new { model.RentalID });
-
-            
-
             }
+            else
+            {
+                ViewBag.message = "Car is already booked for the specified date range";
+                return View();
+            }
+        }
             [HttpGet]
         public IActionResult RentedVehicles()
         {

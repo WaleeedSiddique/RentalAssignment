@@ -32,9 +32,19 @@ namespace RentalAssignment.Repository
             return result;
         }
 
+        public IEnumerable<Rental> GetAllBookings()
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Rental> GetAllRentalVehicles()
         {
             return _RentalList.ToList();
+        }
+
+        public Rental GetBookingById(int id)
+        {
+            throw new NotImplementedException();
         }
 
         public Rental GetRentalVehicle(int id)

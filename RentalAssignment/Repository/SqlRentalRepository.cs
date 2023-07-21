@@ -1,4 +1,5 @@
-﻿using RentalAssignment.DatabaseContext;
+﻿using Microsoft.EntityFrameworkCore;
+using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 
@@ -33,9 +34,19 @@ namespace RentalAssignment.Repository
             return result;
         }
 
+        public IEnumerable<Rental> GetAllBookings()
+        {
+            return _context.rentals.ToList();
+        }
+
         public IEnumerable<Rental> GetAllRentalVehicles()
         {
             return _context.rentals;
+        }
+
+        public Rental GetBookingById(int id)
+        {
+            return _context.rentals.FirstOrDefault(b => b.VehicleID == id);
         }
 
         public Rental GetRentalVehicle(int id)
@@ -43,18 +54,7 @@ namespace RentalAssignment.Repository
             Rental result = _context.rentals.FirstOrDefault(x => x.RentalID == id);
             return result;
             
-        }
-
-        public bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate)
-        {
-            bool isAvailable = !_context.rentals.Any(b =>
-           b.VehicleID == carId &&
-           ((pickupDate >= b.Pickup && pickupDate <= b.Dropoff) ||
-            (dropoffDate >= b.Pickup && dropoffDate <= b.Dropoff) ||
-            (pickupDate <= b.Pickup && dropoffDate >= b.Dropoff)));
-
-            return isAvailable;
-        }
+        }  
 
         public Rental RentVehicle(Rental rental)
         {

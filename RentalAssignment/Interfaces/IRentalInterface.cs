@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic;
 using RentalAssignment.Models;
+using static sun.security.provider.NativePRNG;
 
 namespace RentalAssignment.Interfaces
 {
@@ -11,7 +12,9 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Rental> GetAllRentalVehicles();
         public Rental UpdateRentalVehicle(Rental rentalChanges);
         public Review AddReview(Review review);
+        public IEnumerable<Rental> GetAllBookings();
+        public Rental GetBookingById(int id);
 
-        bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate);
+        
     };
 }

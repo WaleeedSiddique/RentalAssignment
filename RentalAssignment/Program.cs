@@ -13,8 +13,10 @@ builder.Services.AddDbContext<AddDbContext>(options => options.UseSqlServer(buil
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AddDbContext>();
 builder.Services.AddScoped<IVehicleInterface, SqlVehicleRepository>();
 builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
-builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
 builder.Services.AddScoped<IReviewInterface, SqlReviewRepository>();
+builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
+builder.Services.AddScoped<ICarBookingInterface, CarBookingService>();
+
 
 
 var app = builder.Build();
