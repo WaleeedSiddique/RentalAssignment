@@ -15707,11 +15707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
       "projectName": "RentalAssignment",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+      "projectPath": "C:\\Users\\Admin\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\RentalAssignment\\RentalAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

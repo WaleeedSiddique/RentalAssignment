@@ -4,22 +4,53 @@
 @{
     var photopath = "~/images/" + (Model.Photopath);
 }
-<div class="card" style="width: 18rem;">
-
-    <div class="card-body text-center">
-
-        <img class="card-img-top" src="@photopath" alt="" asp-append-version="true" />
-        
-
-        <h4>Vehicle Owner : @Model.OwnerName</h4>
-        <h4>Vehicle Model : @Model.VehicleModel</h4>
-        <h4>Vehicle Type : @Model.VehicleType </h4>
-        <h4>Vehicle Number : @Model.VehicleNumberPlate</h4>
-        <h4>Vehicle Colour : @Model.VehicleColour</h4>
-        <h4>Vehicle Chassis : @Model.ChassisNumber</h4>
-        <a asp-controller="home" asp-action="index" class="btn btn-info">Back</a>
-        <a asp-controller="home" asp-action="Edit" asp-route-id="@Model.VehicleId" class="btn btn-primary">Edit</a>
-        <a asp-controller="home" asp-action="Delete" asp-route-id="@Model.VehicleId" class="btn btn-danger">Delete</a>
-
+<section class="vh-auto gradient-custom-2">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="card card-stepper" style="border-radius: 16px;">
+                    <div class="card-header p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="text-muted mb-2"> Order ID <span class="fw-bold text-body">1222528743</span></p>
+                                <p class="text-muted mb-0"> Place On <span class="fw-bold text-body">12,March 2019</span> </p>
+                            </div>
+                            <div>
+                                <h6 class="mb-0"> <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@Model.VehicleId" class="btn btn-info">Book Now</a> </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-row mb-4 pb-2">
+                            <div class="flex-fill">
+                                <h5 class="bold">@Model.VehicleModel</h5>
+                                <p class="text-muted"> @Model.VehicleColour</p>
+                                <h4 class="mb-3">  20000 <span class="small text-muted"> /rs </span></h4>
+                                <p class="text-muted">Booking Status on: <span class="text-body">Available</span></p>
+                            </div>
+                            
+                            <div>
+                                <img class="align-self-center img-fluid"
+                                     src="@photopath" width="250" asp-append-version="true">
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="card-footer p-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                            <div class="border-start h-100"></div>
+                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                            <div class="border-start h-100"></div>
+                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                            <div class="border-start h-100"></div>
+                            <h5 class="fw-normal mb-0">
+                                <a href="#!" class="text-muted"></a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
