@@ -1,4 +1,5 @@
-﻿@using RentalAssignment.ViewModels
+﻿@inject SignInManager<ApplicationUser> signInManager;
+@using RentalAssignment.ViewModels
 @model Vehicle
 <h1>Car Details</h1>
 @{
@@ -25,7 +26,7 @@
                             <div class="flex-fill">
                                 <h5 class="bold">@Model.VehicleModel</h5>
                                 <p class="text-muted"> @Model.VehicleColour</p>
-                                <h4 class="mb-3">  20000 <span class="small text-muted"> /rs </span></h4>
+                                <h4 class="mb-3">  20000 <span class="small text-muted"> Day/rs </span></h4>
                                 <p class="text-muted">Booking Status on: <span class="text-body">Available</span></p>
                             </div>
                             
@@ -36,19 +37,21 @@
                         </div>
                       
                     </div>
+                    @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin")){
                     <div class="card-footer p-4">
                         <div class="d-flex justify-content-between">
-                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                                <h5 class="fw-normal mb-0"><a class="btn" style="background-color:#17a2b8;" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.VehicleId">Delete</a></h5>
                             <div class="border-start h-100"></div>
-                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                                <h5 class="fw-normal mb-0"><a class="btn" style="background-color:#17a2b8;" asp-controller="Home" asp-action="Edit" asp-route-id="@Model.VehicleId">Update</a></h5>
                             <div class="border-start h-100"></div>
-                            <h5 class="fw-normal mb-0"><a href="#!"></a></h5>
+                                <h5 class="fw-normal mb-0"><a class="btn" style="background-color:#17a2b8;" asp-controller="Home" asp-action="Index">Back</a></h5>
                             <div class="border-start h-100"></div>
                             <h5 class="fw-normal mb-0">
                                 <a href="#!" class="text-muted"></a>
                             </h5>
                         </div>
                     </div>
+                    }
                 </div>
             </div>
         </div>
