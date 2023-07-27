@@ -296,6 +296,8 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("RentalID");
 
+                    b.HasIndex("VehicleID");
+
                     b.ToTable("rentals");
                 });
 
@@ -377,6 +379,23 @@ namespace RentalAssignment.Migrations
                     b.ToTable("vehicles");
                 });
 
+            modelBuilder.Entity("RentalAssignment.Models.VehicleCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VehicleCategories");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -428,6 +447,15 @@ namespace RentalAssignment.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("RentalAssignment.Models.Rental", b =>
+                {
+                    b.HasOne("RentalAssignment.Models.Vehicle", null)
+                        .WithMany("Bookings")
+                        .HasForeignKey("VehicleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("RentalAssignment.Models.Review", b =>
                 {
                     b.HasOne("RentalAssignment.Models.Rental", "Rental")
@@ -437,6 +465,11 @@ namespace RentalAssignment.Migrations
                         .IsRequired();
 
                     b.Navigation("Rental");
+                });
+
+            modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

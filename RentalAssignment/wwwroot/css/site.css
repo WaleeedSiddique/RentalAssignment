@@ -676,3 +676,7 @@ header {
     border-top-right-radius: 5px;
     /*Main CSS*/
 }
+.image{
+    height:250px;
+    width:310px;
+}

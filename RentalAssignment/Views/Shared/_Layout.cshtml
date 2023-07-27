@@ -18,7 +18,9 @@
     <!------ Include the above in your HEAD tag ---------->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="~/css/animate.css">
 
@@ -44,54 +46,56 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav style="background-color:#000" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Rentals</a>
+                <a class="navbar-brand text-light pt-4" asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-car-front"></i>Rently</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div  class="navbar-collapse collapse d-sm-inline-flex ">
+                    <ul class="navbar-nav flex-grow-1 fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a style="color:hsl(227.37deg 8.23% 54.52%) !important;" class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
 
                         @if(signInManager.IsSignedIn(User) && User.IsInRole("Admin")){
+                            <li  class="nav-item">
+                                <a style="color:hsl(227.37deg 8.23% 54.52%) !important;" class="nav-link " asp-area="" asp-controller="Home" asp-action="Create">Add Vehicle</a>
+                            </li>
+        
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Create">Add Vehicle</a>
+                                <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Employee" asp-action="Index">Employees</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Index">Employees</a>
+                                <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Home" asp-action="RentedCars">Reservations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RentedCars">Reservations</a>
+                                <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Administration" asp-action="ListUsers">User</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Administration" asp-action="ListUsers">User</a>
-                            </li>
+                           
 
                         }
                        
                         
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AvailableCars">Available Vehicles</a>
+                      @*  <li class="nav-item">
+                            <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Home" asp-action="AvailableCars">Available Vehicles</a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Rental" asp-action="RentedVehicles">Rented Vehicles</a>
-                        </li>
+                            <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Rental" asp-action="RentedVehicles">Rented Vehicles</a>
+                        </li>*@
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Administration" asp-action="Contact">Contact</a>
+                            <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Administration" asp-action="Contact">Contact</a>
                         </li>
                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Administration" asp-action="UpdateUser" asp-route-id="@User.Identity.Name">Manage account</a>
+                      @*  <li class="nav-item">
+                            <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Administration" asp-action="UpdateUser" asp-route-id="@User.Identity.Name">Manage account</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Dashboard">Account</a>
-                        </li>
+                            <a class="nav-link " style="color:hsl(227.37deg 8.23% 54.52%) !important;" asp-area="" asp-controller="Account" asp-action="Dashboard">Account</a>
+                        </li>*@
                     </ul>
                         <ul class="navbar nav ml-auto">
                         @if (signInManager.IsSignedIn(User))
@@ -109,11 +113,11 @@
                         {
                             <li class="nav-item">
                                 <i class="fas fa-user fa-sm" style="position:relative;top:18px;"></i>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register" style="    position: relative;top: -16px;">Register</a>
+                                <a class="btn btn-rounded mr-2" asp-area="" asp-controller="Account" asp-action="Register" style=" border-radius:20px; background-color:hsl(227.37deg 12.26% 30.39%);color:#fff;    position: relative;top: -16px;">Sign Up</a>
                             </li>
                             <li class="nav-item">
-                                <i class="fas fa-user fa-sm" style="position:relative;top:18px;"></i> 
-                                <a style="position:relative;top:-16px;" class="nav-link text-dark" asp-controller="account" asp-action="login">
+                                <i class="fas fa-user fa-sm" style="position:relative;top:18px;"></i>
+                                <a style=" background-color:hsl(227.37deg 12.26% 30.39%);color:#fff; border-radius:20px; position:relative;top:-16px;" class="btn btn-rounded " asp-controller="account" asp-action="login">
                                     Login
                                 </a>
                             </li>

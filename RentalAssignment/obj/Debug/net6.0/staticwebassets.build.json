@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6vwLMM6iP5cjv9Nd33ZIx66df/WZezjc5hOlofQVusc=",
+  "Hash": "o2Prj3L5X82w2uG4Gv25i5tslkh3joYOTg0XrOHp26I=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -627,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Alto.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",

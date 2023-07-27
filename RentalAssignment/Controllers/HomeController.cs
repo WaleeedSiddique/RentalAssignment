@@ -108,7 +108,7 @@ namespace RentalAssignment.Controllers
         {
 
             Vehicle result = _vehicleInterface.GetVehicle(model.id);
-            if (ModelState.IsValid)
+            if (result != null )
             {
                 result.OwnerName = model.OwnerName;
                 result.VehicleColour = model.VehicleColour;

@@ -21,46 +21,36 @@
     </div>
         </div>
 
-    <div class="row card-deck mx-auto">
-        <section class="ftco-section ftco-no-pt bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                        <span class="subheading">What we offer</span>
-                        <h2 class="mb-2">Feeatured Vehicles</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="carousel-car owl-carousel">
-                            @foreach (var vehicle in Model)
-                        {
-
-                            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
-                            <div class="item">
-                                <div class="car-wrap rounded ftco-animate">
-                                    <div class="img rounded d-flex align-items-end" style="background-image: url(@photoPath);">
-                                        <img src="@photoPath" asp-append-version="true">
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="mb-0"><a href="#">@vehicle.VehicleModel</a></h2>
-                                        <div class="d-flex mb-3">
-                                            <span class="cat">@vehicle.VehicleModel</span>        
-                                            <p class="price ml-auto">$500 <span>/day</span></p>
-                                        </div>
-                                        <p class="d-flex mb-0 d-block">
-                                            <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" class="btn btn-primary py-2 mr-1">Book now</a>                                            
-                                            <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-secondary py-2 ml-1">Details</a>
-                                        </p>
-                                    </div>
-                                </div>
+<div class="container my-5">
+    <div class="row">
+        @foreach (var vehicle in Model)
+        {
+            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
+            <div class="col-md-4 mb-5">
+                <div class="item">
+                    <div class="car-wrap rounded ftco-animate">
+                        <div class="img rounded d-flex align-items-end">
+                            <img class="image" src="@photoPath" asp-append-version="true">
+                        </div>
+                        <div class="text">
+                            <h2 class="mb-0"><a href="#">@vehicle.VehicleModel</a></h2>
+                            <div class="d-flex mb-3">
+                                <span class="cat">@vehicle.OwnerName</span>
+                                <p class="price ml-auto">$500 <span>/day</span></p>
                             </div>
-                        }
+                            <p class="d-flex mb-0 d-block">
+                                <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" style="background-color:#000;color:#fff" class="btn   py-2 mr-1">BOOK NOW</a>
+                                <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" style="background-color:#17a2b8;" class="btn  py-2 ml-1">DETAILS</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+
+        }
+    </div>
+</div>
+
 
 
