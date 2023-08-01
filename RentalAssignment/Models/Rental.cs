@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
 
 namespace RentalAssignment.Models
 {
@@ -7,12 +9,12 @@ namespace RentalAssignment.Models
         public int RentalID { get; set; }
         public int VehicleID { get; set; }
         [Required]
-        public string RentalName { get; set; }
+        public string RentalName { get; set; } = "Waleed";
         [Required]
         [MaxLength(11)]
         public string RentalPhone { get; set; }
-        public string RentalEmail { get; set; }
-        [Required]
+        public string RentalEmail { get; set; } = "Waleed@gmail.com";
+        [Required]        
         public DateTime Pickup { get; set; }
         [Required]
         public DateTime Dropoff { get; set; }

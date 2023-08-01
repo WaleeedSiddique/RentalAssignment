@@ -1782,3 +1782,6 @@ C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment
 C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\obj\Debug\net6.0\ref\RentalAssignment.dll
+C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\bin\Debug\net6.0\xunit.core.dll
+C:\Users\Admin\OneDrive\Desktop\New folder (2)\RentalAssignment\RentalAssignment\bin\Debug\net6.0\xunit.execution.dotnet.dll

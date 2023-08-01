@@ -25,7 +25,7 @@
                                         <div class="form-outline flex-fill mb-0">
                                             <input hidden asp-for="rental.RentalID" />
                                             <label asp-for="rental.Pickup" class="form-label">Pickup Date/Time</label>
-                                            <input asp-for="rental.Pickup" id="form3Example4c" class="form-control" />
+                                            <input asp-for="rental.Pickup" id="date_picker" class="form-control" />
                                             <span asp-validation-for="rental.Pickup" class="text-danger"></span>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@
                                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label asp-for="rental.Dropoff" class="form-label">Drop Date/Time</label>
-                                            <input asp-for="rental.Dropoff" id="form3Example4c" class="form-control" />
+                                            <input asp-for="rental.Dropoff" id="date_picker" class="form-control" />
                                             <span asp-validation-for="rental.Dropoff" class="text-danger"></span>
                                         </div>
                                     </div>
@@ -51,6 +51,14 @@
                                             <label asp-for="rental.DropoffLocation" class="form-label">Drop Location Location</label>
                                             <input asp-for="rental.DropoffLocation" id="form3Example4c" class="form-control" />
                                             <span asp-validation-for="rental.DropoffLocation" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <label asp-for="rental.RentalPhone" class="form-label">Phone No</label>
+                                            <input asp-for="rental.RentalPhone" id="form3Example4c" class="form-control" />
+                                            <span asp-validation-for="rental.RentalPhone" class="text-danger"></span>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">

@@ -37,7 +37,7 @@ namespace RentalAssignment.Controllers
                 var result = await _userManager.CreateAsync(user,model.Password);
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    await _signInManager.SignInAsync(user, isPersistent: true);
                     return RedirectToAction("Index","Home");
                 }
                 foreach (var error in result.Errors)

@@ -1,4 +1,5 @@
-﻿@model ReviewViewModel
+﻿@inject SignInManager<ApplicationUser> signInManager;
+@model ReviewViewModel
 @{
     ViewData["Title"] = "Review Page";
 }
@@ -14,8 +15,8 @@
         <textarea class="form-control" asp-for="Comment" id="comment" name="comment" rows="4" required></textarea>
     </div>
     <div class="form-group">
-        <label asp-for="rental.RentalName">Customer Name</label>
-        <input asp-for="rental.RentalName" class="form-control"  readonly >
+        <label asp-for="@signInManager.Context.User.Identity.Name">Customer Name</label>
+        <input asp-for="@signInManager.Context.User.Identity.Name" class="form-control" readonly>
     </div>
     <input type="hidden" asp-for="rental.RentalID" />
 

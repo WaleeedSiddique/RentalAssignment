@@ -91,6 +91,10 @@
             "Optivem.Framework.Infrastructure.FluentValidation": {
               "target": "Package",
               "version": "[1.0.23, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [

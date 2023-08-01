@@ -8,6 +8,7 @@ namespace RentalAssignment.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.Sql("UPDATE Vehicles SET OwnerPhone = null WHERE LEN(OwnerPhone) > 10");
             migrationBuilder.AlterColumn<string>(
                 name: "OwnerPhone",
                 table: "vehicles",

@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Rental>
+﻿@inject SignInManager<ApplicationUser> signInManager;
+@model IEnumerable<Rental>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -27,10 +28,11 @@
         {
             <tbody>
                 <tr>
+
                     <th scope="row">@rental.VehicleID</th>
-                    <td>@rental.RentalName</td>
+                    <td>@signInManager.Context.User.Identity.Name</td>
                     <td>@rental.RentalPhone</td>
-                    <td>@rental.RentalEmail</td>
+                    <td>@signInManager.UserManager.GetEmailAsync</td>
                     <td>@rental.Pickup</td>
                     <td>@rental.pickupLocation</td>
                     <td>@rental.Dropoff</td>

@@ -274,14 +274,6 @@ namespace RentalAssignment.Migrations
                     b.Property<DateTime>("Pickup")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("RentalEmail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RentalName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("RentalPhone")
                         .IsRequired()
                         .HasMaxLength(11)

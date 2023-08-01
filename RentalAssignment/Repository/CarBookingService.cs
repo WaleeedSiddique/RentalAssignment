@@ -1,4 +1,6 @@
-﻿using RentalAssignment.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using RentalAssignment.Interfaces;
+using RentalAssignment.Models;
 
 namespace RentalAssignment.Repository
 {
@@ -28,6 +30,8 @@ namespace RentalAssignment.Repository
 
             return false;
         }
+
+        
 
         // Other methods for booking cars, saving bookings, etc.
     }

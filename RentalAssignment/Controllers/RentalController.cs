@@ -45,11 +45,10 @@ namespace RentalAssignment.Controllers
         [Authorize]
         public IActionResult Vehicle(VehicleRentalViewModel vehicleRentalViewModel)
         {
+            if (ModelState.IsValid) { 
             Rental rental = new Rental
-            {
-                RentalName = vehicleRentalViewModel.rental.RentalName,
-                RentalPhone = vehicleRentalViewModel.rental.RentalPhone,
-                RentalEmail = vehicleRentalViewModel.rental.RentalEmail,
+            {                
+                RentalPhone = vehicleRentalViewModel.rental.RentalPhone,               
                 Dropoff = vehicleRentalViewModel.rental.Dropoff,
                 DropoffLocation = vehicleRentalViewModel.rental.DropoffLocation,
                 pickupLocation = vehicleRentalViewModel.rental.pickupLocation,
@@ -67,6 +66,9 @@ namespace RentalAssignment.Controllers
                 ViewBag.message = "Car is already booked for the specified date range";
                 return View();
             }
+            }
+            ViewBag.message = "Something went wrong kindly check again";
+            return View();
         }
             [HttpGet]
         public IActionResult RentedVehicles()
@@ -81,10 +83,8 @@ namespace RentalAssignment.Controllers
             if(result != null)
             {
                 EditRentalViewModel editRentalViewModel = new EditRentalViewModel
-                {
-                    RentalName=result.RentalName,
-                    RentalPhone=result.RentalPhone,
-                    RentalEmail=result.RentalEmail,
+                {                    
+                    RentalPhone=result.RentalPhone,                   
                     Pickup = result.Pickup,
                     pickupLocation =result.pickupLocation,
                     Dropoff = result.Dropoff,
@@ -99,10 +99,8 @@ namespace RentalAssignment.Controllers
         {
             Rental result = _rentalInterface.GetRentalVehicle(model.id);
             if (ModelState.IsValid)
-            {
-                result.RentalName = model.RentalName;
-                result.RentalPhone = model.RentalPhone;
-                result.RentalEmail = model.RentalEmail;
+            {               
+                result.RentalPhone = model.RentalPhone;               
                 result.Pickup = model.Pickup;
                 result.pickupLocation = model.pickupLocation;
                 result.Dropoff = model.Dropoff;

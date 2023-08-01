@@ -1,6 +1,9 @@
 ﻿using LibGit2Sharp;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Serialization;
 using System.ComponentModel.DataAnnotations;
+using Xunit.Sdk;
+
 namespace RentalAssignment.ViewModels
 {
     public class RegistrationViewModel
@@ -11,6 +14,8 @@ namespace RentalAssignment.ViewModels
         [Required]
         [EmailAddress]
         [Remote(action:"IsEmailInUse",controller:"Account")]
+        
+
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]

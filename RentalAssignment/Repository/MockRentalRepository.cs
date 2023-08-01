@@ -10,10 +10,10 @@ namespace RentalAssignment.Repository
         {
             _RentalList = new List<Rental>()
             {
-                new Rental()  {RentalID = 1,RentalName = "Waleed Siddique" , RentalEmail = "Waleed@gmail.com",RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow
+                new Rental()  {RentalID = 1,RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow
                 },
-                new Rental()  {RentalID = 2,RentalName = "Raheel Izaz" , RentalEmail = "Raheel@gmail.com",RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow},
-                new Rental()  {RentalID = 3,RentalName = "Ahmed Khan" , RentalEmail = "Ahmed@gmail.com",RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow},
+                new Rental()  {RentalID = 2,RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow},
+                new Rental()  {RentalID = 3,RentalPhone = "03171215120",Dropoff = DateTime.UtcNow, Pickup = DateTime.UtcNow},
             };
         }
 
@@ -69,10 +69,8 @@ namespace RentalAssignment.Repository
         {
             Rental result = _RentalList.FirstOrDefault(x => x.RentalID == rentalChanges.RentalID);
             if (result != null)
-            {
-                result.RentalName = rentalChanges.RentalName;
-                result.RentalPhone = rentalChanges.RentalPhone;
-                result.RentalEmail = rentalChanges.RentalEmail;
+            {                
+                result.RentalPhone = rentalChanges.RentalPhone;               
                 result.Pickup = rentalChanges.Pickup;
                 result.Dropoff = rentalChanges.Dropoff;
             }
