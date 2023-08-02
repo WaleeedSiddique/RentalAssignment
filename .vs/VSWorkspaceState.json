@@ -7,8 +7,9 @@
     "\\RentalAssignment\\Repository",
     "\\RentalAssignment\\ViewModels",
     "\\RentalAssignment\\Views",
-    "\\RentalAssignment\\Views\\Administration"
+    "\\RentalAssignment\\Views\\Administration",
+    "\\RentalAssignment\\Views\\Employee"
   ],
-  "SelectedNode": "\\RentalAssignment.sln",
+  "SelectedNode": "\\RentalAssignment\\Views\\Employee\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

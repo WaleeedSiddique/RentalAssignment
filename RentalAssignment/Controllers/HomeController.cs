@@ -26,21 +26,25 @@ namespace RentalAssignment.Controllers
             this._context = context;
         }
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string VehicleName)
         {
+            if(VehicleName == null) { 
             var model = _vehicleInterface.GetAllVehicles();
             return View(model);
-        }
-        [HttpPost]
-        public IActionResult Index(string SearchText)
-        {
-            var users = _context.vehicles.ToList();
-            if (SearchText != null)
-            {
-                users = _context.vehicles.Where(x => x.VehicleModel.Contains(SearchText)).ToList();
             }
-            return View(users);
+            var cars = _vehicleInterface.SearchVehicles(VehicleName);
+            return View(cars);
         }
+        //[HttpPost]
+        //public IActionResult Index(string SearchText)
+        //{
+        //    var users = _context.vehicles.ToList();
+        //    if (SearchText != null)
+        //    {
+        //        users = _context.vehicles.Where(x => x.VehicleModel.Contains(SearchText)).ToList();
+        //    }
+        //    return View(users);
+        //}
         [Route("Home/Details/{id?}")]
         public IActionResult Details(int? id)
         {

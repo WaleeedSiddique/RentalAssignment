@@ -279,3 +279,8 @@ li, ul {
     height:250px;
     width:310px;
 }
+.car-images {
+    width: 380px;
+    height: 150px;
+    background-color:coral;
+}

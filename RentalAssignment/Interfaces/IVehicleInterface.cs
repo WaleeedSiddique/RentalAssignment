@@ -6,6 +6,7 @@ namespace RentalAssignment.Interfaces
     public interface IVehicleInterface
     {
         public Vehicle GetVehicle(int vehicleId);
+        public IEnumerable<Vehicle> SearchVehicles(string VehicleName);
         public Vehicle CreateVehicle(Vehicle vehicle);
         public IEnumerable<Vehicle> GetAllVehicles();
         public Vehicle Update(Vehicle VehicleChanges);

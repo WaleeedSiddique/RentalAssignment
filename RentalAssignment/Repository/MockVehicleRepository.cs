@@ -65,6 +65,11 @@ namespace RentalAssignment.Repository
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Vehicle> SearchVehicles(string VehicleName)
+        {
+            throw new NotImplementedException();
+        }
+
         public Vehicle Update(Vehicle VehicleChanges)
         {
             Vehicle result = _VehicleList.FirstOrDefault(x => x.VehicleId == VehicleChanges.VehicleId);

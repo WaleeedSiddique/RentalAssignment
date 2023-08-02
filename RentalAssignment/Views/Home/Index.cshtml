@@ -3,7 +3,7 @@
     ViewData["Title"] = "Home Page";
 
     }
-    <div class="container-fluid">
+    @*<div class="container-fluid">
         <div class="row">
            @using(@Html.BeginForm("Index","Home",FormMethod.Post)){
             <div class="form-horizontal">
@@ -19,7 +19,11 @@
 
         }
     </div>
-        </div>
+        </div>*@
+        <form asp-controller="Home" asp-action="Index" method="get">
+    <input type="text" placeholder="Car" name="VehicleName" />
+    <input type="submit" value="filter" />
+        </form>
 <div class="container-fluid p-0" style="margin-bottom: 90px;">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -46,14 +50,41 @@
         </div>
         <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
             <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                <span class="carousel-control-prev-icon mb-n2"></span>
+                <span class="carousel-control-prev-icon mb-n3"></span>
             </div>
         </a>
         <a class="carousel-control-next" href="#header-carousel" data-slide="next">
             <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                <span class="carousel-control-next-icon mb-n2"></span>
+                <span class="carousel-control-next-icon mb-n3"></span>
             </div>
         </a>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h1 class="text-center">What type of Vehicle are you looking for?</h1>
+    <div class="row">
+        <div class="col-3">
+            <img class="car-images" src="~/images/Car-1.png" />
+            <h3 class="text-center">Budget</h3>
+            <p class="text-center">Suzuki Alto & similar</p>
+        </div>
+        <div class="col-3">
+            <img class="car-images" src="~/images/Car-2.png" />
+            <h3 class="text-center">Standard</h3>
+            <p class="text-center">Honda Civic & similar</p>
+        </div>
+        <div class="col-3">
+            <img class="car-images" src="~/images/Car-3.png" />
+            <h3 class="text-center">Luxury</h3>
+            <p class="text-center">Mercendes S class & similar</p>
+        </div>
+        <div class="col-3">
+            <img class="car-images" src="~/images/Car-4.png" />
+            <h3 class="text-center">SUV</h3>
+            <p class="text-center">Toyota Prado & similar</p>
+        </div>
+      
     </div>
 </div>
 
@@ -69,15 +100,15 @@
                     <h4 class="text-uppercase mb-4">@vehicle.VehicleModel</h4>
                     <div class="d-flex justify-content-center mb-4">
                         <div class="px-2">
-                            <i class="fa fa-car  mr-1" style="color:#F77D0A ;"></i>
+                            <i class="fa fa-car  mr-1" style="color:#343a40 ;"></i>
                             <span>@vehicle.VehicleType</span>
                         </div>
                         <div class="px-2 border-left border-right">
-                            <i class="fa fa-cogs  mr-1" style="color:#F77D0A ;"></i>
+                            <i class="fa fa-cogs  mr-1" style="color:#343a40 ;"></i>
                             <span>AUTO</span>
                         </div>
                         <div class="px-2">
-                            <i class="fa fa-road  mr-1" style="color:#F77D0A ;"></i>
+                            <i class="fa fa-road  mr-1" style="color:#343a40 ;"></i>
                             <span>25K</span>
                         </div>
                     </div>

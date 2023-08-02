@@ -57,7 +57,11 @@ namespace RentalAssignment.Repository
             return model;
         }
 
-       
+        public IEnumerable<Vehicle> SearchVehicles(string VehicleName)
+        {
+            var car = _context.vehicles.Where(x => x.VehicleModel.Contains(VehicleName));
+            return car;
+        }
 
         public Vehicle Update(Vehicle VehicleChanges)
         {
