@@ -11,6 +11,8 @@ namespace RentalAssignment.ViewModels
         public string VehicleModel { get; set; }
         public string VehicleColour { get; set; }
         public string OwnerName { get; set; }
+        [DataType(DataType.Currency)]
+        public string RentPerDay { get; set; } = "2,000";
         public string? OwnerPhone { get; set; }
         [Required]
         public string ChassisNumber { get; set; }

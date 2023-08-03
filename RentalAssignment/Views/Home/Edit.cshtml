@@ -38,6 +38,10 @@
         <label asp-for="OwnerPhone"></label>
         <input asp-for="OwnerPhone" class="form-control" placeholder="Phone" />
     </div>
+    <div class="form-group">
+        <label asp-for="RentPerDay">Charges</label>
+        <input asp-for="RentPerDay" class="form-control" placeholder="Price Per Day" />
+    </div>
     <div>
         <button class="btn btn-primary" type="submit">Update Changes</button>
         <button class="btn btn-primary" asp-action="Index" >Cancel</button>

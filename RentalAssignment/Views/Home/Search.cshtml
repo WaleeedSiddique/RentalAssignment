@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Vehicle>
+@{
+    ViewBag.title= "Car";
+}
+
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Model</th>
+            <th scope="col">Name</th>
+            <th scope="col">Rent</th>
+            <th scope="col">BodyType</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var car in Model){
+        <tr>
+            <th scope="row">@car.VehicleModel</th>
+            <td>@car.OwnerName</td>
+            <td>@car.RentPerDay</td>
+            <td>@car.VehicleType</td>
+        </tr>
+        }
+ 
+      
+    </tbody>
+</table>

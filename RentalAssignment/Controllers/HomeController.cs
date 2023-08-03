@@ -26,14 +26,23 @@ namespace RentalAssignment.Controllers
             this._context = context;
         }
         [HttpGet]
-        public IActionResult Index(string VehicleName)
+        public IActionResult Index()
         {
-            if(VehicleName == null) { 
+            
             var model = _vehicleInterface.GetAllVehicles();
             return View(model);
+            
+        }
+
+        public IActionResult Search(string VehicleName)
+        {
+            if(VehicleName != null)
+            {
+                var cars = _vehicleInterface.SearchVehicles(VehicleName.ToLower());
+                return View(cars);
             }
-            var cars = _vehicleInterface.SearchVehicles(VehicleName);
-            return View(cars);
+            ViewBag.message = "This Car is not available, You can search other cars";
+            return View("Index");
         }
         //[HttpPost]
         //public IActionResult Index(string SearchText)
@@ -79,6 +88,7 @@ namespace RentalAssignment.Controllers
                     VehicleNumberPlate = vehicle.VehicleNumberPlate,
                     VehicleType = vehicle.VehicleType,
                     ChassisNumber = vehicle.ChassisNumber,
+                    RentPerDay = vehicle.RentPerDay,
                     Photopath = uniqueFileName
                 };
                 Vehicle vehicle1 = _vehicleInterface.CreateVehicle(newVehicle);
@@ -101,6 +111,7 @@ namespace RentalAssignment.Controllers
                 VehicleModel = result.VehicleModel,
                 VehicleNumberPlate = result.VehicleNumberPlate,
                 VehicleType = result.VehicleType,
+                RentPerDay = result.RentPerDay
 
             };
             return View(editVehicleViewModel);
@@ -119,6 +130,7 @@ namespace RentalAssignment.Controllers
                 result.VehicleModel = model.VehicleModel;
                 result.VehicleNumberPlate = model.VehicleNumberPlate;
                 result.VehicleType = model.VehicleType;
+                result.RentPerDay = model.RentPerDay;
                 result.ChassisNumber = model.ChassisNumber;
                 Vehicle UpdatedVehicle = _vehicleInterface.Update(result);
                 return RedirectToAction("Index");

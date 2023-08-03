@@ -1,4 +1,10 @@
-﻿html {
+﻿:root {
+    --primary: #F77D0A;
+    --secondary: #2B2E4A;
+    --light: #F4F5F8;
+    --dark: #1C1E32;
+}
+html {
   font-size: 14px;
 }
 
@@ -283,4 +289,20 @@ li, ul {
     width: 380px;
     height: 150px;
     background-color:coral;
+}
+.Location-input {
+    width: 23vw;
+    height: 4.0vh;
+    padding:4px;
+}
+.search-cont{
+    background-color:darkgray;
+    width:auto;
+    height:auto;
+    padding:20px 130px !important;
+}
+.search-btn {
+    height: 37px;
+    width: 70px;
+    background-color:var(--light) !important;
 }

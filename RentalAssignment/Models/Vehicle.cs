@@ -21,6 +21,8 @@ namespace RentalAssignment.Models
         public string? sittingCapacity { get; set; }
         public string? BikeModel { get; set; }
         public string Photopath { get; set; }
+        [DataType(DataType.Currency)]
+        public string RentPerDay { get; set; } = "2,000";
         public ICollection<Rental> Bookings { get; set; }
 
         public bool IsRented { get; set; }
