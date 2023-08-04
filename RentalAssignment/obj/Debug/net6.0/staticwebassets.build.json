@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TztTuPbV/s5sYhed/XEOU513r4YsNc1dvhPnKwRLih8=",
+  "Hash": "O1eKS8Fr9pnzeZwpfXJHt+jpJ5jLzqIEDofaSQzPYr0=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -916,6 +916,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Car-5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-interior-1.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/car-interior-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\car-interior-1.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-1.jpg",

@@ -30,6 +30,7 @@
     <input class="btn search-btn" type="submit" value="Search" />
         </form>
 </div>
+
 <div class="container-fluid p-0" style="margin-bottom: 90px;">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -95,38 +96,19 @@
 </div>
 
 <div class="container-fluid my-5">
-    <div class="row">
-        <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
-        @foreach (var vehicle in Model)
-        {
-            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
-           <div class="col-lg-4 col-md-6 mb-2">
-                <div class="rent-item mb-4" style="background-color:#eee;text-align:center;">
-                    <img class="image" src="@photoPath" asp-append-version="true" alt="no image">
-                    <h4 class="text-uppercase mb-4">@vehicle.VehicleModel</h4>
-                    <div class="d-flex justify-content-center mb-4">
-                        <div class="px-2">
-                            <i class="fa fa-car  mr-1" style="color:#343a40 ;"></i>
-                            <span>@vehicle.VehicleType</span>
-                        </div>
-                        <div class="px-2 border-left border-right">
-                            <i class="fa fa-cogs  mr-1" style="color:#343a40 ;"></i>
-                            <span>AUTO</span>
-                        </div>
-                        <div class="px-2">
-                            <i class="fa fa-road  mr-1" style="color:#343a40 ;"></i>
-                            <span>25K</span>
-                        </div>
-                    </div>
-                    <a asp-controller="Rental" asp-action="Vehicle" asp-route-id="@vehicle.VehicleId" style="background-color:#000;color:#fff" class="btn   py-2 mr-1">BOOK NOW</a>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" style="background-color:#17a2b8;" class="btn  py-2 ml-1">DETAILS</a>
-                </div>
-            </div>
-
-
-        }
+    <div class="row" style="background-color:#111; padding:50px 0px;">
+        <div class="col-6 px-3">
+            <img src="./images/car-interior-1.png" width="800px" height="650px" />
+        </div>
+        <div class="col-6" style="padding:170px 130px;">
+            <h1 class="text-light">Get Started</h1>
+            <p class="font-monospace">Explore Rental At your own pace by <br /> creating a free account.</p>
+            <a class="btn btn-dark text-light px-3">Book</a>
+        </div>
     </div>
 </div>
+
+
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row mx-0">

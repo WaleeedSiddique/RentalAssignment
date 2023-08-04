@@ -38,11 +38,18 @@ namespace RentalAssignment.Controllers
         {
             if(VehicleName != null)
             {
-                var cars = _vehicleInterface.SearchVehicles(VehicleName.ToLower());
-                return View(cars);
+                var cars = _vehicleInterface.GetAllVehicles().ToList();
+                //return View(cars)
+                    return RedirectToAction("SearchPage");
             }
             ViewBag.message = "This Car is not available, You can search other cars";
-            return View("Index");
+            return RedirectToAction("SearchPage");
+        }
+
+        public IActionResult SearchPage()
+        {
+            var cars = _vehicleInterface.GetAvailableVehicles().ToList();
+            return View(cars);
         }
         //[HttpPost]
         //public IActionResult Index(string SearchText)
