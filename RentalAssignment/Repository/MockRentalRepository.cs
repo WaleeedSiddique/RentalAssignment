@@ -53,6 +53,16 @@ namespace RentalAssignment.Repository
             return rental;
         }
 
+        public IEnumerable<Rental> GetUnApprovedBookings()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Rental> GetUserBookings(string userId)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool IsCarAvailableForBooking(int carId, DateTime pickupDate, DateTime dropoffDate)
         {
             throw new NotImplementedException();

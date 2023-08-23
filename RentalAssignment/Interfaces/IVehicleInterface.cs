@@ -13,7 +13,7 @@ namespace RentalAssignment.Interfaces
         public Vehicle Delete(int VehicleId);
         public List<Vehicle> GetAvailableVehicles();
         public List<Vehicle> GetRentedVehicles();  
-       
+       public IEnumerable<Vehicle> GetNotRentedVehicles(DateTime pickup,DateTime dropoff);
         
     }
 }

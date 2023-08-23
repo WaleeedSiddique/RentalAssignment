@@ -7,6 +7,7 @@ namespace RentalAssignment.Models
     public class Rental
     {
         public int RentalID { get; set; }
+        public string userId { get; set; }
         public int VehicleID { get; set; }
         [Required]
         public string RentalName { get; set; } = "Waleed";
@@ -14,12 +15,13 @@ namespace RentalAssignment.Models
         [MaxLength(11)]
         public string RentalPhone { get; set; }
         public string RentalEmail { get; set; } = "Waleed@gmail.com";
-        [Required]        
+        [Required]
         public DateTime Pickup { get; set; }
         [Required]
         public DateTime Dropoff { get; set; }
         public string pickupLocation { get; set; }
-        public string DropoffLocation { get; set; }       
+        public string DropoffLocation { get; set; }
+        public bool BookingStatus { get; set; }        
 
     }
 }

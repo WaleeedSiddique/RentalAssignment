@@ -30,15 +30,18 @@ namespace RentalAssignment.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser
-                {                                        
-                    UserName = model.Name,
-                    Email = model.Email 
+                {        
+                    NormalizedUserName = model.FirstName,
+                    UserName = model.username,                    
+                    Email = model.Email,
+                    IsApproved = false
+                    
                 };
                 var result = await _userManager.CreateAsync(user,model.Password);
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: true);
-                    return RedirectToAction("Index","Home");
+                    //await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Pending");
                 }
                 foreach (var error in result.Errors)
                 {
@@ -78,22 +81,33 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
+            var user = await _userManager.FindByEmailAsync(model.Email)?? await _userManager.FindByNameAsync(model.Email);
                 
-                var result =await _signInManager.PasswordSignInAsync(model.Email,model.Password,model.RememberMe,false);
-                if (result.Succeeded)
+                if(user  != null)
                 {
-                    if (!string.IsNullOrEmpty(returnUrl))
+                    if (user.IsApproved == false)
                     {
-                        return Redirect(returnUrl);
+                        ViewBag.ErrorMessage = "Your Account is not approved yet!";
+                        return View();
                     }
-                    else
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                    if (result.Succeeded)
                     {
-                        return RedirectToAction("Index", "Home");
+                        if (!string.IsNullOrEmpty(returnUrl))
+                        {
+                            return Redirect(returnUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
                     }
-                }
-              
-                
-            ModelState.AddModelError(string.Empty, "Invalid User Input ");
+                    ModelState.AddModelError(string.Empty, "Password Didn't match ");
+                    return View();
+
+                }                                                
+                             
+            ModelState.AddModelError(string.Empty, "No Account with this Email");
             }
             return View(model);
         }
@@ -170,6 +184,51 @@ namespace RentalAssignment.Controllers
             }
             return View(model);
         }
+        [HttpGet]
+        public IActionResult GetUsers()
+        {
+            var users = _userManager.Users;
+            return View(users);
+        }
+        [HttpGet]
+        public async Task<IActionResult> RemoveUser(string Id)
+        {
+            var user = await _userManager.FindByIdAsync(Id);
+            if(user == null)
+            {
+                ViewBag.ErrorMessage = $"User with id {user} does not exist";
+                return View("Not Found");
+            }
+            await _userManager.DeleteAsync(user);
+            return RedirectToAction("Dashboard");
+        }
+
+        [HttpGet]
+
+        public async Task<IActionResult> Pending()
+        {
+            return View();
+        }
+        public IActionResult MyAccount(string id)
+        {
+            var user = GetCurrentUserAsync();
+
+            //var user = _userManager.FindByIdAsync(id);
+            
+                EditUserViewModel model = new EditUserViewModel
+                {
+                    UserName = user.Result.UserName,
+                    Email = user.Result.Email
+                };
+            return View(model);
+            
+            //var user = GetCurrentUserAsync();
+            //var name = user.Result.UserName,
+            //    var email-
+        }
+
+
+
 
 
     }

@@ -256,7 +256,7 @@ li, ul {
 }
 
 #navigation {
-    background: #0e1a35;
+    background: #2b2e4a;
 }
 .icon-info {
     position: relative;
@@ -267,9 +267,8 @@ li, ul {
     border-top: 1px solid #0d172e;
     color: #ffffff;
     display: block;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 28px 20px;
+    font-size: 13px;   
+    padding: 28px 5px;
     text-decoration: none;
 }
 .navi i {
@@ -286,13 +285,12 @@ li, ul {
     width:310px;
 }
 .car-images {
-    width: 380px;
+    width: 320px;
     height: 150px;
     background-color:coral;
 }
 .Location-input {
     width: 23vw;
-    height: 4.0vh;
     padding:4px;
 }
 .search-cont{
@@ -306,3 +304,4 @@ li, ul {
     width: 70px;
     background-color:var(--light) !important;
 }
+

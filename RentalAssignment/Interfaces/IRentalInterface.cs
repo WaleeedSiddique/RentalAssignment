@@ -12,8 +12,10 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Rental> GetAllRentalVehicles();
         public Rental UpdateRentalVehicle(Rental rentalChanges);
         public Review AddReview(Review review);
+        public IEnumerable<Rental> GetUserBookings(string userId);
         public IEnumerable<Rental> GetAllBookings();
         public Rental GetBookingById(int id);
+      
 
         
     };

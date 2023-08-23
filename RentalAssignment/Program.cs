@@ -16,6 +16,7 @@ builder.Services.AddScoped<IEmployeeInterface, SqlEmployeeRepository>();
 builder.Services.AddScoped<IReviewInterface, SqlReviewRepository>();
 builder.Services.AddScoped<IRentalInterface, SqlRentalRepository>();
 builder.Services.AddScoped<ICarBookingInterface, CarBookingService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IVehicleCategoryInterface, SqlVehicleCategoryRepository>();
 
 

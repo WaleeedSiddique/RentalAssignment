@@ -174,6 +174,9 @@ namespace RentalAssignment.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
@@ -264,6 +267,9 @@ namespace RentalAssignment.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RentalID"), 1L, 1);
 
+                    b.Property<bool>("BookingStatus")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("Dropoff")
                         .HasColumnType("datetime2");
 
@@ -294,6 +300,10 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("RentalID");
 
                     b.HasIndex("VehicleID");
@@ -316,12 +326,11 @@ namespace RentalAssignment.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.Property<int>("RentalId")
-                        .HasColumnType("int");
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RentalId");
 
                     b.ToTable("reviews");
                 });
@@ -333,9 +342,6 @@ namespace RentalAssignment.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VehicleId"), 1L, 1);
-
-                    b.Property<string>("BikeModel")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ChassisNumber")
                         .IsRequired()
@@ -356,13 +362,11 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("RentPerDay")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("RentPerDay")
+                        .HasColumnType("int");
 
-                    b.Property<string>("VehicleColour")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("VehicleColour")
+                        .HasColumnType("int");
 
                     b.Property<string>("VehicleModel")
                         .IsRequired()
@@ -458,17 +462,6 @@ namespace RentalAssignment.Migrations
                         .HasForeignKey("VehicleID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("RentalAssignment.Models.Review", b =>
-                {
-                    b.HasOne("RentalAssignment.Models.Rental", "Rental")
-                        .WithMany()
-                        .HasForeignKey("RentalId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Rental");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>

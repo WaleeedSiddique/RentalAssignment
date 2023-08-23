@@ -3,6 +3,7 @@ using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
+using System.Web.WebPages;
 
 namespace RentalAssignment.Repository
 {
@@ -44,6 +45,13 @@ namespace RentalAssignment.Repository
         public List<Vehicle> GetAvailableVehicles()
         {
             return _context.vehicles.Where(c => !c.IsRented).ToList();
+        }
+
+        public IEnumerable<Vehicle> GetNotRentedVehicles(DateTime startDate,DateTime endDate)
+        {
+            var cars = _context.vehicles.Where(x => !x.Bookings.Any(b =>
+            (b.Dropoff <= startDate || b.Pickup >= endDate))).ToList();
+            return cars;
         }
 
         public List<Vehicle> GetRentedVehicles()

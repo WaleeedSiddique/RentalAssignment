@@ -13,9 +13,9 @@ namespace RentalAssignment.Repository
         {
             _VehicleList = new List<Vehicle>()
             {
-                new Vehicle()  {VehicleId =1 ,OwnerName = "Waleed Siddique",OwnerPhone = "03171215120",VehicleModel = "Suzuki Cultus",VehicleNumberPlate = "KFR-9673",ChassisNumber = "k-356873",VehicleColour = "blue",VehicleType = VehicleType.Hatchback},
-                new Vehicle()  {VehicleId =2 ,OwnerName = "Raheel Izaz",OwnerPhone = "03121325233",VehicleModel = "Audi Etron",VehicleNumberPlate = "E-tron",ChassisNumber = "E-984538",VehicleColour = "blue", VehicleType = VehicleType.Suv},
-                new Vehicle()  {VehicleId =3 ,OwnerName = "Kashif Faraz",OwnerPhone = "0316363350",VehicleModel = "Land Cruiser",VehicleNumberPlate = "LFC-2452",ChassisNumber = "L-33523523", VehicleType = VehicleType.Sedan ,VehicleColour = "blue"},
+                new Vehicle()  {VehicleId =1 ,OwnerName = "Waleed Siddique",OwnerPhone = "03171215120",VehicleModel = "Suzuki Cultus",VehicleNumberPlate = "KFR-9673",ChassisNumber = "k-356873",VehicleColour = VehicleColour.White,VehicleType = VehicleType.Hatchback},
+                new Vehicle()  {VehicleId =2 ,OwnerName = "Raheel Izaz",OwnerPhone = "03121325233",VehicleModel = "Audi Etron",VehicleNumberPlate = "E-tron",ChassisNumber = "E-984538",VehicleColour = VehicleColour.Black, VehicleType = VehicleType.Suv},
+                new Vehicle()  {VehicleId =3 ,OwnerName = "Kashif Faraz",OwnerPhone = "0316363350",VehicleModel = "Land Cruiser",VehicleNumberPlate = "LFC-2452",ChassisNumber = "L-33523523", VehicleType = VehicleType.Sedan ,VehicleColour = VehicleColour.Maroon},
             };
         }
         public Vehicle CreateVehicle(Vehicle vehicle)
@@ -43,6 +43,11 @@ namespace RentalAssignment.Repository
         }
 
         public List<Vehicle> GetAvailableVehicles()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Vehicle> GetNotRentedVehicles(DateTime pickup, DateTime dropoff)
         {
             throw new NotImplementedException();
         }

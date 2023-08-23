@@ -4,9 +4,10 @@ using RentalAssignment.Models;
 
 namespace RentalAssignment.DatabaseContext
 {
+
     public class AddDbContext : IdentityDbContext<ApplicationUser>
     {
-        public AddDbContext(DbContextOptions options) : base(options)
+        public AddDbContext(DbContextOptions<AddDbContext> options) : base(options)
         {
 
         }

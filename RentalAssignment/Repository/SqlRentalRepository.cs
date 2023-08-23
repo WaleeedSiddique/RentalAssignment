@@ -34,6 +34,10 @@ namespace RentalAssignment.Repository
             return result;
         }
 
+        public IEnumerable<Rental> GetUserBookings(string userId)
+        {
+            return _context.rentals.Where(x => x.userId == userId);
+        }
         public IEnumerable<Rental> GetAllBookings()
         {
             return _context.rentals.ToList();
@@ -46,7 +50,7 @@ namespace RentalAssignment.Repository
 
         public Rental GetBookingById(int id)
         {
-            return _context.rentals.FirstOrDefault(b => b.VehicleID == id);
+            return _context.rentals.FirstOrDefault(b => b.RentalID == id);
         }
 
         public Rental GetRentalVehicle(int id)
@@ -70,5 +74,7 @@ namespace RentalAssignment.Repository
             _context.SaveChanges();
             return rentalChanges;
         }
+
+       
     }
 }

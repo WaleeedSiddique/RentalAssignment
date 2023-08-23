@@ -24,8 +24,8 @@
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <label asp-for="Email" class="form-label" for="form3Example3"></label>
-                            <input asp-for="Email" id="form3Example3" class="form-control" />
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email"  class="form-control" />
                         </div>
 
                         <!-- Password input -->
@@ -40,6 +40,7 @@
                                 Don't Have an Account <a asp-controller="Account" asp-action="Register">Sign Up!Now</a>
                             </label>
                         </div>
+                        <span class="text-danger">@ViewBag.ErrorMessage</span>
 
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-dark btn-block mb-4">

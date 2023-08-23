@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Vehicle>
+@{
+    ViewBag.title= "Searched";
+}
+<div class="container-fluid my-5">
+    <div class="row">
+
+        @foreach (var vehicle in Model)
+        {
+            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4" style="background-color:#eee;text-align:center;">
+                    <img class="image" src="@photoPath" asp-append-version="true" alt="no image">
+                    <h4 class="text-uppercase mb-4">@vehicle.VehicleModel</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car  mr-1" style="color:#343a40 ;"></i>
+                            <span>@vehicle.VehicleType</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs  mr-1" style="color:#343a40 ;"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road  mr-1" style="color:#343a40 ;"></i>
+                            <span>25K</span>
+                        </div>
+                    </div>
+                    <a asp-controller="Rental" asp-action="Booking" asp-route-id="@vehicle.VehicleId" style="background-color:#000;color:#fff" class="btn   py-2 mr-1">BOOK NOW</a>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@vehicle.VehicleId" style="background-color:#17a2b8;" class="btn  py-2 ml-1">DETAILS</a>
+                </div>
+            </div>
+
+
+        }
+    </div>
+</div>

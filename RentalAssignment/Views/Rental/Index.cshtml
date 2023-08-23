@@ -5,46 +5,31 @@
 }
 
 <div class="row card-deck mx-auto">
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">No</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
-                <th scope="col">PickUp</th>
-                <th scope="col">PickUp Location</th>
-                <th scope="col">DropOff</th>
-                <th scope="col">DropOff Location</th>
-                <th scope="col">Vehicle Availability</th>
-                <th scope="col">Review</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
-                
-            </tr>
-        </thead>
+    
+
+    <h1 class="text-center text-secondary">YOUR BOOKINGS</h1>
 
         @foreach (var rental in Model)
-        {
-            <tbody>
-                <tr>
-
-                    <th scope="row">@rental.VehicleID</th>
-                    <td>@signInManager.Context.User.Identity.Name</td>
-                    <td>@rental.RentalPhone</td>
-                    <td>@signInManager.UserManager.GetEmailAsync</td>
-                    <td>@rental.Pickup</td>
-                    <td>@rental.pickupLocation</td>
-                    <td>@rental.Dropoff</td>
-                    <td>@rental.DropoffLocation</td>
-                    <td><a asp-controller="Rental" asp-action="Review" asp-route-id="@rental.RentalID" class="btn btn-primary">Review</a></td>
-                    <td><a asp-controller="Rental" asp-action="Edit" asp-route-id="@rental.RentalID" class="btn btn-primary"  >Edit Details</a></td>
-                    <td><a asp-controller="Rental" asp-action="Delete" asp-route-id="@rental.RentalID" class="btn btn-danger">Delete Reservation</a></td>
-                </tr>              
-            </tbody>
+        {            
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./images/Car-2.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">@rental.VehicleID</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">@signInManager.Context.User.Identity.Name</li>                            
+                            <li class="list-group-item">@rental.Pickup</li>
+                            <li class="list-group-item">@rental.Dropoff</li>
+                            <li class="list-group-item">@rental.RentalPhone</li>                           
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         }
-
-        </table>
 
       
 

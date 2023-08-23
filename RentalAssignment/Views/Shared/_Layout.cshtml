@@ -49,7 +49,7 @@
         <div class="position-relative px-lg-5" style="z-index: 9;background-color:#2b2e4a;!important">
             <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1 log">Royal Cars</h1>
+                    <h1 class="text-uppercase text-primary mb-1 log">Rently</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -59,8 +59,59 @@
                         <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a> 
                         <a asp-controller="Home" asp-action="SearchPage" class="nav-item nav-link">Search a Car</a>
                         <a asp-controller="Administration" asp-action="Contact" class="nav-item nav-link">Contact</a>
-                        <a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Sign up</a>
-                        <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Log In</a>
+                        @*<a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Sign up</a>
+                        <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Log In</a>*@
+                        @{if (signInManager.IsSignedIn(User) && !User.IsInRole("Admin"))
+                        {                            
+                            <li class="nav-item nav-link">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage Account
+                                    </button>
+                                    <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                        <a asp-controller="Rental" asp-action="MyBookings" style="color:#f4f5f8;" class="nav-item nav-link">Bookings</a>
+                                        <a asp-controller="Rental" asp-action="Review" style="color:#f4f5f8;" class="nav-item nav-link">Review</a>
+                                        <a asp-controller="Account" asp-action="MyAccount" style="color:#f4f5f8;" class="nav-item nav-link">My Account</a>
+                                        <form method="post" asp-controller="account" asp-action="logout">
+                                        <button type="submit" style="width:auto"
+                                                style="color:#f4f5f8;"
+                                            class="nav-link btn btn-link py-0">
+                                            Logout @User.Identity.Name
+                                        </button>
+                                        </form>
+                                    </div>
+                                </div>                              
+                            </li>                           
+                        }else if(signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage Account
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a class="nav-item nav-link" asp-controller="Account" asp-action="Dashboard">Admin Dashboard</a>
+                                            <form method="post" asp-controller="account" asp-action="logout">
+                                                <button type="submit" style="width:auto"
+                                                    style="color:#f4f5f8;"
+                                                    class="nav-link btn btn-link py-0">
+                                                    Logout Admin
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                        }
+                        else
+                        {
+                                  <i class="fas fa-user fa-sm" style="position:relative;top:43px; right:-13px;"></i>
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Account" asp-action="Register">Sign Up</a>
+                                <i class="fas fa-user fa-sm" style="position:relative;top:43px;right:-13px;"></i>
+                                <a class="nav-item nav-link" asp-controller="account" asp-action="login">
+                                        Login
+                                    </a>                           
+                        }
+                        }
                     </div>
                    
                 </div>

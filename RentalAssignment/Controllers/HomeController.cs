@@ -48,8 +48,19 @@ namespace RentalAssignment.Controllers
 
         public IActionResult SearchPage()
         {
-            var cars = _vehicleInterface.GetAvailableVehicles().ToList();
+            var cars = _vehicleInterface.GetAllVehicles().ToList();
             return View(cars);
+        }
+        [HttpPost]
+        public IActionResult GetAvailableCars(DateTime pickup, DateTime dropoff)
+        {
+            var availablecars = _vehicleInterface.GetAllVehicles();
+            if(availablecars != null)
+            {
+             availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
+            }
+                return View(availablecars);
+            
         }
         //[HttpPost]
         //public IActionResult Index(string SearchText)
@@ -72,6 +83,14 @@ namespace RentalAssignment.Controllers
         {
             return View();
         }
+        private bool IsImageFileValid(IFormFile file)
+        {
+            // Check the file extension against the allowed extensions
+            string[] allowedExtensions = { ".jpg", ".jpeg", ".png" };
+            string fileExtension = Path.GetExtension(file.FileName).ToLowerInvariant();
+
+            return allowedExtensions.Contains(fileExtension);
+        }
         [HttpPost]
         public IActionResult Create(VehicleCreateViewModel vehicle)
         {
@@ -81,6 +100,11 @@ namespace RentalAssignment.Controllers
                 string uniqueFileName = null;
                 if (vehicle.Photo != null)
                 {
+                    if (!IsImageFileValid(vehicle.Photo))
+                    {
+                        ViewBag.message = "Car ImageFile Invalid file format. Only JPG, JPEG, and PNG files are allowed.";
+                        return View(vehicle);
+                    }
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + vehicle.Photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -96,6 +120,7 @@ namespace RentalAssignment.Controllers
                     VehicleType = vehicle.VehicleType,
                     ChassisNumber = vehicle.ChassisNumber,
                     RentPerDay = vehicle.RentPerDay,
+                    sittingCapacity = vehicle.sittingCapacity,
                     Photopath = uniqueFileName
                 };
                 Vehicle vehicle1 = _vehicleInterface.CreateVehicle(newVehicle);
@@ -113,8 +138,10 @@ namespace RentalAssignment.Controllers
             EditVehicleViewModel editVehicleViewModel = new EditVehicleViewModel
             {
                 OwnerName = result.OwnerName,
+                OwnerPhone = result.OwnerPhone,
                 ChassisNumber = result.ChassisNumber,
                 VehicleColour = result.VehicleColour,
+                sittingCapacity = result.sittingCapacity,
                 VehicleModel = result.VehicleModel,
                 VehicleNumberPlate = result.VehicleNumberPlate,
                 VehicleType = result.VehicleType,
@@ -135,6 +162,7 @@ namespace RentalAssignment.Controllers
                 result.OwnerName = model.OwnerName;
                 result.VehicleColour = model.VehicleColour;
                 result.VehicleModel = model.VehicleModel;
+                result.sittingCapacity = model.sittingCapacity;
                 result.VehicleNumberPlate = model.VehicleNumberPlate;
                 result.VehicleType = model.VehicleType;
                 result.RentPerDay = model.RentPerDay;

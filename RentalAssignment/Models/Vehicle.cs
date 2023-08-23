@@ -10,7 +10,7 @@ namespace RentalAssignment.Models
         [Required]
         public string VehicleNumberPlate { get; set; }
         public string VehicleModel { get; set; }
-        public string VehicleColour { get; set; }
+        public VehicleColour VehicleColour { get; set; }
         public string OwnerName { get; set; }
         [MaxLength(11)]
         public string? OwnerPhone { get; set; }
@@ -19,10 +19,9 @@ namespace RentalAssignment.Models
         [Required]
         public VehicleType VehicleType { get; set; }
         public string? sittingCapacity { get; set; }
-        public string? BikeModel { get; set; }
         public string Photopath { get; set; }
         [DataType(DataType.Currency)]
-        public string RentPerDay { get; set; } = "2,000";
+        public int RentPerDay { get; set; }
         public ICollection<Rental> Bookings { get; set; }
 
         public bool IsRented { get; set; }

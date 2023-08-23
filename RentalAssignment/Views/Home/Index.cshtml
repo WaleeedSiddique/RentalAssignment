@@ -20,15 +20,30 @@
         }
     </div>
         </div>*@
-        <div class="container  search-cont">
-
-
-    <form asp-controller="Home" asp-action="Search" method="get">
-    <input class="Location-input" type="text" placeholder="Enter Your City, Airport or Address" name="VehicleName" />
-    <input type="datetime-local" />
-        <input type="date" />
-    <input class="btn search-btn" type="submit" value="Search" />
-        </form>
+<div class="container bg-white pt-3 px-lg-5">
+    <form asp-action="Search" asp-controller="Home">
+    <div class="row mx-n2">
+        <div class="col-xl-4 col-lg-4 col-md-6 px-2">
+            <div class="time mb-3" >
+                    <input type="datetime" name="VehicleName" class="form-control p-3 datetimepicker-input" placeholder="Drop your address" />
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 px-2">
+            <div class="date mb-3">
+                <input type="datetime-local" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"/>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 px-2">
+            <div class="time mb-3">
+                <input type="date" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"/>
+            </div>
+        </div>
+   
+        <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;background-color:#2b2e4a!important; color:white;border:none;">Search</button>
+        </div>
+    </div>
+    </form>
 </div>
 
 <div class="container-fluid p-0" style="margin-bottom: 90px;">
@@ -95,15 +110,17 @@
     </div>
 </div>
 
-<div class="container-fluid my-5">
-    <div class="row" style="background-color:#111; padding:50px 0px;">
-        <div class="col-6 px-3">
-            <img src="./images/car-interior-1.png" width="800px" height="650px" />
-        </div>
-        <div class="col-6" style="padding:170px 130px;">
-            <h1 class="text-light">Get Started</h1>
-            <p class="font-monospace">Explore Rental At your own pace by <br /> creating a free account.</p>
-            <a class="btn btn-dark text-light px-3">Book</a>
+<div class="container my-5">
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 style="color:#F77D0A !important;" class="display-1 text-primary text-center">Rently</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span style="color:#F77D0A !important;" class="text-primary">Rently</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="./images/about.png" alt="">
+                    <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
+                </div>
+            </div>            
         </div>
     </div>
 </div>

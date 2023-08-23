@@ -30,8 +30,9 @@ namespace RentalAssignment.Repository
 
             return false;
         }
+       
 
-        
+
 
         // Other methods for booking cars, saving bookings, etc.
     }

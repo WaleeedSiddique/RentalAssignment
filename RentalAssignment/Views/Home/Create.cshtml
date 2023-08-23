@@ -5,53 +5,82 @@
 @{
     ViewBag.Title = "Add Vehicle";
 }
+<h1 class="text-center">Add Vehicle</h1>
+<span class="text-center text-danger">@ViewBag.message</span>
 <form asp-controller="Home" asp-action="Create" method="post" class="form-group" enctype="multipart/form-data">
-    <div class="form-group">
-        <label asp-for="OwnerName">Owner Name</label>
-        <input asp-for="OwnerName" class="form-control" placeholder="Owned By" />
-    </div>
-    <div class="form-group">
-        <label asp-for="VehicleModel">Vehicle Model</label>
-        <input asp-for="VehicleModel" class="form-control" placeholder="Model" />
-    </div>
-    <div class="form-group">
-        <label asp-for="VehicleType">Vehicle Type</label>
-        <select class="form-control" asp-for="VehicleType" asp-items="Html.GetEnumSelectList<VehicleType>()">
-            <option>Please Select</option>
-        </select>
-        <span asp-validation-for="VehicleType" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VehicleNumberPlate">Vehicle Number Plate</label>
-        <input asp-for="VehicleNumberPlate" class="form-control" placeholder="License Plate Number" />
-        <span asp-validation-for="VehicleNumberPlate" class="text-danger"></span>
-        
-    </div>
-    <div class="form-group">
-        <label asp-for="ChassisNumber">Chassis Number</label>
-        <input asp-for="ChassisNumber" class="form-control" placeholder="Engine Number" />
-        <span asp-validation-for="ChassisNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Photo"></label>
-        <input asp-for="Photo" class="form-control" />
-        <span asp-validation-for="Photo" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VehicleColour">Vehicle Colour</label>
-        <input asp-for="VehicleColour" class="form-control" placeholder="Colour" />
-    </div>
-    <div class="form-group">
-        <label asp-for="OwnerPhone">Owner Phone</label>
-        <input asp-for="OwnerPhone" class="form-control" placeholder="Phone..." />
-    </div>
-    <div class="form-group">
-        <label asp-for="RentPerDay">Charges</label>
-        <input asp-for="RentPerDay" class="form-control" placeholder="Price Per Day" />
-    </div>
-
-    <div>
-        <button class="btn btn-primary" type="submit">Add Vehicle</button>
+    <div class="container-fluid pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Personal Details</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            
+                            <div class="col-6 form-group">
+                                <input asp-for="OwnerName" class="form-control p-4" placeholder="Owner Name" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input asp-for="OwnerPhone" class="form-control p-4" placeholder="Owner Phone" required="required">
+                            </div>
+                        </div>                       
+                    </div>
+                    <h2 class="mb-4">Car Details</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="VehicleModel">Car Model</label>
+                                <input asp-for="VehicleModel" class="form-control p-4" placeholder="Car Make" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="VehicleType">Car Type</label>
+                                <select class="form-control" asp-for="VehicleType" asp-items="Html.GetEnumSelectList<VehicleType>()">
+                                    <option>Please Select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">   
+                                <label asp-for="VehicleNumberPlate">Car Number</label>
+                                    <input asp-for="VehicleNumberPlate" class="form-control" placeholder="Vehicle Plate" />                              
+                            </div>                          
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="VehicleColour">Select Color</label>
+                                <select class="form-control" asp-for="VehicleColour" asp-items="Html.GetEnumSelectList<VehicleColour>()">
+                                    <option>Please Select</option>
+                                </select>
+                                    </div>
+                                <div class="col-6 form-group">
+                                    <label asp-for="ChassisNumber">Chassic Number</label>
+                                    <input asp-for="ChassisNumber" class="form-control p-4" placeholder="Chassis Number" required="required">
+                                </div> 
+                                
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="sittingCapacity">Sitting Capacity</label>
+                                <input asp-for="sittingCapacity" class="form-control p-4" placeholder="Sitting Capacity" required="required">
+                            </div>
+                                                    
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="Photo">Car Image</label>
+                                <input asp-for="Photo" class="form-control p-4"  required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="RentPerDay">Rent Price</label>
+                                <input asp-for="RentPerDay" class="form-control p-4" placeholder="Rent Per Day" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="Submit" class="btn btn-primary" style="background-color:#2b2e4a!important;">Add Car</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

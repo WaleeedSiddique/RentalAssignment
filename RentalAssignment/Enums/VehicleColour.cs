@@ -6,6 +6,7 @@
         Black,
         Silver,
         Maroon,
-        Golden
+        Golden,
+        Custom
     }
 }

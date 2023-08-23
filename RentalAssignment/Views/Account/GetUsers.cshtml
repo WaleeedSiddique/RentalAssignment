@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ApplicationUser>
+@{
+    ViewBag.title = "Users";
+}
+@ViewBag.ErrorMessage
+<table class="table-striped">
+    <thead class="thead-dark">
+        <tr>        
+        <th class="scope">UserName</th>
+        <th class="scope">FullName</th>
+        <th class="scope">Email</th>
+        <th class="scope">Accept User</th>
+        <th class="scope">Reject User</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+            @foreach(var user in Model)
+            {
+        <tr>
+                <td class="scope">@user.UserName</td>
+                <td class="scope">@user.NormalizedUserName</td>
+                <td class="scope">@user.Email</td>
+                <td><a class="btn btn-success" asp-controller="Account" asp-action="UpdateUser" asp-route-id="@user.Id">Accept User</a></td>
+                <td><a class="btn btn-danger ml-2" asp-controller="Account" asp-action="RemoveUser" asp-route-id="@user.Id">Reject User</a></td>
+
+        </tr>
+            }
+
+
+
+    </tbody>
+
+
+</table>
