@@ -75,6 +75,9 @@ namespace RentalAssignment.Repository
             return rentalChanges;
         }
 
-       
+        public IEnumerable<Rental> GetUnapprovedbookings()
+        {
+            return _context.rentals.Where(x => x.BookingStatus == false);
+        }
     }
 }

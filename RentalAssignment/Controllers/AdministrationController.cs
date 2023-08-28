@@ -1,5 +1,6 @@
 ﻿using com.sun.xml.@internal.bind.v2.model.core;
 using LibGit2Sharp;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Models;
@@ -7,6 +8,7 @@ using RentalAssignment.ViewModels;
 
 namespace RentalAssignment.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;

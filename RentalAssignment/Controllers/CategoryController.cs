@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
@@ -6,6 +7,7 @@ using static java.util.Locale;
 
 namespace RentalAssignment.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly IVehicleCategoryInterface _vehicleCategory;

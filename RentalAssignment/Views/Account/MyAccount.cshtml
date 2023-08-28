@@ -1,7 +1,8 @@
 ﻿@model EditUserViewModel
 @{
-    ViewBag.message = "My Account";
+    ViewBag.Title = "My Account";
 }
+@ViewBag.message
 <section class="vh-100" style="background-color: #eee;">
     <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -13,9 +14,9 @@
 
                                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-                                <form class="mx-1 mx-md-4" method="post">
+                                <form class="mx-1 mx-md-4" asp-controller="Account" asp-action="MyAccount" method="post">
                                     <input hidden asp-for="Id" />
-                                    <div asp-validation-summary="All" class="text-danger"></div>
+                                    
 
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -34,11 +35,11 @@
                                             <span asp-validation-for="Email" class="text-danger"></span>
                                         </div>
                                     </div>
+                                    <a class="text-secondary" asp-controller="Account" asp-action="DeleteUser" asp-route-id="@Model.Id">Deavtivate Account</a>
 
                                    
 
                                     
-
 
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                         <button type="Submit" class="btn btn-primary btn-lg">Update</button>

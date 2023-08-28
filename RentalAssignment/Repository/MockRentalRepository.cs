@@ -58,6 +58,11 @@ namespace RentalAssignment.Repository
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Rental> GetUnapprovedbookings()
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Rental> GetUserBookings(string userId)
         {
             throw new NotImplementedException();

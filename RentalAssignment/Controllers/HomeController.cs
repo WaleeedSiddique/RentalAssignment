@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RentalAssignment.DatabaseContext;
 using RentalAssignment.Enums;
@@ -79,6 +80,7 @@ namespace RentalAssignment.Controllers
             return View(model);
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -92,6 +94,7 @@ namespace RentalAssignment.Controllers
             return allowedExtensions.Contains(fileExtension);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(VehicleCreateViewModel vehicle)
         {
 
@@ -132,6 +135,7 @@ namespace RentalAssignment.Controllers
 
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
             Vehicle result = _vehicleInterface.GetVehicle(id);
@@ -153,6 +157,7 @@ namespace RentalAssignment.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(EditVehicleViewModel model)
         {
 
@@ -174,6 +179,7 @@ namespace RentalAssignment.Controllers
 
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
 

@@ -15,6 +15,7 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Rental> GetUserBookings(string userId);
         public IEnumerable<Rental> GetAllBookings();
         public Rental GetBookingById(int id);
+        public IEnumerable<Rental> GetUnapprovedbookings();
       
 
         

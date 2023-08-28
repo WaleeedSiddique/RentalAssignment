@@ -45,9 +45,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container-fluid position-relative nav-bar p-0 my-2">
+    <div class="container-fluid position-relative nav-bar p-0 ">
         <div class="position-relative px-lg-5" style="z-index: 9;background-color:#2b2e4a;!important">
-            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav class="navbar navbar-expand-lg mb-0  navbar-dark  py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
                     <h1 class="text-uppercase text-primary mb-1 log">Rently</h1>
                 </a>
@@ -69,9 +69,9 @@
                                             Manage Account
                                     </button>
                                     <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
-                                        <a asp-controller="Rental" asp-action="MyBookings" style="color:#f4f5f8;" class="nav-item nav-link">Bookings</a>
-                                        <a asp-controller="Rental" asp-action="Review" style="color:#f4f5f8;" class="nav-item nav-link">Review</a>
-                                        <a asp-controller="Account" asp-action="MyAccount" style="color:#f4f5f8;" class="nav-item nav-link">My Account</a>
+                                        <a asp-controller="Rental" asp-action="MyBookings" style="color:#f4f5f8;" class="nav-item nav-link py-1">Bookings</a>
+                                        <a asp-controller="Rental" asp-action="Review" style="color:#f4f5f8;" class="nav-item nav-link py-1">Review</a>
+                                        <a asp-controller="Account" asp-action="MyAccount" style="color:#f4f5f8;" class="nav-item nav-link py-1">Edit Details</a>
                                         <form method="post" asp-controller="account" asp-action="logout">
                                         <button type="submit" style="width:auto"
                                                 style="color:#f4f5f8;"
@@ -121,12 +121,12 @@
     <!-- Navbar End -->
 
     <div class="container-fluid">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class="container-fluid my-5">
+    <div class="container-fluid">
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white"
                 style="background-color: #2b2e4a">

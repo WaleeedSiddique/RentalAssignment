@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RentalAssignment.Models;
 using RentalAssignment.ViewModels;
+using System.Security.Claims;
 using static com.sun.tools.@internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 namespace RentalAssignment.Controllers
@@ -14,7 +15,7 @@ namespace RentalAssignment.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private Task<ApplicationUser> GetCurrentUserAsync() => _userManager.GetUserAsync(HttpContext.User);
 
-        public AccountController(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
@@ -30,14 +31,14 @@ namespace RentalAssignment.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser
-                {        
+                {
                     NormalizedUserName = model.FirstName,
-                    UserName = model.username,                    
+                    UserName = model.username,
                     Email = model.Email,
                     IsApproved = false
-                    
+
                 };
-                var result = await _userManager.CreateAsync(user,model.Password);
+                var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     //await _signInManager.SignInAsync(user, isPersistent: false);
@@ -46,17 +47,17 @@ namespace RentalAssignment.Controllers
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
-                }                
+                }
             }
             return View(model);
         }
-       
-        [AcceptVerbs("Get","Post")]
+
+        [AcceptVerbs("Get", "Post")]
         [AllowAnonymous]
         public async Task<IActionResult> IsEmailInUse(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
-            if(user == null)
+            if (user == null)
             {
                 return Json(true);
             }
@@ -68,8 +69,8 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-           await _signInManager.SignOutAsync();
-            return RedirectToAction("Index","Home");
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
         [HttpGet]
         public async Task<IActionResult> Login()
@@ -77,13 +78,13 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel model,string? returnUrl)
+        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl)
         {
             if (ModelState.IsValid)
             {
-            var user = await _userManager.FindByEmailAsync(model.Email)?? await _userManager.FindByNameAsync(model.Email);
-                
-                if(user  != null)
+                var user = await _userManager.FindByEmailAsync(model.Email) ?? await _userManager.FindByNameAsync(model.Email);
+
+                if (user != null)
                 {
                     if (user.IsApproved == false)
                     {
@@ -105,18 +106,19 @@ namespace RentalAssignment.Controllers
                     ModelState.AddModelError(string.Empty, "Password Didn't match ");
                     return View();
 
-                }                                                
-                             
-            ModelState.AddModelError(string.Empty, "No Account with this Email");
+                }
+
+                ModelState.AddModelError(string.Empty, "No Account with this Email");
             }
             return View(model);
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Dashboard(RegistrationViewModel model)
-        {                               
+        {
             return View(model);
         }
-       
+
         [HttpGet]
         public async Task<IActionResult> Update()
         {
@@ -132,12 +134,12 @@ namespace RentalAssignment.Controllers
             {
                 Id = userId.ToString(),
                 UserName = user.Result.UserName,
-                Email = user.Result.Email,               
+                Email = user.Result.Email,
             };
-            return View(model);            
+            return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult>  Update(EditUserViewModel model)
+        public async Task<IActionResult> Update(EditUserViewModel model)
         {
             var user = GetCurrentUserAsync();
             var userId = user?.Id;
@@ -145,7 +147,7 @@ namespace RentalAssignment.Controllers
             {
                 return View("Error");
             };
-            
+
             user.Result.UserName = model.UserName;
             user.Result.Email = model.Email;
             return RedirectToAction("Dashboard");
@@ -185,6 +187,7 @@ namespace RentalAssignment.Controllers
             return View(model);
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult GetUsers()
         {
             var users = _userManager.Users;
@@ -194,7 +197,7 @@ namespace RentalAssignment.Controllers
         public async Task<IActionResult> RemoveUser(string Id)
         {
             var user = await _userManager.FindByIdAsync(Id);
-            if(user == null)
+            if (user == null)
             {
                 ViewBag.ErrorMessage = $"User with id {user} does not exist";
                 return View("Not Found");
@@ -204,28 +207,63 @@ namespace RentalAssignment.Controllers
         }
 
         [HttpGet]
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Pending()
         {
             return View();
         }
+        [HttpGet]
         public IActionResult MyAccount(string id)
         {
             var user = GetCurrentUserAsync();
 
             //var user = _userManager.FindByIdAsync(id);
-            
-                EditUserViewModel model = new EditUserViewModel
-                {
-                    UserName = user.Result.UserName,
-                    Email = user.Result.Email
-                };
+
+            EditUserViewModel model = new EditUserViewModel
+            {
+                Id = this.User.FindFirstValue(ClaimTypes.NameIdentifier),
+                UserName = user.Result.UserName,
+                Email = user.Result.Email
+            };
             return View(model);
-            
+
             //var user = GetCurrentUserAsync();
             //var name = user.Result.UserName,
             //    var email-
         }
+        [HttpPost]
+        public async Task<IActionResult> MyAccount(EditUserViewModel model)
+        {
+            var user = await GetCurrentUserAsync();
+            if (ModelState.IsValid)
+            {
+                user.UserName = model.UserName;
+                user.Email = model.Email;
+                _userManager.UpdateAsync(user);
+                return RedirectToAction("MyAccount");
+            }
+            ViewBag.message = "Something went wrong";
+            return View();
+        }
+
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                var result = await _userManager.DeleteAsync(user);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Logout");
+                }
+            }
+            ViewBag.message = "Something went wrong";
+            return View();
+
+        }
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1dqYA8N6lDldTWCWR0akPWUcD7wfGSopzxjLPMyKAWo=",
+  "Hash": "OaZsy7A926DAHa9im+gkas6OnG1G9HUkf21ZfOYNQbI=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -323,6 +323,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png"
+    },
+    {
       "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
@@ -474,23 +491,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png"
-    },
-    {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\99f23bd8-52a9-4467-b961-082caaf4f639_TeamsSetup_c_w_.exe",
-      "SourceId": "RentalAssignment",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
-      "BasePath": "_content/RentalAssignment",
-      "RelativePath": "images/99f23bd8-52a9-4467-b961-082caaf4f639_TeamsSetup_c_w_.exe",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\99f23bd8-52a9-4467-b961-082caaf4f639_TeamsSetup_c_w_.exe"
     },
     {
       "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\a4917825-8870-48a3-812e-c2f335f0b197_bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",

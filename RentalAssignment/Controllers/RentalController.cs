@@ -196,12 +196,12 @@ namespace RentalAssignment.Controllers
             }
 
         }
-        
-        //public IActionResult PendingBookings()
-        //{
-        //   // var bookings = _rentalInterface.GetUnApprovedBookings();
-        //   // return View(bookings);
-        //}
+
+        public IActionResult PendingBookings()
+        {
+            var bookings = _rentalInterface.GetUnapprovedbookings();
+            return View(bookings);
+        }
 
 
 
