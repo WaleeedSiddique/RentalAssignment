@@ -22,6 +22,11 @@ namespace RentalAssignment.Repository
             throw new NotImplementedException();
         }
 
+        public void AssignDriverToBooking(int bookingId, int driverId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Rental DeleteRentedVehicle(int id)
         {
             var result = _RentalList.FirstOrDefault(x => x.RentalID == id);

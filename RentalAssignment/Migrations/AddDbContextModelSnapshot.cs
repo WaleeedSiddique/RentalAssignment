@@ -270,6 +270,9 @@ namespace RentalAssignment.Migrations
                     b.Property<bool>("BookingStatus")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("DriverId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Dropoff")
                         .HasColumnType("datetime2");
 

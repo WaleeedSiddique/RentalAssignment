@@ -285,7 +285,7 @@ li, ul {
     width:310px;
 }
 .car-images {
-    width: 320px;
+    width: 300px;
     height: 150px;
     background-color:coral;
 }
@@ -305,3 +305,6 @@ li, ul {
     background-color:var(--light) !important;
 }
 
+.dropdown-menu{
+    display:none;
+}

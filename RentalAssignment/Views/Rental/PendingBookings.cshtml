@@ -21,7 +21,7 @@
             <td>@booking.RentalPhone</td>
             <td>@booking.RentalEmail</td>
             <td>@booking.Pickup</td>
-            <td><a class="btn btn-secondary" asp-controller="Rental" asp-action="UpdateBooking" asp-route-id="@booking.RentalID">Update Booking</a></td>
+                <td><a class="btn btn-secondary" asp-controller="Rental" asp-action="ConfirmBooking" asp-route-id="@booking.RentalID">Update Booking</a></td>
             <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
         </tr>
         }

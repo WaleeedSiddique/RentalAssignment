@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OaZsy7A926DAHa9im+gkas6OnG1G9HUkf21ZfOYNQbI=",
+  "Hash": "T29ibm2ndIF6iHhnihq/QJsbTKCtvy9qodgIwb6uu0Y=",
   "Source": "RentalAssignment",
   "BasePath": "_content/RentalAssignment",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RentalAssignment\\wwwroot",
       "Source": "RentalAssignment",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RentalAssignment.styles.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RentalAssignment.styles.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "RentalAssignment.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RentalAssignment.styles.css"
+      "OriginalItemSpec": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RentalAssignment.styles.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "RentalAssignment.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\animate.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\animate.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/animate.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\aos.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\aos.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/aos.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\aos.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap-datepicker.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap-datepicker.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/bootstrap-datepicker.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-datepicker.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\flaticon.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\flaticon.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/flaticon.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\flaticon.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\icomoon.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\icomoon.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/icomoon.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icomoon.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\ionicons.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\ionicons.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/ionicons.min.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\ionicons.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\jquery.timepicker.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\jquery.timepicker.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/jquery.timepicker.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery.timepicker.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\magnific-popup.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\magnific-popup.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/magnific-popup.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\magnific-popup.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\NewDesign.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\NewDesign.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/NewDesign.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\NewDesign.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.carousel.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.carousel.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/owl.carousel.min.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\owl.carousel.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.theme.default.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.theme.default.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/owl.theme.default.min.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\owl.theme.default.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\site.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\style.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\style.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\favicon.ico",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\560e9650-e01b-44ed-8b92-c383ac5b105e_1669809260561-BRV.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\560e9650-e01b-44ed-8b92-c383ac5b105e_1669809260561-BRV.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/560e9650-e01b-44ed-8b92-c383ac5b105e_1669809260561-BRV.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\560e9650-e01b-44ed-8b92-c383ac5b105e_1669809260561-BRV.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\6f5375a6-a06e-4860-94cc-4acc4ec1a7f1_b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\6f5375a6-a06e-4860-94cc-4acc4ec1a7f1_b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/6f5375a6-a06e-4860-94cc-4acc4ec1a7f1_b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6f5375a6-a06e-4860-94cc-4acc4ec1a7f1_b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\a4917825-8870-48a3-812e-c2f335f0b197_bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\a4917825-8870-48a3-812e-c2f335f0b197_bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/a4917825-8870-48a3-812e-c2f335f0b197_bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a4917825-8870-48a3-812e-c2f335f0b197_bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\a9c7e3ed-c762-4c66-ad66-dc50c9c8a7b0_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\a9c7e3ed-c762-4c66-ad66-dc50c9c8a7b0_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/a9c7e3ed-c762-4c66-ad66-dc50c9c8a7b0_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a9c7e3ed-c762-4c66-ad66-dc50c9c8a7b0_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\about.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\about.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/about.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\about.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\adb5a228-3c4f-48d9-98dd-af9aa95cd30d_cultus.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\adb5a228-3c4f-48d9-98dd-af9aa95cd30d_cultus.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/adb5a228-3c4f-48d9-98dd-af9aa95cd30d_cultus.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\adb5a228-3c4f-48d9-98dd-af9aa95cd30d_cultus.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Alto.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Alto.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Alto.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Alto.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b0d6d4cf-be9e-46b8-b420-557e6664d531_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b0d6d4cf-be9e-46b8-b420-557e6664d531_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/b0d6d4cf-be9e-46b8-b420-557e6664d531_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b0d6d4cf-be9e-46b8-b420-557e6664d531_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b4154380-ccc7-4a4e-86cf-a9bf3df31496_Civic.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b7a8617e-6256-43f9-9a22-0c77234abccc_bf3221b4-44fb-4835-9bf0-6e1a325690b6_suzuki_150_gs-removebg-preview.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b7a8617e-6256-43f9-9a22-0c77234abccc_bf3221b4-44fb-4835-9bf0-6e1a325690b6_suzuki_150_gs-removebg-preview.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/b7a8617e-6256-43f9-9a22-0c77234abccc_bf3221b4-44fb-4835-9bf0-6e1a325690b6_suzuki_150_gs-removebg-preview.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b7a8617e-6256-43f9-9a22-0c77234abccc_bf3221b4-44fb-4835-9bf0-6e1a325690b6_suzuki_150_gs-removebg-preview.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-left.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-left.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/banner-left.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-left.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-right.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-right.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/banner-right.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\images\\banner-right.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bb27223c-28bb-4f75-84c2-eb931247679e_f28110c2-09db-4be4-b4f2-ad9ecb8eb8e5_Honda_125-removebg-preview.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bf2781b0-f9a2-4211-8adb-0cef8b57bc7a_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bf2781b0-f9a2-4211-8adb-0cef8b57bc7a_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/bf2781b0-f9a2-4211-8adb-0cef8b57bc7a_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bf2781b0-f9a2-4211-8adb-0cef8b57bc7a_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bg-banner.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\bg-banner.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/bg-banner.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bg-banner.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c16eca68-144b-436c-840e-2b5cb27b83db_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c16eca68-144b-436c-840e-2b5cb27b83db_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/c16eca68-144b-436c-840e-2b5cb27b83db_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c16eca68-144b-436c-840e-2b5cb27b83db_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c6632e44-0011-40be-ac9a-ca1a3c3937f7_Civic.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c6632e44-0011-40be-ac9a-ca1a3c3937f7_Civic.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/c6632e44-0011-40be-ac9a-ca1a3c3937f7_Civic.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c6632e44-0011-40be-ac9a-ca1a3c3937f7_Civic.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c9afb04c-fd59-461c-8e12-dbfce29d12d0_Alto.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c9afb04c-fd59-461c-8e12-dbfce29d12d0_Alto.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/c9afb04c-fd59-461c-8e12-dbfce29d12d0_Alto.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\images\\c9afb04c-fd59-461c-8e12-dbfce29d12d0_Alto.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-1.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-1.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Car-1.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Car-1.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-2.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-2.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Car-2.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Car-2.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-3.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-3.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Car-3.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Car-3.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-4.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-4.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Car-4.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Car-4.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-5.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-5.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Car-5.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Car-5.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-1.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-1.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/carousel-1.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\images\\carousel-1.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-2.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-2.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/carousel-2.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\images\\carousel-2.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-1.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-1.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-1.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-1.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-2.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-2.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-2.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-2.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-3.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-3.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-3.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-3.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-4.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-4.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-4.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-4.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-5.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-5.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-5.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-5.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-6.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\car-rent-6.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/car-rent-6.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\images\\car-rent-6.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Civic.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Civic.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/Civic.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Civic.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e27108be-842b-4735-9970-d74d6945bfb4_car-rent-6.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e27108be-842b-4735-9970-d74d6945bfb4_car-rent-6.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/e27108be-842b-4735-9970-d74d6945bfb4_car-rent-6.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\images\\e27108be-842b-4735-9970-d74d6945bfb4_car-rent-6.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\ee4fa23f-eb08-460f-b710-05cca8fc785e_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\ee4fa23f-eb08-460f-b710-05cca8fc785e_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/ee4fa23f-eb08-460f-b710-05cca8fc785e_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ee4fa23f-eb08-460f-b710-05cca8fc785e_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f76b2dad-28db-4e40-98c0-2eed388e793e_f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\f76b2dad-28db-4e40-98c0-2eed388e793e_f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/f76b2dad-28db-4e40-98c0-2eed388e793e_f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\images\\f76b2dad-28db-4e40-98c0-2eed388e793e_f0bccb65-6a6a-4bca-8cd1-ee64a46b870d_Wagon R.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\fa2793da-1ac2-41f8-9ff9-c89ed95c266a_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover-removebg-preview (1).png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\fa2793da-1ac2-41f8-9ff9-c89ed95c266a_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover-removebg-preview (1).png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/fa2793da-1ac2-41f8-9ff9-c89ed95c266a_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover-removebg-preview (1).png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fa2793da-1ac2-41f8-9ff9-c89ed95c266a_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover-removebg-preview (1).png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-1.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-1.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/gallery-1.jpg",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-1.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-3.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-3.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/gallery-3.jpg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-3.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-4.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-4.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/gallery-4.jpg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-4.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-5.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-5.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/gallery-5.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-5.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-6.jpg",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\gallery-6.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/gallery-6.jpg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery-6.jpg"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\signup-image.png",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\signup-image.png",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "images/signup-image.png",
       "AssetKind": "All",
@@ -1275,10 +1275,44 @@
       "OriginalItemSpec": "wwwroot\\images\\signup-image.png"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\aos.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-2.jpg",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/testimonial-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\testimonial-2.jpg"
+    },
+    {
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-3.jpg",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "BasePath": "_content/RentalAssignment",
+      "RelativePath": "images/testimonial-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\testimonial-3.jpg"
+    },
+    {
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\aos.js",
+      "SourceId": "RentalAssignment",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/aos.js",
       "AssetKind": "All",
@@ -1292,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\js\\aos.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1309,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap-datepicker.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap-datepicker.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/bootstrap-datepicker.js",
       "AssetKind": "All",
@@ -1326,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap-datepicker.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\google-map.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\google-map.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/google-map.js",
       "AssetKind": "All",
@@ -1343,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\js\\google-map.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.animateNumber.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.animateNumber.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.animateNumber.min.js",
       "AssetKind": "All",
@@ -1360,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.animateNumber.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.easing.1.3.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.easing.1.3.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.easing.1.3.js",
       "AssetKind": "All",
@@ -1377,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.easing.1.3.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.magnific-popup.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.magnific-popup.min.js",
       "AssetKind": "All",
@@ -1394,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.magnific-popup.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -1411,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.stellar.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.stellar.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.stellar.min.js",
       "AssetKind": "All",
@@ -1428,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.stellar.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.timepicker.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.timepicker.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.timepicker.min.js",
       "AssetKind": "All",
@@ -1445,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.timepicker.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.waypoints.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.waypoints.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery.waypoints.min.js",
       "AssetKind": "All",
@@ -1462,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.waypoints.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-3.2.1.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery-3.2.1.min.js",
       "AssetKind": "All",
@@ -1479,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/jquery-migrate-3.0.1.min.js",
       "AssetKind": "All",
@@ -1496,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-migrate-3.0.1.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\main.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\main.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -1513,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\owl.carousel.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\owl.carousel.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/owl.carousel.min.js",
       "AssetKind": "All",
@@ -1530,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.carousel.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\popper.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\popper.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/popper.min.js",
       "AssetKind": "All",
@@ -1547,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\range.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\range.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/range.js",
       "AssetKind": "All",
@@ -1564,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\js\\range.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\scrollax.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\scrollax.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/scrollax.min.js",
       "AssetKind": "All",
@@ -1581,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scrollax.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\site.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1598,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1615,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1632,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1649,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1666,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1683,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1700,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1717,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1734,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1751,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1768,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1785,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1802,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1819,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1836,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1853,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1870,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1887,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1904,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1921,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1938,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1955,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1972,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1989,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2006,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2023,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2040,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2057,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2091,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2108,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2125,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2159,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2176,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2193,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2210,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2227,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2244,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2261,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2278,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2295,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2312,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2329,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2346,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2363,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2380,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2397,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2414,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2431,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2448,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2465,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2482,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2499,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2516,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2533,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2550,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "RentalAssignment",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\wwwroot\\",
+      "ContentRoot": "D:\\Rental Assignment\\RentalAssignment\\RentalAssignment\\wwwroot\\",
       "BasePath": "_content/RentalAssignment",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

@@ -79,5 +79,19 @@ namespace RentalAssignment.Repository
         {
             return _context.rentals.Where(x => x.BookingStatus == false);
         }
+        public void AssignDriverToBooking(int bookingId, int driverId)
+        {
+            var booking = _context.rentals.Find(bookingId);
+            var driver = _context.Employees.Find(driverId);
+
+            if (booking != null && driver != null)
+            {
+                booking.DriverId = driver.EmployeeId;
+                _context.SaveChanges();
+            }
+        }
+
+
+
     }
 }

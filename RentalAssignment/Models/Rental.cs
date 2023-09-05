@@ -21,7 +21,7 @@ namespace RentalAssignment.Models
         public DateTime Dropoff { get; set; }
         public string pickupLocation { get; set; }
         public string DropoffLocation { get; set; }
-        public bool BookingStatus { get; set; }        
-
+        public bool BookingStatus { get; set; }
+        public int? DriverId { get; set; }
     }
 }

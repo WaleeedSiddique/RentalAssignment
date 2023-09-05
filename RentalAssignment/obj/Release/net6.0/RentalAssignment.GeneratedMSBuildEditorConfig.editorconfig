@@ -8,205 +8,209 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RentalAssignment
 build_property.RootNamespace = RentalAssignment
-build_property.ProjectDir = D:\New folder (2)\RentalAssignment\RentalAssignment\
+build_property.ProjectDir = D:\Rental Assignment\RentalAssignment\RentalAssignment\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\New folder (2)\RentalAssignment\RentalAssignment
+build_property.MSBuildProjectDirectory = D:\Rental Assignment\RentalAssignment\RentalAssignment
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/AdminLogin.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/AdminLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkxvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/Dashboard.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/GetUsers.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/GetUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXRVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/ListUsers.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/ListUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMaXN0VXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/Login.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/MyAccount.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/MyAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNeUFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/Pending.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/Pending.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQZW5kaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/Register.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Account/Update.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Account/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/Contact.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/CreateRole.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/EditRole.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/EditRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/EditUsersInRole.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/EditUsersInRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/ListRoles.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/ListRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/ListUsers.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/ListUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/UpdateUser.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Administration/UpdateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cVXBkYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Admin/ApprovedUsers.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Admin/ApprovedUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXBwcm92ZWRVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Admin/PendingUsers.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Admin/PendingUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGVuZGluZ1VzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Category/Create.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Category/DeleteCategory.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Category/DeleteCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Category/EditCategory.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Category/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Category/Index.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Employee/Create.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Employee/Details.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Employee/Edit.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Employee/Index.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/AvailableCars.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/AvailableCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdmFpbGFibGVDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Create.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Details.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Edit.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/GetAvailableCars.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/GetAvailableCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRBdmFpbGFibGVDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Index.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Privacy.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/RentedCars.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/RentedCars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZW50ZWRDYXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/Search.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Home/SearchPage.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Home/SearchPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2hQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/1Vehicle.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/1Vehicle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXDFWZWhpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/Booking.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXEJvb2tpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/Edit.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/ConfirmBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXENvbmZpcm1Cb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/Index.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/MyBookings.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/MyBookings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXE15Qm9va2luZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/PendingBookings.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/PendingBookings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFBlbmRpbmdCb29raW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/RentedVehicles.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/RentedVehicles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJlbnRlZFZlaGljbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/Review.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Rental/Review.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Shared/Error.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/_ViewImports.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/_ViewStart.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Shared/_Layout.cshtml]
+[D:/Rental Assignment/RentalAssignment/RentalAssignment/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yynxfv7mcb

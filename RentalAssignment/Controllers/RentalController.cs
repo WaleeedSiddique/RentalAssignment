@@ -12,6 +12,7 @@ using RentalAssignment.Repository;
 using RentalAssignment.ViewModels;
 using sun.security.x509;
 using System.Security.Claims;
+using static sun.security.provider.NativePRNG;
 
 namespace RentalAssignment.Controllers
 {
@@ -196,11 +197,53 @@ namespace RentalAssignment.Controllers
             }
 
         }
+        [HttpGet]
 
         public IActionResult PendingBookings()
         {
             var bookings = _rentalInterface.GetUnapprovedbookings();
             return View(bookings);
+        }
+        [HttpGet]
+        public IActionResult ConfirmBooking(int id)
+        {
+            var booking = _rentalInterface.GetBookingById(id);
+            var drivers = _employeeInterface.GetAllEmployee();
+            
+            var availableDrivers = new SelectList(drivers, "EmployeeId", "EmployeeName");
+
+            var viewModel = new BookingConfirmViewModel
+            {RentalID= booking.RentalID,
+                Booking = booking,
+                AvailableDrivers = availableDrivers
+            };
+
+            return View(viewModel);
+        }
+        
+        [HttpPost]
+        public IActionResult AssignDriver(int RentalID, int SelectedDriverId)
+        {
+            if (ModelState.IsValid)
+            {
+                _rentalInterface.AssignDriverToBooking(RentalID, SelectedDriverId);
+                _rentalInterface.GetBookingById(RentalID).BookingStatus = true;
+                return RedirectToAction("BookingConfirmed", new { bookingId = RentalID });
+            }
+
+            var booking = _rentalInterface.GetBookingById(RentalID);
+            var drivers = _employeeInterface.GetAllEmployee();
+
+            var availableDrivers = new SelectList(drivers, "EmployeeId", "EmployeeName");
+
+            var viewModel = new BookingConfirmViewModel
+            {
+                Booking = booking,
+                AvailableDrivers = availableDrivers
+            };
+
+            viewModel.AvailableDrivers = new SelectList(_employeeInterface.GetAllEmployee(), "EmployeeId", "EmployeeName");
+            return View("ConfirmBooking", viewModel);
         }
 
 
