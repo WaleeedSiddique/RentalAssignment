@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Rental>
+@{
+    ViewBag.Title = "Bookings";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Booking Date</th>
+            <th>Driver</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.RentalName</td>
+                <td>@booking.RentalPhone</td>
+                <td>@booking.RentalEmail</td>
+                <td>@booking.Pickup</td>
+                <td>@booking.DriverId</td>
+                <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

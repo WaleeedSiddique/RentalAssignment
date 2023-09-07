@@ -59,6 +59,7 @@
                         <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a> 
                         <a asp-controller="Home" asp-action="SearchPage" class="nav-item nav-link">Search a Car</a>
                         <a asp-controller="Administration" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                       
                         @*<a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Sign up</a>
                         <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Log In</a>*@
                         @{if (signInManager.IsSignedIn(User) && !User.IsInRole("Admin"))
@@ -81,9 +82,34 @@
                                         </form>
                                     </div>
                                 </div>                              
-                            </li>                           
+                            </li>                            
                         }else if(signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                         {
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Users
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Admin" asp-action="ApprovedUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Approved Users</a>
+                                            <a asp-controller="Admin" asp-action="PendingUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Pending Users</a>
+                                            <a asp-controller="Rental" asp-action="BookingConfirmed" style="color:#f4f5f8;" class="nav-item nav-link py-1">Bookings</a>
+                                            <a asp-controller="Rental" asp-action="PendingBookings" style="color:#f4f5f8;" class="nav-item nav-link py-1">Pending Bookings</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Employee/Vehicle
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Employee" asp-action="Index" style="color:#f4f5f8;" class="nav-item nav-link py-1">Employees</a>
+                                            <a asp-controller="Employee" asp-action="Create" style="color:#f4f5f8;" class="nav-item nav-link py-1">Add Employee</a>
+                                            <a asp-controller="Home" asp-action="Create" style="color:#f4f5f8;" class="nav-item nav-link py-1">Add Vehicle</a>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li class="nav-item nav-link">
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -47,6 +47,11 @@ namespace RentalAssignment.Repository
             return _RentalList.ToList();
         }
 
+        public IEnumerable<Rental> Getapprovedbookings()
+        {
+            throw new NotImplementedException();
+        }
+
         public Rental GetBookingById(int id)
         {
             throw new NotImplementedException();

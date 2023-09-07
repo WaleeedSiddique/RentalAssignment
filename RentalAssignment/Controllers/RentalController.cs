@@ -246,6 +246,13 @@ namespace RentalAssignment.Controllers
             return View("ConfirmBooking", viewModel);
         }
 
+        [HttpGet]
+        public IActionResult BookingConfirmed()
+        {
+            var bookings = _rentalInterface.Getapprovedbookings();
+            return View(bookings);
+        }
+
 
 
     }

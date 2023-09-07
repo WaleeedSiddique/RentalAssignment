@@ -79,6 +79,10 @@ namespace RentalAssignment.Repository
         {
             return _context.rentals.Where(x => x.BookingStatus == false);
         }
+        public IEnumerable<Rental> Getapprovedbookings()
+        {
+            return _context.rentals.Where(x => x.DriverId != null);
+        }
         public void AssignDriverToBooking(int bookingId, int driverId)
         {
             var booking = _context.rentals.Find(bookingId);
