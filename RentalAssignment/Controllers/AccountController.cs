@@ -213,19 +213,21 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult MyAccount(string id)
+        public async Task<IActionResult> MyAccount()
         {
-            var user = GetCurrentUserAsync();
+            var user = await _userManager.GetUserAsync(User);
 
             //var user = _userManager.FindByIdAsync(id);
-
+            if(user != null) { 
             EditUserViewModel model = new EditUserViewModel
             {
                 Id = this.User.FindFirstValue(ClaimTypes.NameIdentifier),
-                UserName = user.Result.UserName,
-                Email = user.Result.Email
+                UserName = user.UserName,
+                Email = user.Email
             };
             return View(model);
+            }
+            return NotFound();
 
             //var user = GetCurrentUserAsync();
             //var name = user.Result.UserName,
@@ -234,14 +236,18 @@ namespace RentalAssignment.Controllers
         [HttpPost]
         public async Task<IActionResult> MyAccount(EditUserViewModel model)
         {
-            var user = await GetCurrentUserAsync();
-            if (ModelState.IsValid)
+            var user = await _userManager.FindByIdAsync(model.Id);
+            if(user != null) 
             {
                 user.UserName = model.UserName;
                 user.Email = model.Email;
-                _userManager.UpdateAsync(user);
-                return RedirectToAction("MyAccount");
-            }
+                var result = await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                      return RedirectToAction("Index", "Home");
+                }
+                 
+            }            
             ViewBag.message = "Something went wrong";
             return View();
         }
@@ -254,7 +260,8 @@ namespace RentalAssignment.Controllers
                 var result = await _userManager.DeleteAsync(user);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Logout");
+                    await _signInManager.SignOutAsync();
+                    return RedirectToAction("Index", "Home");
                 }
             }
             ViewBag.message = "Something went wrong";
