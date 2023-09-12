@@ -162,15 +162,17 @@
                         </div>
                         <div class="row">
                             <div class="col-6 form-group">
-                                <div class="date" id="date2" data-target-input="nearest">
+                                <div>
                                     <label asp-for="Pickup" class="form-label">Pickup Date</label>
-                                    <input asp-for="Pickup" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date" />
+                                    <input type="Date"  asp-for="Pickup" data-date-format="DD MM YYYY" class="form-control p-4" />
+                                    <span asp-validation-for="Pickup" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-6 form-group">
-                                <div class="time" id="time2" data-target-input="nearest">
+                                <div>
                                     <label asp-for="Dropoff" class="form-label">Dropoff Date</label>
-                                    <input asp-for="Dropoff" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time" />
+                                    <input type="Date" asp-for="Dropoff" data-date-format="DD MM YYYY" class="form-control p-4" />
+                                    <span asp-validation-for="Dropoff" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>

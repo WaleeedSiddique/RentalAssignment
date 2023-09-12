@@ -6,26 +6,28 @@
 
  <div class="container mt-3">
         <div class="booking-container">
-        <form asp-action="GetAvailableCars" asp-controller="Home">
+        <form asp-controller="Home" asp-action="SearchPage" method="post">
             <div class="row mx-n2">
+                @* <div class="col-xl-4 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3">
+                <input type="datetime" name="VehicleName" class="form-control p-3" placeholder="Drop your address" />
+                </div>
+                </div>*@
                 <div class="col-xl-4 col-lg-4 col-md-6 px-2">
-                    <div class="time mb-3">
-                        <input type="datetime" name="VehicleName" class="form-control p-3" placeholder="Drop your address" />
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 px-2">
+                        <label class="text-black">Pickup Date</label>
                     <div class="date mb-3">
-                        <input type="datetime-local" class="form-control p-4" placeholder="Pickup Date" />
+                        <input type="date" name="pickup" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Date" />
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 px-2">
+                <div class="col-xl-4 col-lg-4 col-md-6 px-2">
+                    <label class="text-black">DropOff Date</label>
                     <div class="time mb-3">
-                        <input type="datetime-local" class="form-control p-4" placeholder="Pickup Time" />
+                        <input type="date" name="dropoff" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Time" />
                     </div>
                 </div>
 
-                <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                    <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;background-color:#2b2e4a!important; color:white;border:none;">Search</button>
+                <div class="col-xl-2 col-lg-4 col-md-6 px-2 mt-5">                    
+                    <button class="btn btn-primary btn-block mb-3 mt-2" type="submit" style="height: 50px;background-color:#2b2e4a!important; color:white;border:none;">Search</button>
                 </div>
             </div>
         </form>

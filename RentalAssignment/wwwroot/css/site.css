@@ -53,7 +53,7 @@ html {
     width: 220px;
     top: -60px;
     left: -130px;
-    background: radial-gradient(#44006b, #ad1fff);
+    background: radial-gradient(#ffffff, #d9d9d9);
     overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ html {
     right: -110px;
     width: 300px;
     height: 300px;
-    background: radial-gradient(#44006b, #ad1fff);
+    background: radial-gradient(#ffffff, #d9d9d9);
     overflow: hidden;
 }
 

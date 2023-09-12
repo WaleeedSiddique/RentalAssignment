@@ -67,6 +67,12 @@ namespace RentalAssignment.Controllers
         public IActionResult Booking(BookingDto bookingDto)
         {
             if (ModelState.IsValid) {
+                if (bookingDto.Pickup < DateTime.Now && bookingDto.Dropoff < DateTime.Now)
+                {
+                    ViewBag.Message = "Cannot do bookings for past date";
+                    return View();
+                }
+                
 
                 if (_bookingService.IsCarAvailableForBooking(bookingDto.VehicleId, bookingDto.Pickup, bookingDto.Dropoff))
                 {
@@ -97,8 +103,9 @@ namespace RentalAssignment.Controllers
                     ViewBag.message = "Car is already booked for the specified date range";
                     return View();
                 }
-            }
-            ViewBag.message = "Something went wrong kindly check again";
+
+                }
+                ViewBag.message = "Something went wrong kindly check again";
             return View();
         }
         [HttpGet]
@@ -197,13 +204,7 @@ namespace RentalAssignment.Controllers
             }
 
         }
-        [HttpGet]
-
-        public IActionResult PendingBookings()
-        {
-            var bookings = _rentalInterface.GetUnapprovedbookings();
-            return View(bookings);
-        }
+        
         [HttpGet]
         public IActionResult ConfirmBooking(int id)
         {
@@ -250,6 +251,13 @@ namespace RentalAssignment.Controllers
         public IActionResult BookingConfirmed()
         {
             var bookings = _rentalInterface.Getapprovedbookings();
+            return View(bookings);
+        }
+        [HttpGet]
+
+        public IActionResult PendingBookings()
+        {
+            var bookings = _rentalInterface.GetUnapprovedbookings();
             return View(bookings);
         }
 

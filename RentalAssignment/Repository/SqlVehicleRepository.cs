@@ -50,7 +50,7 @@ namespace RentalAssignment.Repository
         public IEnumerable<Vehicle> GetNotRentedVehicles(DateTime startDate,DateTime endDate)
         {
             var cars = _context.vehicles.Where(x => !x.Bookings.Any(b =>
-            (b.Dropoff <= startDate || b.Pickup >= endDate))).ToList();
+            (b.Dropoff >= startDate && b.Pickup <= endDate))).ToList();
             return cars;
         }
 

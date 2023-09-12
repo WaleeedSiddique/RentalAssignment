@@ -17,6 +17,7 @@ namespace RentalAssignment.Dto
         [Required]
         public DateTime Pickup { get; set; }
         [Required]
+        
         public DateTime Dropoff { get; set; }
         public string pickupLocation { get; set; }
         public string DropoffLocation { get; set; }
@@ -33,7 +34,11 @@ namespace RentalAssignment.Dto
         [DataType(DataType.Currency)]
         public int RentPerDay { get; set; }
         public bool IsRented { get; set; }
-
+        public BookingDto()
+        {
+            Pickup = DateTime.Now;
+            Dropoff = DateTime.Now;
+        }
 
     }
 }

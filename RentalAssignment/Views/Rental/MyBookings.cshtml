@@ -11,8 +11,7 @@
                 <th>Car ID</th>
                 <th>Booking Date</th>
                 <th>Status</th>
-                <th>Delete Booking</th>
-
+                <th>Delete Booking</th>               
                 <!-- Other columns as needed -->
             </tr>
         </thead>
@@ -23,15 +22,16 @@
                 <tr>
                     <td>@booking.RentalName</td>
                     <td>@booking.VehicleID</td>
-                    <td>@booking.Pickup</td>
-                @if (booking.BookingStatus == false){
-            <td>Pending</td>
-                }
-else
-                        {
-                            <td>Confirmed</td>
-                        }
+                    <td>@booking.Pickup</td>                
+                      @if(booking.DriverId != null){
+                          <td>Booking Confirmed</td>
+                      }else{
+                          <td>Pending</td>
+                      }               
+                      @if(booking.DriverId == null){
+
                     <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
+                      }
                     <!-- Other columns as needed -->
                 </tr>
             }

@@ -47,22 +47,26 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("SearchPage");
         }
 
-        public IActionResult SearchPage()
+        public IActionResult SearchPage(DateTime pickup, DateTime dropoff)
         {
-            var cars = _vehicleInterface.GetAllVehicles().ToList();
-            return View(cars);
-        }
-        [HttpPost]
-        public IActionResult GetAvailableCars(DateTime pickup, DateTime dropoff)
-        {
-            var availablecars = _vehicleInterface.GetAllVehicles();
-            if(availablecars != null)
+            var availablecars = _vehicleInterface.GetAllVehicles();           
+            if (availablecars != null)
             {
-             availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
+                availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
             }
-                return View(availablecars);
-            
+            return View(availablecars);
         }
+        //[HttpPost]
+        //public IActionResult GetAvailableCars(DateTime pickup, DateTime dropoff)
+        //{
+        //    var availablecars = _vehicleInterface.GetAllVehicles();
+        //    if(availablecars != null)
+        //    {
+        //     availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
+        //    }
+        //        return View(availablecars);
+            
+        //}
         //[HttpPost]
         //public IActionResult Index(string SearchText)
         //{

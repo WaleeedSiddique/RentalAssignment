@@ -11,12 +11,14 @@
             <div class="col-md-10 col-lg-8 col-xl-6">
                 <div class="card card-stepper" style="border-radius: 16px;">
                     <div class="card-header p-4">
-                        <div class="d-flex justify-content-between align-items-center">                           
-                            <div>
-                                @if (signInManager.IsSignedIn(User) && !User.IsInRole("Admin")){
-                                <h6 class="mb-0"> <a asp-controller="Rental" asp-action="Booking" asp-route-id="@Model.VehicleId" class="btn btn-info">Book Now</a> </h6>
-                                }
-                            </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                            {
+                                <div>
+                                    <h6 class="mb-0">Car Details </h6>
+                                </div>
+                            }                           
+                           
                         </div>
                     </div>
                     <div class="card-body p-4">
@@ -50,6 +52,14 @@
                             </h5>
                         </div>
                     </div>
+                    }else{
+                        <div class="card-footer p-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fw-normal mb-0"><a class="btn" style="background-color:#17a2b8;" asp-controller="Rental" asp-action="Booking" asp-route-id="@Model.VehicleId">Book Now</a></h5>                                
+                                <div class="border-start h-100"></div>
+                                <h5 class="fw-normal mb-0"><a class="btn" style="background-color:#17a2b8;" asp-controller="Home" asp-action="Index">Back</a></h5>                                                             
+                            </div>
+                        </div>
                     }
                 </div>
             </div>

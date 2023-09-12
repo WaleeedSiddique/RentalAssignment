@@ -50,6 +50,7 @@ namespace RentalAssignment.Controllers
             return View(model);
         }
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Contact()
         {
             return View();

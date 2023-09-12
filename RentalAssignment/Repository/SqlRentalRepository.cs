@@ -77,7 +77,7 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Rental> GetUnapprovedbookings()
         {
-            return _context.rentals.Where(x => x.BookingStatus == false);
+            return _context.rentals.Where(x => x.DriverId == null);
         }
         public IEnumerable<Rental> Getapprovedbookings()
         {
