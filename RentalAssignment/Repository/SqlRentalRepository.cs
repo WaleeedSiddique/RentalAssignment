@@ -95,7 +95,14 @@ namespace RentalAssignment.Repository
             }
         }
 
+        public IEnumerable<Rental> GetByMonth(int year, int month)
+        {
+            return _context.rentals.Where(x => x.Pickup.Year == year && x.Pickup.Month == month);   
+        }
 
-
+        public IEnumerable<Rental> GetByDay(DateTime date)
+        {
+            return _context.rentals.Where(x => x.Pickup.Date == date.Date);
+        }
     }
 }

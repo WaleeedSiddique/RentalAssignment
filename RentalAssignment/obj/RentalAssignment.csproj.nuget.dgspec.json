@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {}
+    "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
+    "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+        "projectUniqueName": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
         "projectName": "RentalAssignment",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+        "projectPath": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\obj\\",
+        "outputPath": "D:\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

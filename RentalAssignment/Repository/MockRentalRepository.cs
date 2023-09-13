@@ -57,6 +57,16 @@ namespace RentalAssignment.Repository
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Rental> GetByDay(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Rental> GetByMonth(int year, int month)
+        {
+            throw new NotImplementedException();
+        }
+
         public Rental GetRentalVehicle(int id)
         {
             Rental rental = _RentalList.FirstOrDefault(x => x.RentalID == id);

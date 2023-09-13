@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Rental>
+
+@{
+    ViewData["Title"] = "Daily Reservation Report";
+}
+
+<h2 class="text-center-danger">@ViewData["Title"]</h2>
+
+<p>Displaying reservations for @Model.FirstOrDefault()?.Pickup.ToString("MM/dd/yyyy")</p>
+<form asp-controller="Rental" asp-action="DailyReport" method="get">
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Reservation ID</th>
+            <th>Reservation Date</th>
+            <th>Vehicle ID</th>
+            <th>Driver ID</th>
+            <!-- Add other reservation-related columns as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.RentalID</td>
+                <td>@reservation.Pickup.ToString("MM/dd/yyyy HH:mm:ss")</td>
+                <td>@reservation.VehicleID</td>
+                <td>@reservation.DriverId</td>
+                <!-- Add other reservation-related data here -->
+            </tr>
+        }
+    </tbody>
+</table>
+

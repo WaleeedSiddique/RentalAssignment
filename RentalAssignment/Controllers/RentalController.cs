@@ -261,6 +261,34 @@ namespace RentalAssignment.Controllers
             return View(bookings);
         }
 
+        [HttpGet]
+        public IActionResult MonthlyReport(int? year, int? month)
+        {
+            if (year.HasValue && month.HasValue)
+            {
+                var reservations = _rentalInterface.GetByMonth(year.Value, month.Value);
+                // Pass the reservations to the view
+                return View("MonthlyReport", reservations);
+            }
+
+            // If year and month are not provided, show an empty report
+            return View("MonthlyReport", Enumerable.Empty<Rental>());
+        }
+        [HttpGet]
+        public IActionResult DailyReport(DateTime? date)
+        {
+            if (date.HasValue)
+            {
+                var reservations = _rentalInterface.GetByDay(date.Value);
+                // Pass the reservations to the view
+                return View("DailyReport", reservations);
+            }
+
+            // If date is not provided, show an empty report
+            return View("DailyReport", Enumerable.Empty<Rental>());
+        }
+       
+
 
 
     }

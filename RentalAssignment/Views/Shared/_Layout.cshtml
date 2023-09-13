@@ -85,10 +85,22 @@
                             </li>                            
                         }else if(signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                         {
+                                 <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            RESERVATION
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Rental" asp-action="DailyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Daily Report</a>
+                                            <a asp-controller="Rental" asp-action="MonthlyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Monthly Report</a>
+                                        </div>
+                                    </div>
+                                </li>
+
                                 <li class="nav-item nav-link">
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Users
+                                            USERS
                                         </button>
                                         <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
                                             <a asp-controller="Admin" asp-action="ApprovedUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Approved Users</a>

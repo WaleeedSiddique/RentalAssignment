@@ -1,0 +1,51 @@
+﻿@using System.Globalization
+@model IEnumerable<Rental>
+
+@{
+    var firstReservation = Model.FirstOrDefault();
+    var monthName = (firstReservation != null)
+        ? DateTimeFormatInfo.CurrentInfo.GetMonthName(firstReservation.Pickup.Month)
+        : string.Empty;
+    var year = (firstReservation != null)
+        ? firstReservation.Pickup.Year.ToString()
+        : string.Empty;
+    ViewBag.Title = "Monthly Reservation Report";
+}
+
+<h2 class="text-center-danger">@ViewData["Title"]</h2>
+<form asp-controller="Rental" asp-action="MonthlyReport" method="get">
+    <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="month">Month:</label>
+        <input type="number" name="month" id="month" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search Monthly</button>
+</form>
+<p>Displaying reservations for @monthName @year</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Reservation ID</th>
+            <th>Reservation Date</th>
+            <th>Vehicle ID</th>
+            <th>Driver ID</th>
+            <!-- Add other reservation-related columns as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.RentalID</td>
+                <td>@reservation.Pickup.ToString("MM/dd/yyyy HH:mm:ss")</td>
+                <td>@reservation.VehicleID</td>
+                <td>@reservation.DriverId</td>
+                <!-- Add other reservation-related data here -->
+            </tr>
+        }
+    </tbody>
+</table>
