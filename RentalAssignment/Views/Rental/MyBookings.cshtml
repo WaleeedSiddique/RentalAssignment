@@ -11,7 +11,9 @@
                 <th>Car ID</th>
                 <th>Booking Date</th>
                 <th>Status</th>
-                <th>Delete Booking</th>               
+                <th>Driver id</th>
+                <th>Delete Booking</th>
+                
                 <!-- Other columns as needed -->
             </tr>
         </thead>
@@ -27,11 +29,18 @@
                           <td>Booking Confirmed</td>
                       }else{
                           <td>Pending</td>
-                      }               
+                      }
+                @if (booking.DriverId != null)
+                {
+                    <td>
+                        @booking.DriverId
+                    </td>
+                }
                       @if(booking.DriverId == null){
 
                     <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
                       }
+                     
                     <!-- Other columns as needed -->
                 </tr>
             }

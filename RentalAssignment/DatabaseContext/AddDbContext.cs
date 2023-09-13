@@ -17,6 +17,7 @@ namespace RentalAssignment.DatabaseContext
         public DbSet<Review> reviews { get; set; }
         public DbSet<VehicleCategory> VehicleCategories { get; set; }
         public DbSet<ApplicationUser> applicationusers { get; set; }
+        public DbSet<Contact> contact { get; set; }
 
     }
 }

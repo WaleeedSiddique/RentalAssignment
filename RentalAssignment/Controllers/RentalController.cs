@@ -33,6 +33,7 @@ namespace RentalAssignment.Controllers
             this._employeeInterface = employeeInterface;
         }
         [HttpGet]
+        
         public IActionResult Index()
         {
             var model = _rentalInterface.GetAllRentalVehicles();
@@ -40,6 +41,7 @@ namespace RentalAssignment.Controllers
 
         }
         [HttpGet]
+        [Authorize]
         public IActionResult Booking(int id)
         {
             Vehicle vehicle = _vehicleInterface.GetVehicle(id);
@@ -109,12 +111,14 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult RentedVehicles()
         {
             var model = _rentalInterface.GetAllRentalVehicles();
             return View(model);
         }
         [HttpGet]
+        [Authorize]
         public IActionResult Edit(int id)
         {
             Rental result = _rentalInterface.GetRentalVehicle(id);
@@ -134,6 +138,7 @@ namespace RentalAssignment.Controllers
             return NotFound("Rental Not Found"); //404 error
         }
         [HttpPost]
+        [Authorize]
         public IActionResult Edit(EditRentalViewModel model)
         {
             Rental result = _rentalInterface.GetRentalVehicle(model.id);
@@ -151,17 +156,20 @@ namespace RentalAssignment.Controllers
             return View(model);
         }
         [HttpGet]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             _rentalInterface.DeleteRentedVehicle(id);
             return RedirectToAction("Index");
         }
         [HttpGet]
+        [Authorize]
         public IActionResult Review()
         {
             return View();
         }
         [HttpPost]
+        [Authorize]
         public IActionResult Review(ReviewViewModel model)
         {
 
@@ -176,6 +184,8 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("Home", new { newReview.Id });
 
         }
+        [HttpGet]
+        [Authorize]
 
         public IActionResult MyBookings()
         {
@@ -187,6 +197,7 @@ namespace RentalAssignment.Controllers
             return View(userBookings);
         }
         [HttpGet]
+        [Authorize]
         public IActionResult DeleteBooking(int id)
         {
             var booking = _rentalInterface.GetBookingById(id);
@@ -206,6 +217,7 @@ namespace RentalAssignment.Controllers
         }
         
         [HttpGet]
+        [Authorize]
         public IActionResult ConfirmBooking(int id)
         {
             var booking = _rentalInterface.GetBookingById(id);
@@ -223,6 +235,7 @@ namespace RentalAssignment.Controllers
         }
         
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult AssignDriver(int RentalID, int SelectedDriverId)
         {
             if (ModelState.IsValid)
@@ -248,13 +261,14 @@ namespace RentalAssignment.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult BookingConfirmed()
         {
             var bookings = _rentalInterface.Getapprovedbookings();
             return View(bookings);
         }
         [HttpGet]
-
+        [Authorize(Roles = "Admin")]
         public IActionResult PendingBookings()
         {
             var bookings = _rentalInterface.GetUnapprovedbookings();
@@ -262,6 +276,7 @@ namespace RentalAssignment.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult MonthlyReport(int? year, int? month)
         {
             if (year.HasValue && month.HasValue)
@@ -275,6 +290,7 @@ namespace RentalAssignment.Controllers
             return View("MonthlyReport", Enumerable.Empty<Rental>());
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult DailyReport(DateTime? date)
         {
             if (date.HasValue)

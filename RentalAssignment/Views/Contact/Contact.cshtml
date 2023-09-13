@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Contact
+@{
     ViewBag.pagetitle = "Contact Support";
 }
 
@@ -14,30 +15,30 @@
         </div>
 
         <div class="col-lg-7">
-            <form>
+            <form asp-controller="Contact"  asp-action="Contact" method="post">
                 <div class="row">
                     <div class="col-md-9">
                         <div class="row mb-4">
                             <div class="col-md-6 mb-4 mb-md-0">
                                 <div class="form-outline">
-                                    <label class="form-label" for="form3Example1">First name</label>
-                                    <input type="text" id="form3Example1" class="form-control" />
+                                    <label asp-for="Name" class="form-label" for="form3Example1">First name</label>
+                                    <input type="text" asp-for="Name" id="form3Example1" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-outline">
-                                    <label class="form-label" for="form3Example2">Email Address</label>
-                                    <input type="email" id="form3Example2" class="form-control" />
+                                    <label asp-for="EmailAddress" class="form-label" for="form3Example2">Email Address</label>
+                                    <input asp-for="EmailAddress" type="email" id="form3Example2" class="form-control" />
                                 </div>
                             </div>
                         </div>
                         <div class="form-outline mb-4">
-                            <label class="form-label" for="form3Example3">Subject</label>
-                            <input type="text" id="form3Example3" class="form-control" />
+                            <label asp-for="subject" class="form-label" for="form3Example3">Subject</label>
+                            <input asp-for="subject" type="text" id="form3Example3" class="form-control" />
                         </div>
                         <div class="form-outline mb-4">
-                            <label class="form-label" for="form4Example3">Message</label>
-                            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                            <label asp-for="comment" class="form-label" for="form4Example3">Message</label>
+                            <textarea asp-for="comment" class="form-control" id="form4Example3" rows="4"></textarea>
                         </div>
                         <div class="text-center text-md-start">
                             <button type="submit" class="btn btn-primary mb-5 mb-md-0">

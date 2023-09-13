@@ -51,10 +51,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ29udGFjdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Administration/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -101,6 +97,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Contact/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Employee/Create.cshtml]
@@ -205,10 +209,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/Review.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFJldmlldy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Rental/SearchReservations.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXFNlYXJjaFJlc2VydmF0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/New folder (2)/RentalAssignment/RentalAssignment/Views/Shared/Error.cshtml]

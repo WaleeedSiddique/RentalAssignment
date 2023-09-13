@@ -50,12 +50,6 @@ namespace RentalAssignment.Controllers
             return View(model);
         }
         [HttpGet]
-        [AllowAnonymous]
-        public IActionResult Contact()
-        {
-            return View();
-        }
-        [HttpGet]
         public IActionResult ListUsers()
         {
             var user = _userManager.Users;
