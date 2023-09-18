@@ -114,9 +114,10 @@ namespace RentalAssignment.Controllers
         }
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public IActionResult Dashboard(RegistrationViewModel model)
+        public IActionResult Dashboard()
         {
-            return View(model);
+            var user = _userManager.Users.ToList();
+            return View(user);
         }
 
         [HttpGet]

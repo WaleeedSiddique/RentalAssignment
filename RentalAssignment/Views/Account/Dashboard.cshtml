@@ -1,6 +1,35 @@
-﻿@model RegistrationViewModel
-   <div class="container-fluid">      
+﻿@model IEnumerable<ApplicationUser>
+   <div class="container">    
+       <div class="heading text-center">Welcome to dashboard</div>
     <div class="row">       
-            <img class="my-2" src="~/images/4404656_2332001.jpg" />       
+                 <div style="background-color:lightgrey;" class="col-3 admin-con d-flex justify-content-between align-items-center text-dark p-5">
+                     <div>
+                <i style="font-size:5rem; padding-top:15px!important;" class="fas fa-user fa-xl fa-fw text-center font-s"></i>
+                     </div>
+                     <div>
+                         Total Users<br />
+                         @Model.Count()
+                     </div>
+                 </div>
+        <div style="background-color:lightgrey;" class="col-3 ml-5 d-flex justify-content-between align-items-center text-dark p-3">
+            <div>
+                <i style="font-size:5rem; padding-top:15px!important;color:green!important;" class="fas fa-user fa-xl fa-fw text-center font-s"></i>
+            </div>
+            <div class="text-success">
+                Approved Users<br />
+                @Model.Where(x => x.IsApproved == true).Count()
+            </div>
+
+        </div>
+        <div style="background-color:lightgrey;" class="col-3  ml-5  d-flex justify-content-between align-items-center text-dark p-3">
+            <div>
+                <i style="font-size:5rem; padding-top:15px!important;color:darkred!important;" class="fas fa-user fa-xl fa-fw text-center font-s"></i>
+            </div>
+            <div class="text-danger">
+                UnApproved Users<br />
+                @Model.Where(x => x.IsApproved != true).Count()
+            </div>
+        </div>
+
     </div>
    </div>
