@@ -31,13 +31,13 @@
             <div class="col-xl-4 col-lg-4 col-md-6 px-2">
                  <label class="text-black">Pickup Date</label>
                 <div class="date mb-3">
-                    <input type="date" name="pickup" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Date" />
+                    <input required type="date" name="pickup" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Date" />
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 px-2">
                 <label class="text-black">DropOff Date</label>
                 <div class="time mb-3">
-                    <input type="date" name="dropoff" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Time" />
+                    <input required type="date" name="dropoff" data-date-format="DD MM YYYY" class="form-control p-4" placeholder="Pickup Time" />
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
                         <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        <a asp-controller="Home" asp-action="SearchPage" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
                     </div>
                 </div>
             </div>

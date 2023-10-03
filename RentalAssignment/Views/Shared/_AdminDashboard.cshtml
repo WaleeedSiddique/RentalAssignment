@@ -93,7 +93,7 @@
                     <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
                     <li>
                         <form method="post" asp-controller="account" asp-action="logout">
-                            <button type="submit" style="width:auto"                                    
+                            <button type="submit" style="width:160px"                                    
                                     class="nav-link btn btn-dark py-0">
                                 Logout Admin
                             </button>
@@ -121,6 +121,7 @@
                 <ul class="treeview-menu">
                     <a asp-controller="Admin" asp-action="ApprovedUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Approved Users</a>
                     <a asp-controller="Admin" asp-action="PendingUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Pending Users</a>
+                   
 
                 </ul>
             </li>
@@ -129,6 +130,14 @@
                 <ul class="treeview-menu">
                     <a asp-controller="Rental" asp-action="DailyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Daily Report</a>
                     <a asp-controller="Rental" asp-action="MonthlyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Monthly Report</a>
+
+                </ul>
+            </li>
+             <li class="treeview">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Manage Roles</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <a asp-controller="Administration" asp-action="ListRoles" style="color:#f4f5f8;" class="nav-item nav-link py-1">Make an Admin</a>
+                  
 
                 </ul>
             </li>
