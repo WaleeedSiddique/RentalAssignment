@@ -107,7 +107,7 @@ namespace RentalAssignment.Controllers
             }
             await _userManager.DeleteAsync(user);
             return RedirectToAction("ListUsers");
-        }
+        }   
 
         [HttpGet]
         public IActionResult ListRoles()
