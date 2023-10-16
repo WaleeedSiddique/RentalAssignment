@@ -38,8 +38,32 @@
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-dark btn-block mb-4">
                             Login
-                        </button>                       
+                        </button>
+                       
                     </form>
+                     @*    <form asp-controller="Account" asp-action="ExternalLogin">
+                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                            <button class="text-dark"><i class="fab fa-facebook-f fa-lg"></i></button>
+                            <button href="#!" class="text-dark"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></button>
+                            <button title="Login using your Google Account" name="provider" class="text-dark"><i class="fab fa-google fa-lg"></i></button>
+
+                        </form> *@
+
+                        <form asp-controller="Account" asp-action="ExternalLogins" asp-route-returnUrl="@Model.ReturnURL">
+                            <div>
+                            @foreach(var provider in Model.ExternalLogins)
+                            {
+                                <button type="submit" class="btn btn-dark" name="provider" value="@provider.Name">
+                                    @if(provider.DisplayName == "Google")
+                                    {
+                                        <i title="Login With Your Google Account" class="fab fa-google fa-lg"></i>
+                                    }
+                                </button>
+                            }
+                        </div>
+
+                        </form>
+                    </div>
            
                 </div>
             </div>
