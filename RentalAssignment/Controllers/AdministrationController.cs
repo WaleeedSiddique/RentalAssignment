@@ -215,7 +215,18 @@ namespace RentalAssignment.Controllers
 
             return RedirectToAction("EditRole", new { Id = roleId });
         }
-
+        
+          public async Task<IActionResult> DeleteRole(string Id)
+        {
+            var role = await roleManager.FindByIdAsync(Id);
+            if(role != null)
+            {
+                await roleManager.DeleteAsync(role);
+                return RedirectToAction("ListRoles");
+            }
+            return ViewBag.message("Not Found");
+           
+        }
     }
 }
 
