@@ -1,0 +1,8 @@
+﻿@inject SignInManager<ApplicationUser> signInManager;
+@{
+    if(signInManager.IsSignedIn(User) && User.IsInRole("Admin")){
+        Layout = "_AdminDashboard";
+    }else{
+        Layout = "_Layout";
+    }
+}

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ApplicationUser>
+@{
+    ViewBag.title = "Approved Users";
+}
+<h3 class="text-center text-success">Applications Users</h3>
+<table class="table">
+    @ViewBag.message
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Username</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status</th>  
+            <th scope="col">Delete User</th>
+        </tr>
+    </thead>
+    <tbody>
+        @ViewBag.Errormessage
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.NormalizedUserName</td>
+                <td>@user.Email</td>
+                <td>Approved</td>
+                <td><a class="btn btn-danger" asp-controller="Admin" asp-action="RejectUser" asp-route-id="@user.Id">Delete User</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

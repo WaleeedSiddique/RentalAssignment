@@ -1,0 +1,8 @@
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.csproj.AssemblyReference.cache
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.AssemblyInfoInputs.cache
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.AssemblyInfo.cs
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.csproj.CoreCompileInputs.cache
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.RazorAssemblyInfo.cache
+C:\Users\walee\Desktop\Rent - Copy\Userside\obj\Debug\net6.0\Userside.RazorAssemblyInfo.cs

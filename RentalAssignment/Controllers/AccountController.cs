@@ -73,7 +73,7 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("Index", "Home");
         }
         [HttpGet]
-        public async Task<IActionResult> Login(string returnurl)
+        public async Task<IActionResult> Login(string? returnurl = "~/")
         {
             LoginViewModel model = new LoginViewModel
             {
@@ -84,7 +84,7 @@ namespace RentalAssignment.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult ExternalLogins(string provider,string returnUrl)
+        public IActionResult ExternalLogins(string provider,string returnUrl = "~/")
         {
             var redirectUrl = Url.Action("ExternalCallbackUrl", "Account", new { ReturnURL = returnUrl });
             var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);   

@@ -1,0 +1,187 @@
+﻿@using RentalAssignment.Dto
+@model BookingDto
+
+@{
+    ViewBag.Title = "Booking a Vehicle";
+    var photo = "~/images/" + (Model?.Photopath);
+}
+
+
+<h1 class="text-center- text-danger">@ViewBag.message</h1>
+
+<table class="model-state">
+    @foreach (var item in ViewContext.ViewData.ModelState) 
+    {
+        if (item.Value.Errors.Any())
+        { 
+        <tr>
+            <td><b>@item.Key</b></td>
+            <td>@((item.Value == null || item.Value == null) ? "<null>" : item.Value.RawValue)</td>
+            <td>@(string.Join("; ", item.Value.Errors.Select(x => x.ErrorMessage)))</td>
+        </tr>
+        }
+    }
+</table>
+
+<style>
+    table.model-state
+    {
+        border-color: #600;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        border-collapse: collapse;
+        font-size: .8em;
+        font-family: arial;
+    }
+
+    table.model-state td
+    {
+        border-color: #600;
+        border-width: 1px 1px 0 0;
+        border-style: solid;
+        margin: 0;
+        padding: .25em .75em;
+        background-color: #FFC;
+    }
+ </style>
+
+
+
+<div class="container-fluid pt-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase mb-5">Booking Form</h1>
+        <div class="row align-items-center pb-2">
+            <div class="col-lg-6 mb-4">
+                <img class="img-fluid" src="@photo" asp-append-version="true" alt="">
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="d-flex mb-3">
+                    <h6 class="mr-2">Rating:</h6>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                        <small>(250)</small>
+                    </div>
+                </div>
+                <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt</p>
+                <div class="d-flex pt-1">
+                    <h6>Share on:</h6>
+                    <div class="d-inline-flex">
+                        <a class="px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="px-2" href=""><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<form asp-action="Booking" asp-controller="Rental" method="post" class="form-group" enctype="multipart/form-data">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Car Details</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <input hidden asp-for="VehicleId" />
+                            <div class="col-6 form-group">
+                                <label asp-for="OwnerName" class="form-label">Driver Name</label>
+                                <input asp-for="OwnerName" readonly class="form-control" readonly />
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="VehicleType" class="form-label">Car Type</label>
+                                <input asp-for="VehicleType" readonly class="form-control" readonly />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="VehicleNumberPlate" class="form-label">Car Number</label>
+                                <input asp-for="VehicleNumberPlate" id="form3Example4c" class="form-control" readonly />
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="RentPerDay" class="form-label">Rent <small>/Day pkr</small></label>
+                                <input asp-for="RentPerDay" id="form3Example4c" class="form-control" readonly />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="ChassisNumber" class="form-label">Chassis Number</label>
+                                <input asp-for="ChassisNumber" id="form3Example4c" class="form-control" readonly />
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="sittingCapacity" class="form-label">Sitting Capacity</label>
+                                <input asp-for="sittingCapacity" id="form3Example4c" class="form-control" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Personal Detail</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="RentalName" class="form-label">Full Name</label>
+                                <input asp-for="RentalName" class="form-control p-4" placeholder="Full Name" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="RentalPhone" class="form-label">Phone</label>
+                                <input asp-for="RentalPhone" class="form-control p-4" placeholder="Mobile Number" required="required">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="RentalEmail" class="form-label">Email</label>
+                                <input asp-for="RentalEmail" class="form-control p-4" placeholder="Your Email" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="mb-4">Booking Detail</h2>
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label asp-for="pickupLocation" class="form-label">Pickup Address</label>
+                                <input asp-for="pickupLocation" class="form-control p-4" placeholder="Your Pickup Location" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="DropoffLocation" class="form-label">Dropoff Address</label>
+                                <input asp-for="DropoffLocation" class="form-control p-4" placeholder="Your Dropoff Location" required="required">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <div>
+                                    <label asp-for="Pickup" class="form-label">Pickup Date</label>
+                                    <input type="Date"  asp-for="Pickup" data-date-format="DD MM YYYY" class="form-control p-4" />
+                                    <span asp-validation-for="Pickup" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <div>
+                                    <label asp-for="Dropoff" class="form-label">Dropoff Date</label>
+                                    <input type="Date" asp-for="Dropoff" data-date-format="DD MM YYYY" class="form-control p-4" />
+                                    <span asp-validation-for="Dropoff" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="Submit" class="btn btn-primary" style="background-color:#2b2e4a!important;">Book Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

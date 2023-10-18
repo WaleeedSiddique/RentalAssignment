@@ -1,0 +1,56 @@
+﻿<!-- MyBookings.cshtml -->
+@model IEnumerable<Rental>
+
+<h2 class="text-center">My Bookings</h2>
+
+    <table class="table">
+        @ViewBag.message
+    <thead class="thead-dark">
+            <tr>
+                <th>Booking ID</th>
+                <th>Car ID</th>
+                <th>Booking Date</th>
+                <th>Status</th>
+                <th>Driver id</th>
+                <th>Delete Booking</th>
+                
+                <!-- Other columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+      
+            @foreach (var booking in Model)
+            {
+                
+                <tr>
+                    <td>@booking.RentalName</td>
+                    <td>@booking.VehicleID</td>
+                    <td>@booking.Pickup</td>                
+                      @if(booking.DriverId != null){
+                          <td>Booking Confirmed</td>
+                      }else{
+                          <td>Pending</td>
+                      }
+                @if (booking.DriverId != null)
+                {
+                    <td>
+                        @booking.DriverId
+                    </td>
+                }
+                else{
+                    <td>Pending </td>
+                }
+                      @if(booking.DriverId == null)
+                      {
+
+
+                    <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
+                      }else{
+                          <td>No Action</td>
+                      }
+                     
+                    <!-- Other columns as needed -->
+                </tr>
+            }
+        </tbody>
+    </table>

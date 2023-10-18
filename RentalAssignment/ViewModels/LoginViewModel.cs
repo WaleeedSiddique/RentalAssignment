@@ -12,7 +12,7 @@ namespace RentalAssignment.ViewModels
         public string Password { get; set; }
         [Display(Name = "Remember Me")]
         public bool RememberMe { get; set; }
-        public string ReturnURL { get; set; } = "localhost:4200/home";
-        public IList<AuthenticationScheme> ExternalLogins { get; set; }
+        public string? ReturnURL { get; set; } = "localhost:4200/home";
+        public IList<AuthenticationScheme>? ExternalLogins { get; set; }
     }
 }

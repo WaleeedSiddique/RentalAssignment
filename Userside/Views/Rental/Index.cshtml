@@ -1,0 +1,40 @@
+﻿@inject SignInManager<ApplicationUser> signInManager;
+@model IEnumerable<Rental>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row card-deck mx-auto">
+    
+
+    <h1 class="text-center text-secondary">YOUR BOOKINGS</h1>
+
+        @foreach (var rental in Model)
+        {            
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./images/Car-2.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">@rental.VehicleID</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">@signInManager.Context.User.Identity.Name</li>                            
+                            <li class="list-group-item">@rental.Pickup</li>
+                            <li class="list-group-item">@rental.Dropoff</li>
+                            <li class="list-group-item">@rental.RentalPhone</li>                           
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+      
+
+
+
+        
+</div>
+

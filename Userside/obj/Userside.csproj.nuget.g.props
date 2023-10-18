@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\walee\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\walee\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.16\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.16\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.win7-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.win7-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.win7-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.win7-x64.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.osx-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.osx-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.osx-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.osx-x64.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-x64.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-arm64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-arm64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-arm64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-arm64.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-arm\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-arm.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-arm\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-arm.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.image\8.5.1\buildTransitive\IKVM.Image.props" Condition="Exists('$(NuGetPackageRoot)ikvm.image\8.5.1\buildTransitive\IKVM.Image.props')" />
+    <Import Project="$(NuGetPackageRoot)ikvm\8.5.1\buildTransitive\netstandard2.0\IKVM.props" Condition="Exists('$(NuGetPackageRoot)ikvm\8.5.1\buildTransitive\netstandard2.0\IKVM.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.19.4\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.19.4\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.compilers\1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.compilers\1.0.0\build\Microsoft.Net.Compilers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codedom.providers.dotnetcompilerplatform\1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codedom.providers.dotnetcompilerplatform\1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMessagePackAnalyzer Condition=" '$(PkgMessagePackAnalyzer)' == '' ">C:\Users\walee\.nuget\packages\messagepackanalyzer\2.1.152</PkgMessagePackAnalyzer>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\walee\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\walee\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\walee\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.19.4</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgMicrosoft_Net_Compilers Condition=" '$(PkgMicrosoft_Net_Compilers)' == '' ">C:\Users\walee\.nuget\packages\microsoft.net.compilers\1.0.0</PkgMicrosoft_Net_Compilers>
+    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\walee\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\1.0.1</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\walee\.nuget\packages\entityframework\6.1.0</PkgEntityFramework>
+    <PkgFluent_Infrastructure Condition=" '$(PkgFluent_Infrastructure)' == '' ">C:\Users\walee\.nuget\packages\fluent.infrastructure\2.0.0-beta-01</PkgFluent_Infrastructure>
+  </PropertyGroup>
+</Project>

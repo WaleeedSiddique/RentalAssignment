@@ -1,0 +1,11 @@
+﻿@model VehicleCategory
+
+<form asp-action="Create">
+        @ViewBag.message
+    <div class="form-group">
+        <label asp-for="Category">Category Name</label>
+        <input asp-for="Category" class="form-control" />
+    </div>
+    <!-- Other properties related to the category (if any) -->
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

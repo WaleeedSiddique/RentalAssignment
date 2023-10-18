@@ -1,0 +1,320 @@
+﻿@inject SignInManager<ApplicationUser> signInManager;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RentalAssignment</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/jquery/dist/jquery.min.map"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RentalAssignment.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="~/css/aos.css">
+
+    <link rel="stylesheet" href="~/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="~/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/NewDesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid position-relative nav-bar p-0 ">
+        <div class="position-relative px-lg-5" style="z-index: 9;background-color:#2b2e4a;!important">
+            <nav class="navbar navbar-expand-lg mb-0  navbar-dark  py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-uppercase text-primary mb-1 log">Rently</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a> 
+                        <a asp-controller="Home" asp-action="SearchPage" class="nav-item nav-link">Search a Car</a>
+                        <a asp-controller="Contact" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                       
+                        @*<a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Sign up</a>
+                        <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Log In</a>*@
+                        @{if (signInManager.IsSignedIn(User) && !User.IsInRole("Admin"))
+                        {                            
+                            <li class="nav-item nav-link">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage Account
+                                    </button>
+                                    <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                        <a asp-controller="Rental" asp-action="MyBookings" style="color:#f4f5f8;" class="nav-item nav-link py-1">Bookings</a>
+                                        <a asp-controller="Rental" asp-action="Review" style="color:#f4f5f8;" class="nav-item nav-link py-1">Review</a>
+                                        <a asp-controller="Account" asp-action="MyAccount" style="color:#f4f5f8;" class="nav-item nav-link py-1">Edit Details</a>
+                                        <form method="post" asp-controller="account" asp-action="logout">
+                                        <button type="submit" style="width:auto"
+                                                style="color:#f4f5f8;"
+                                            class="nav-link btn btn-link py-0">
+                                            Logout @User.Identity.Name
+                                        </button>
+                                        </form>
+                                    </div>
+                                </div>                              
+                            </li>                            
+                        }else if(signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+                                 <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            RESERVATION
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Rental" asp-action="DailyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Daily Report</a>
+                                            <a asp-controller="Rental" asp-action="MonthlyReport" style="color:#f4f5f8;" class="nav-item nav-link py-1">Monthly Report</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            USERS
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Admin" asp-action="ApprovedUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Approved Users</a>
+                                            <a asp-controller="Admin" asp-action="PendingUsers" style="color:#f4f5f8;" class="nav-item nav-link py-1">Pending Users</a>
+                                            <a asp-controller="Rental" asp-action="BookingConfirmed" style="color:#f4f5f8;" class="nav-item nav-link py-1">Bookings</a>
+                                            <a asp-controller="Rental" asp-action="PendingBookings" style="color:#f4f5f8;" class="nav-item nav-link py-1">Pending Bookings</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Employee/Vehicle
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a asp-controller="Employee" asp-action="Index" style="color:#f4f5f8;" class="nav-item nav-link py-1">Employees</a>
+                                            <a asp-controller="Employee" asp-action="Create" style="color:#f4f5f8;" class="nav-item nav-link py-1">Add Employee</a>
+                                            <a asp-controller="Home" asp-action="Create" style="color:#f4f5f8;" class="nav-item nav-link py-1">Add Vehicle</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-link">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" style="color:#f4f5f8;font-size:16px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage Account
+                                        </button>
+                                        <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                            <a class="nav-item nav-link" asp-controller="Account" asp-action="Dashboard">Admin Dashboard</a>
+                                            <form method="post" asp-controller="account" asp-action="logout">
+                                                <button type="submit" style="width:auto"
+                                                    style="color:#f4f5f8;"
+                                                    class="nav-link btn btn-link py-0">
+                                                    Logout Admin
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                        }
+                        else
+                        {
+                                  <i class="fas fa-user fa-sm" style="position:relative;top:43px; right:-13px;"></i>
+                                <a class="nav-item nav-link" asp-area="" asp-controller="Account" asp-action="Register">Sign Up</a>
+                                <i class="fas fa-user fa-sm" style="position:relative;top:43px;right:-13px;"></i>
+                                <a class="nav-item nav-link" asp-controller="account" asp-action="login">
+                                        Login
+                                    </a>                           
+                        }
+                        }
+                    </div>
+                   
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid mt-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white mt-2"
+                style="background-color: #2b2e4a">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Rentals
+                            </h6>
+                            <p>
+                                Rentals is the Pakistan biggest car rental company operated in all major cities of Pakistan.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-4 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white">Contact</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Book a Car</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Search for Cars</a>
+                            </p>
+                            <p>
+                                <a class="text-white">FAQs</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> House M-43, PECHS, Block 6, 43rd Street, Behind Fortune Tower Shahra E Faisal, Karachi Sindh (75350)</p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> info@ratechnologies.net
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> 021- 34324010
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i> 021- 34324010
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-6 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #2b2e4a"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #55acee"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #dd4b39"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-google"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #ac2bac"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #0082ca"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1"
+                               style="background-color: #333333"
+                               href="#!"
+                               role="button">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3"
+                 style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2023 Copyright:
+                <a class="text-white" href="#">Rentals</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/jquery.stellar.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/jquery.animateNumber.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.js"></script>
+    <script src="~/js/jquery.timepicker.min.js"></script>
+    <script src="~/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/js/google-map.js"></script>
+    <script src="~/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
