@@ -49,20 +49,7 @@
 
                         </form> *@
 
-                        <form asp-controller="Account" asp-action="ExternalLogins" asp-route-returnUrl="@Model.ReturnURL">
-                            <div>
-                            @foreach(var provider in Model.ExternalLogins)
-                            {
-                                <button type="submit" class="btn btn-dark" name="provider" value="@provider.Name">
-                                    @if(provider.DisplayName == "Google")
-                                    {
-                                        <i title="Login With Your Google Account" class="fab fa-google fa-lg"></i>
-                                    }
-                                </button>
-                            }
-                        </div>
-
-                        </form>
+                       
                     </div>
            
                 </div>

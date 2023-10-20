@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentalAssignment", "RentalAssignment\RentalAssignment.csproj", "{6FA874E9-AAD7-4880-8BEC-4B9797818F26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentalAssignment", "RentalAssignment\RentalAssignment.csproj", "{6FA874E9-AAD7-4880-8BEC-4B9797818F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminPanel", "AdminPanel\AdminPanel.csproj", "{04FBBAE3-4008-4224-98DD-24808FC92C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6FA874E9-AAD7-4880-8BEC-4B9797818F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA874E9-AAD7-4880-8BEC-4B9797818F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA874E9-AAD7-4880-8BEC-4B9797818F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FBBAE3-4008-4224-98DD-24808FC92C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FBBAE3-4008-4224-98DD-24808FC92C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FBBAE3-4008-4224-98DD-24808FC92C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FBBAE3-4008-4224-98DD-24808FC92C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

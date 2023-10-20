@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RentalAssignment.Models;
+using static com.sun.tools.@internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 namespace RentalAssignment.DatabaseContext
 {
@@ -11,6 +13,21 @@ namespace RentalAssignment.DatabaseContext
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+           base.OnModelCreating(builder);
+            var appuser = new ApplicationUser()
+            {
+                UserName = "TestUser",
+                Email = "Test@gmail.com",
+                EmailConfirmed = false,
+                IsApproved = true,
+            };
+            PasswordHasher<ApplicationUser> ph = new PasswordHasher<ApplicationUser>();
+            appuser.PasswordHash = ph.HashPassword(appuser, "Test@123");
+
+        }
+
         public DbSet<Vehicle> vehicles { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Rental> rentals { get; set; }

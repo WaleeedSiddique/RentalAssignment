@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\Dashboard\css\main.css" />
+    <None Remove="wwwroot\Dashboard\js\bootstrap.min.js" />
+    <None Remove="wwwroot\Dashboard\js\jquery-3.2.1.min.js" />
+    <None Remove="wwwroot\Dashboard\js\jquerydata.js" />
+    <None Remove="wwwroot\Dashboard\js\main.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\bootstrap-datepicker.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\bootstrap-notify.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\chart.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\dataTables.bootstrap.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\fullcalendar.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\jquery-ui.custom.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\jquery.dataTables.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\jquery.vmap.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\jquery.vmap.sampledata.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\jquery.vmap.world.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\moment.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\pace.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\select2.min.js" />
+    <None Remove="wwwroot\Dashboard\js\plugins\sweetalert.min.js" />
+    <None Remove="wwwroot\Dashboard\js\popper.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RentalAssignment\RentalAssignment.csproj" />
+  </ItemGroup>
+
+</Project>
