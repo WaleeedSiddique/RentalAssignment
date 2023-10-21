@@ -15,17 +15,45 @@ namespace RentalAssignment.DatabaseContext
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-           base.OnModelCreating(builder);
+            base.OnModelCreating(builder);
             var appuser = new ApplicationUser()
             {
+                Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                 UserName = "TestUser",
                 Email = "Test@gmail.com",
-                EmailConfirmed = false,
+                NormalizedEmail = "Test@gmail.com".ToUpper(),
+                NormalizedUserName = "TestUser".ToUpper(),
+                EmailConfirmed = true,
+                IsApproved = true,
+            };
+            var admin = new ApplicationUser()
+            {
+                Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
+                UserName = "Admin",
+                Email = "Admin@gmail.com",
+                NormalizedEmail = "Admin@gmail.com".ToUpper(),
+                NormalizedUserName = "Admin".ToUpper(),
+                EmailConfirmed = true,
                 IsApproved = true,
             };
             PasswordHasher<ApplicationUser> ph = new PasswordHasher<ApplicationUser>();
             appuser.PasswordHash = ph.HashPassword(appuser, "Test@123");
+            builder.Entity<IdentityRole>().HasData(new IdentityRole
+            {
+                Id = "Adminkahsakjsajkf99s86as79",
+                Name = "Admin",
+                NormalizedName = "Admin".ToUpper(),
+                ConcurrencyStamp = "admin8472850237"
+            }
+            );
+            builder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
+            {
+                UserId = "Admin2729083033937898-329332ndjhf8e4",
+                RoleId = "Adminkahsakjsajkf99s86as79"
+            });
 
+            builder.Entity<ApplicationUser>()
+                .HasData(appuser,admin);
         }
 
         public DbSet<Vehicle> vehicles { get; set; }

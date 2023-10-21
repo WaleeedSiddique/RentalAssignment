@@ -221,6 +221,23 @@ namespace RentalAssignment.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "Test2729373937898-329332ndjhf8e4",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "be8f9995-f889-4cd4-ae04-1edd3777862a",
+                            Email = "Test@gmail.com",
+                            EmailConfirmed = false,
+                            IsApproved = true,
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAEAACcQAAAAEGp+Rr7N6l3PFwMLIVjv7WFlFwD1dYgYhbyIh+ZYqrMiTCFaFQAaxjfDidzlwSkm6w==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "064b295b-c6a5-4fad-aa7b-0fd0c0794844",
+                            TwoFactorEnabled = false,
+                            UserName = "TestUser"
+                        });
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Contact", b =>
@@ -249,7 +266,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("contact");
+                    b.ToTable("contact", (string)null);
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Employee", b =>
@@ -285,7 +302,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employees", (string)null);
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Rental", b =>
@@ -340,7 +357,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasIndex("VehicleID");
 
-                    b.ToTable("rentals");
+                    b.ToTable("rentals", (string)null);
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Review", b =>
@@ -364,7 +381,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("reviews");
+                    b.ToTable("reviews", (string)null);
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>
@@ -416,7 +433,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("VehicleId");
 
-                    b.ToTable("vehicles");
+                    b.ToTable("vehicles", (string)null);
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.VehicleCategory", b =>
@@ -433,7 +450,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VehicleCategories");
+                    b.ToTable("VehicleCategories", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -15,6 +15,7 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.23\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\6.0.23\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.23\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.23\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
     <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.win7-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.win7-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.win7-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.win7-x64.props')" />
     <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.osx-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.osx-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.osx-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.osx-x64.props')" />
     <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-x64.props" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools.runtime.linux-x64\8.5.1\buildTransitive\netstandard2.0\IKVM.MSBuild.Tools.runtime.linux-x64.props')" />
@@ -28,5 +29,6 @@
     <PkgMessagePackAnalyzer Condition=" '$(PkgMessagePackAnalyzer)' == '' ">C:\Users\walee\.nuget\packages\messagepackanalyzer\2.1.152</PkgMessagePackAnalyzer>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\walee\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\walee\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\walee\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.23</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using RentalAssignment.Dto;
 using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
-using RentalAssignment.Migrations;
 using RentalAssignment.Models;
 using RentalAssignment.Repository;
 using RentalAssignment.ViewModels;
