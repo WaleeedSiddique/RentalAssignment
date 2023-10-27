@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\walee\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {}
+    "C:\\Users\\walee\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\walee\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
+    "C:\\Users\\walee\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walee\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+        "projectUniqueName": "C:\\Users\\walee\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
         "projectName": "RentalAssignment",
-        "projectPath": "C:\\Users\\walee\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
+        "projectPath": "C:\\Users\\walee\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj",
         "packagesPath": "C:\\Users\\walee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walee\\Desktop\\New folder (2)\\RentalAssignment\\RentalAssignment\\obj\\",
+        "outputPath": "C:\\Users\\walee\\Desktop\\New folder\\RentalAssignment\\RentalAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

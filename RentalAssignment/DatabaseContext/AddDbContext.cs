@@ -38,6 +38,8 @@ namespace RentalAssignment.DatabaseContext
             };
             PasswordHasher<ApplicationUser> ph = new PasswordHasher<ApplicationUser>();
             appuser.PasswordHash = ph.HashPassword(appuser, "Test@123");
+            PasswordHasher<ApplicationUser> ad = new PasswordHasher<ApplicationUser>();
+            admin.PasswordHash = ad.HashPassword(admin, "Admin@123");
             builder.Entity<IdentityRole>().HasData(new IdentityRole
             {
                 Id = "Adminkahsakjsajkf99s86as79",
@@ -48,7 +50,7 @@ namespace RentalAssignment.DatabaseContext
             );
             builder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-                UserId = "Admin2729083033937898-329332ndjhf8e4",
+                UserId = "Admin2729083033937898-329332nduyvugjvjhf8e4",
                 RoleId = "Adminkahsakjsajkf99s86as79"
             });
 

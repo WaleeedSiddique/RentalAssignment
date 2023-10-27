@@ -45,12 +45,17 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-
-                if (result.Succeeded)
+                var user = await  _userManager.FindByEmailAsync(model.Email);
+                if(user != null)
                 {
-                    return RedirectToAction("Dashboard");
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, false);
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Dashboard");
+                    }
                 }
+              
 
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
             }

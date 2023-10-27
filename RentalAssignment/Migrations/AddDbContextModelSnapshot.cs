@@ -47,6 +47,15 @@ namespace RentalAssignment.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "Adminkahsakjsajkf99s86as79",
+                            ConcurrencyStamp = "admin8472850237",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -134,6 +143,13 @@ namespace RentalAssignment.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "Admin2729083033937898-329332nduyvugjvjhf8e4",
+                            RoleId = "Adminkahsakjsajkf99s86as79"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -225,18 +241,37 @@ namespace RentalAssignment.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "Test2729373937898-329332ndjhf8e4",
+                            Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "be8f9995-f889-4cd4-ae04-1edd3777862a",
+                            ConcurrencyStamp = "502ba2da-093a-488b-b447-aaaab1e977c9",
                             Email = "Test@gmail.com",
-                            EmailConfirmed = false,
+                            EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEGp+Rr7N6l3PFwMLIVjv7WFlFwD1dYgYhbyIh+ZYqrMiTCFaFQAaxjfDidzlwSkm6w==",
+                            NormalizedEmail = "TEST@GMAIL.COM",
+                            NormalizedUserName = "TESTUSER",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPoIjasTSmNpTXv9GfD5aMmfCE2hxgRB/mS1Lg92KDbaeE+1l65154gwI9QNgGABAg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "064b295b-c6a5-4fad-aa7b-0fd0c0794844",
+                            SecurityStamp = "f1667eac-c92d-4028-86ef-394f69bb2d30",
                             TwoFactorEnabled = false,
                             UserName = "TestUser"
+                        },
+                        new
+                        {
+                            Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "09103e08-9f33-4999-b808-b3af96ebfdb4",
+                            Email = "Admin@gmail.com",
+                            EmailConfirmed = true,
+                            IsApproved = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@GMAIL.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM6FzLI7LrIBzyv0ibqqhvSYHRTgqNYozjo2NaxRlvBNaanGgM7BlRjoBrWeTsi85Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "acc1815b-6868-4203-b3ab-bc2c244bb4d1",
+                            TwoFactorEnabled = false,
+                            UserName = "Admin"
                         });
                 });
 
@@ -266,7 +301,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("contact", (string)null);
+                    b.ToTable("contact");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Employee", b =>
@@ -302,7 +337,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employees", (string)null);
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Rental", b =>
@@ -357,7 +392,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasIndex("VehicleID");
 
-                    b.ToTable("rentals", (string)null);
+                    b.ToTable("rentals");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Review", b =>
@@ -381,7 +416,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("reviews", (string)null);
+                    b.ToTable("reviews");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>
@@ -433,7 +468,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("VehicleId");
 
-                    b.ToTable("vehicles", (string)null);
+                    b.ToTable("vehicles");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.VehicleCategory", b =>
@@ -450,7 +485,7 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VehicleCategories", (string)null);
+                    b.ToTable("VehicleCategories");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
