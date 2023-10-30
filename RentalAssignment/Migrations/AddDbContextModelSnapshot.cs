@@ -243,16 +243,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "502ba2da-093a-488b-b447-aaaab1e977c9",
+                            ConcurrencyStamp = "edb3860c-2093-484f-ae28-9157cd063347",
                             Email = "Test@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "TEST@GMAIL.COM",
                             NormalizedUserName = "TESTUSER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPoIjasTSmNpTXv9GfD5aMmfCE2hxgRB/mS1Lg92KDbaeE+1l65154gwI9QNgGABAg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEuGfWBQDzm7JJNvf3SYrcKVa6mrNgDmh3yxxms2tQ3K2gRdb6WcIyn8v/IQJLHxSw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f1667eac-c92d-4028-86ef-394f69bb2d30",
+                            SecurityStamp = "8d1e058b-54bb-4689-b001-53e130e4a08e",
                             TwoFactorEnabled = false,
                             UserName = "TestUser"
                         },
@@ -260,16 +260,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "09103e08-9f33-4999-b808-b3af96ebfdb4",
+                            ConcurrencyStamp = "616a29de-806a-4213-8003-9a80bfdd660a",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEM6FzLI7LrIBzyv0ibqqhvSYHRTgqNYozjo2NaxRlvBNaanGgM7BlRjoBrWeTsi85Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEN9PSBXW0gIkwpF2ylFeNjeEZHkjmsqyEJXR5GNxvNxzJwA14P+kkRJWdyQ4qHjIng==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "acc1815b-6868-4203-b3ab-bc2c244bb4d1",
+                            SecurityStamp = "7c2adfc5-848a-4cc3-b617-7667b32a26db",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -449,6 +449,9 @@ namespace RentalAssignment.Migrations
                     b.Property<int>("RentPerDay")
                         .HasColumnType("int");
 
+                    b.Property<int>("VehicleCategoryId")
+                        .HasColumnType("int");
+
                     b.Property<int>("VehicleColour")
                         .HasColumnType("int");
 
@@ -468,22 +471,24 @@ namespace RentalAssignment.Migrations
 
                     b.HasKey("VehicleId");
 
+                    b.HasIndex("VehicleCategoryId");
+
                     b.ToTable("vehicles");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.VehicleCategory", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
 
-                    b.Property<string>("Category")
+                    b.Property<string>("CategoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("CategoryId");
 
                     b.ToTable("VehicleCategories");
                 });
@@ -550,7 +555,23 @@ namespace RentalAssignment.Migrations
 
             modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>
                 {
+                    b.HasOne("RentalAssignment.Models.VehicleCategory", "VehicleCategory")
+                        .WithMany("vehicles")
+                        .HasForeignKey("VehicleCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("VehicleCategory");
+                });
+
+            modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>
+                {
                     b.Navigation("Bookings");
+                });
+
+            modelBuilder.Entity("RentalAssignment.Models.VehicleCategory", b =>
+                {
+                    b.Navigation("vehicles");
                 });
 #pragma warning restore 612, 618
         }

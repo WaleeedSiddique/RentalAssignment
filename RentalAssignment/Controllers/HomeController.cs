@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RentalAssignment.DatabaseContext;
 using RentalAssignment.Enums;
@@ -18,14 +19,17 @@ namespace RentalAssignment.Controllers
         private readonly IVehicleInterface _vehicleInterface;
         private readonly IHostingEnvironment hostingEnvironment;
         private readonly AddDbContext _context;
+        private readonly IVehicleCategoryInterface _vehicleCategory;
 
-        public HomeController(IVehicleInterface vehicleInterface, IHostingEnvironment hostingEnvironment,AddDbContext context)
+        public HomeController(IVehicleInterface vehicleInterface, IHostingEnvironment hostingEnvironment,AddDbContext context,IVehicleCategoryInterface vehicleCategory)
         {
 
             this._vehicleInterface = vehicleInterface;
             this.hostingEnvironment = hostingEnvironment;
             this._context = context;
+            this._vehicleCategory = vehicleCategory;
         }
+        
         [HttpGet]
         public IActionResult Index()
         {
@@ -46,7 +50,7 @@ namespace RentalAssignment.Controllers
             ViewBag.message = "This Car is not available, You can search other cars";
             return RedirectToAction("SearchPage");
         }
-
+        [HttpGet]
         public IActionResult SearchPage(DateTime pickup, DateTime dropoff)
         {
             var availablecars = _vehicleInterface.GetAllVehicles();           
@@ -54,6 +58,8 @@ namespace RentalAssignment.Controllers
             {
                 availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
             }
+            var categories = _vehicleCategory.GetAllCategories();
+            ViewBag.category = new SelectList(categories, "CategoryId", "CategoryName");
             return View(availablecars);
         }
         //[HttpPost]
@@ -87,6 +93,9 @@ namespace RentalAssignment.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
+            var Categories = _vehicleCategory.GetAllCategories();
+            ViewBag.category = new SelectList(Categories, "CategoryId", "CategoryName");
+          
             return View();
         }
         private bool IsImageFileValid(IFormFile file)
@@ -111,7 +120,8 @@ namespace RentalAssignment.Controllers
                     {
                         ViewBag.message = "Car ImageFile Invalid file format. Only JPG, JPEG, and PNG files are allowed.";
                         return View(vehicle);
-                    }
+
+                    }                   
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath,"images");
                     uniqueFileName = Guid.NewGuid().ToString()+ "_" +vehicle.Photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -128,6 +138,7 @@ namespace RentalAssignment.Controllers
                     ChassisNumber = vehicle.ChassisNumber,
                     RentPerDay = vehicle.RentPerDay,
                     sittingCapacity = vehicle.sittingCapacity,
+                    VehicleCategoryId = vehicle.VehicleCategoryId,
                     Photopath = uniqueFileName
                 };
                 Vehicle vehicle1 = _vehicleInterface.CreateVehicle(newVehicle);
@@ -202,10 +213,47 @@ namespace RentalAssignment.Controllers
             List<Vehicle> rentedCars = _vehicleInterface.GetRentedVehicles();
             return View(rentedCars);
         }
+        [HttpGet]
+        public IActionResult GetAllVehicles()
+        {
+            var Vehicles = _vehicleInterface.GetAllVehicles();
+            return View(Vehicles);
+        }
+        [HttpGet]
+        public IActionResult GetBudgetVehicles()
+        {
+            var vehicles = _vehicleInterface.GetAllVehicles().Where(x => x.VehicleCategory.CategoryName == "Budget");
+            return View("SearchPage",vehicles);
+        }
+        [HttpGet]
+        public IActionResult GetStandardVehicles()
+        {
+            var vehicles = _vehicleInterface.GetAllVehicles().Where(x => x.VehicleCategory.CategoryName == "Standard");
+            return View("SearchPage", vehicles);
+        }
+        [HttpGet]
+        public IActionResult GetLuxuryVehicles()
+        {
+            var vehicles = _vehicleInterface.GetAllVehicles().Where(x => x.VehicleCategory.CategoryName == "Luxury");
+            return View("SearchPage", vehicles);
+        }
+        [HttpGet]
+        public IActionResult GetVansVehicles()
+        {
+            var vehicles = _vehicleInterface.GetAllVehicles().Where(x => x.VehicleCategory.CategoryName == "Vans");
+            return View("SearchPage", vehicles);
+        }
+        [HttpGet]
+        public IActionResult GetSUVVehicles()
+        {
+            var vehicles = _vehicleInterface.GetAllVehicles().Where(x => x.VehicleCategory.CategoryName == "SUV");
+            return View("SearchPage", vehicles);
+        }
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

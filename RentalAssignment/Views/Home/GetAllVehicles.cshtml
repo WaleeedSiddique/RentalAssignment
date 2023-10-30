@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Vehicle>
+@{
+    ViewBag.Title = "Vehicles";
+}
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Vehicle Model</th>
+            <th>Vehicle Category</th>
+            <th>Vehicle Category id</th>
+            <th>Edit</th>
+            <th>Detail</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var cars in Model)
+        {     
+        <tr>
+            <td>@cars.VehicleId</td>
+            <td>@cars.VehicleModel</td>
+            <td>@cars.VehicleCategory.CategoryName</td>
+            <td>@cars.VehicleCategoryId</td>
+            <td><a class="btn btn-warning" asp-controller="Home" asp-action="Edit" asp-route-id="@cars.VehicleId">Edit</a></td>
+            <td><a class="btn btn-secondary" asp-controller="Home" asp-action="Details" asp-route-id="@cars.VehicleId">Details</a></td>
+            <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@cars.VehicleId">Delete</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

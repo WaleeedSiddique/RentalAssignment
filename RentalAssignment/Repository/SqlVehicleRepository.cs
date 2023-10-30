@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
@@ -39,7 +40,7 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Vehicle> GetAllVehicles()
         {
-            return _context.vehicles;
+            return _context.vehicles.Include(x => x.VehicleCategory).ToList();
         }
 
         public List<Vehicle> GetAvailableVehicles()
@@ -61,10 +62,9 @@ namespace RentalAssignment.Repository
 
         public Vehicle GetVehicle(int id)
         {
-            var model = _context.vehicles.FirstOrDefault(x => x.VehicleId == id);
+            var model = _context.vehicles.Include(x => x.VehicleCategory).FirstOrDefault(x => x.VehicleId == id);
             return model;
         }
-
         public IEnumerable<Vehicle> SearchVehicles(string VehicleName)
         {
             var car = _context.vehicles.Where(x => x.VehicleModel.Contains(VehicleName));

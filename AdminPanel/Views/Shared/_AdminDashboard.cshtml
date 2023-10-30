@@ -164,13 +164,24 @@
             <li class="treeview">
                 <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Vehicles</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" asp-controller="Home" asp-action="Index"> <i class="icon fa fa-circle-o"></i>View Vehicles</a></li>
+                    <li><a class="treeview-item" asp-controller="Home" asp-action="GetAllVehicles"> <i class="icon fa fa-circle-o"></i>View Vehicles</a></li>
 
 
                     <li><a class="treeview-item" asp-controller="Home" asp-action="Create"> <i class="icon fa fa-circle-o"></i>Add Vehicles</a></li>
 
                 </ul>
             </li>
+            <li class="treeview">
+                <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Category</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" asp-controller="Category" asp-action="Index"> <i class="icon fa fa-circle-o"></i>View Categories</a></li>
+
+
+                    <li><a class="treeview-item" asp-controller="Category" asp-action="Create"> <i class="icon fa fa-circle-o"></i>Add Category</a></li>
+
+                </ul>
+            </li>
+
 
 
 

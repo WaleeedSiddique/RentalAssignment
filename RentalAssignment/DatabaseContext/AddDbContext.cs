@@ -16,6 +16,11 @@ namespace RentalAssignment.DatabaseContext
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<Vehicle>()
+                .HasOne(x => x.VehicleCategory)
+                .WithMany(e => e.vehicles)
+                .HasForeignKey(x => x.VehicleCategoryId);
+
             var appuser = new ApplicationUser()
             {
                 Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",

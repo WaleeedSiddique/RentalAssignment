@@ -3,8 +3,9 @@ using RentalAssignment.Models;
 
 namespace RentalAssignment.ViewModels
 {
-    public class EditCategoryViewModel:VehicleCategory
+    public class EditCategoryViewModel
     {
         public int id { get; set; }
+        public string CategoryName { get; set; }
     }
 }

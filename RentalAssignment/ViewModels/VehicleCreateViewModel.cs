@@ -20,6 +20,7 @@ namespace RentalAssignment.ViewModels
         public string ChassisNumber { get; set; }
         [Required]
         public bool VehicleExistance { get; set; }
+        public int VehicleCategoryId { get; set; }
         public VehicleType VehicleType { get; set; }
         public IFormFile Photo { get; set; }
     }

@@ -23,6 +23,8 @@ namespace RentalAssignment.Models
         [DataType(DataType.Currency)]
         public int RentPerDay { get; set; }
         public ICollection<Rental> Bookings { get; set; }
+        public int VehicleCategoryId { get; set; }
+        public VehicleCategory VehicleCategory { get; set; }    
 
         public bool IsRented { get; set; }
      

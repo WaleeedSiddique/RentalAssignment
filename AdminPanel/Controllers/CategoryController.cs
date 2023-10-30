@@ -44,24 +44,35 @@ namespace RentalAssignment.Controllers
         public IActionResult EditCategory(int id)
         {
             var category = _vehicleCategory.GetCategoryById(id);
-            if (category == null)
+            if (category != null)
             {
-                return NotFound();
+                var model = new EditCategoryViewModel()
+                {
+                    CategoryName = category.CategoryName
+                };
+                return View(model);
             }
 
-            return View(category);
+            return NotFound();
         }
 
         [HttpPost]
-        public IActionResult EditCategory(VehicleCategory category)
+        public IActionResult EditCategory(EditCategoryViewModel model)
         {
             if (ModelState.IsValid)
             {
+                var category = _vehicleCategory.GetCategoryById(model.id);
+                if(category != null)
+                {
+                    category.CategoryName = model.CategoryName;
                 _vehicleCategory.UpdateCategory(category);
                 return RedirectToAction("Index");
+                }
+                ViewBag.Message = "No Category change";
+                return View();
             }
 
-            return View(category);
+            return View(model);
         }
         [HttpGet]
         public IActionResult DeleteCategory(int id)
@@ -71,14 +82,8 @@ namespace RentalAssignment.Controllers
             {
                 return NotFound();
             }
-            return View(category);
-        }
-        [HttpPost]
-        public IActionResult ConfirmedDelete(int id)
-        {
             _vehicleCategory.RemoveCategory(id);
             return RedirectToAction("Index");
-
         }
 
     }

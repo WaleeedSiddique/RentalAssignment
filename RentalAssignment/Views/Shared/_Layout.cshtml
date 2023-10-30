@@ -59,7 +59,21 @@
                         <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a> 
                         <a asp-controller="Home" asp-action="SearchPage" class="nav-item nav-link">Search a Car</a>
                         <a asp-controller="Contact" asp-action="Contact" class="nav-item nav-link">Contact</a>
-                       
+                        <li class="nav-item nav-link">
+                            <div class="dropdown">
+                                <button class="btn " style="color:#f4f5f8;font-size:17px;font-weight:500;padding:0px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    VEHICLES
+                                </button>
+                                <div class="dropdown-menu" style="background-color:#2b2e4a;" aria-labelledby="dropdownMenuButton">
+                                    <a asp-controller="Home" asp-action="GetBudgetVehicles"   class="nav-item nav-link py-1">Budget</a>
+                                    <a asp-controller="Home" asp-action="GetStandardVehicles"  class="nav-item nav-link py-1">Standard</a>
+                                    <a asp-controller="Home" asp-action="GetLuxuryVehicles" class="nav-item nav-link py-1">Luxury</a>
+                                    <a asp-controller="Home" asp-action="GetSUVVehicles"  class="nav-item nav-link py-1">SUV's</a>
+                                    <a asp-controller="Home" asp-action="GetVansVehicles"  class="nav-item nav-link py-1">Vans&Coasters</a>
+                                </div>
+                            </div>
+                        </li>
+
                         @*<a asp-controller="Account" asp-action="Register" class="nav-item nav-link">Sign up</a>
                         <a asp-controller="Account" asp-action="Login" class="nav-item nav-link">Log In</a>*@
                         @{if (signInManager.IsSignedIn(User) && !User.IsInRole("Admin"))

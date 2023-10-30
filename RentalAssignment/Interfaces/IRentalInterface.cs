@@ -20,6 +20,7 @@ namespace RentalAssignment.Interfaces
         public void AssignDriverToBooking(int bookingId, int driverId);
         public IEnumerable<Rental> GetByMonth(int year, int month);
         public IEnumerable<Rental> GetByDay(DateTime date);
+     
 
 
 

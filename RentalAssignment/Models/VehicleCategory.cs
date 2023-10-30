@@ -1,8 +1,12 @@
-﻿namespace RentalAssignment.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RentalAssignment.Models
 {
     public class VehicleCategory
     {
-        public int Id { get; set; }
-        public string Category { get; set; }
+        [Key]
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
+        public ICollection<Vehicle> vehicles { get; set; }
     }
 }

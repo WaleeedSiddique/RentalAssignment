@@ -1,5 +1,4 @@
-﻿using org.omg.CosNaming.NamingContextPackage;
-using RentalAssignment.DatabaseContext;
+﻿using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 
@@ -23,24 +22,23 @@ namespace RentalAssignment.Repository
         public IEnumerable<VehicleCategory> GetAllCategories()
         {
 
-            return _context.VehicleCategories;
+            return _context.VehicleCategories.ToList();
              
         }
 
         public VehicleCategory GetCategoryById(int id)
         {
-            var model = _context.VehicleCategories.FirstOrDefault(x => x.Id == id);
+            var model = _context.VehicleCategories.FirstOrDefault(x => x.CategoryId == id);
             return model;
         }
 
         public void RemoveCategory(int id)
         {
-            var model = _context.VehicleCategories.Find(id);
+            var model = _context.VehicleCategories.FirstOrDefault(x => x.CategoryId ==id);
             if(model != null)
             {                
             _context.VehicleCategories.Remove(model);
-            _context.SaveChanges();
-                
+            _context.SaveChanges();                
             }
            
 
