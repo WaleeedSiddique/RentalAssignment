@@ -121,7 +121,8 @@ namespace RentalAssignment.Controllers
                         ViewBag.message = "Car ImageFile Invalid file format. Only JPG, JPEG, and PNG files are allowed.";
                         return View(vehicle);
 
-                    }                   
+                    }
+                    return Ok(hostingEnvironment.WebRootPath);
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath,"images");
                     uniqueFileName = Guid.NewGuid().ToString()+ "_" +vehicle.Photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);

@@ -39,7 +39,7 @@
        
         @foreach (var vehicle in Model)
         {
-            var photoPath = "~/images/" + (vehicle.Photopath ?? "noimage.jpg");
+            var photoPath = "RentalAssignment/AdminPanel/wwwroot/images/" + (vehicle.Photopath);
             <div class="col-lg-4 col-md-6 mb-2">
                 <div class="rent-item mb-4" style="background-color:#eee;text-align:center;">
                     <img class="image" src="@photoPath" asp-append-version="true" alt="no image">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KffhPod/E3eDBYkZhB1d9GqDITATBZLhUrqRdzSt1PE=",
+  "Hash": "EAzVry96oIIQEE/5cGKpolfiTMjkuvyvn76ZAuUvRtQ=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -444,6 +444,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\173202cc-56c2-4b7c-938d-83692cbb0d06_web-development.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/173202cc-56c2-4b7c-938d-83692cbb0d06_web-development.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\173202cc-56c2-4b7c-938d-83692cbb0d06_web-development.png"
+    },
+    {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\1feed5ff-b6f0-42a4-8262-56bfdaaec4c6_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
@@ -493,6 +510,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2e3bee66-666e-4901-8b23-6ef997411f1f_e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\378ced19-5dfa-4f70-bc2a-28a9ddb6c75e_web-image.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/378ced19-5dfa-4f70-bc2a-28a9ddb6c75e_web-image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\378ced19-5dfa-4f70-bc2a-28a9ddb6c75e_web-image.png"
     },
     {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\3adc2486-e494-4be0-a367-58d18b25bcc0_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
@@ -612,6 +646,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\7340429c-5cd5-4e97-a378-06f43eebd964_web.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/7340429c-5cd5-4e97-a378-06f43eebd964_web.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7340429c-5cd5-4e97-a378-06f43eebd964_web.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\cb05a83a-2917-4aee-ab5d-029ffcb4f032_Green Meditation Music YouTube Thumbnail (3).png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/cb05a83a-2917-4aee-ab5d-029ffcb4f032_Green Meditation Music YouTube Thumbnail (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cb05a83a-2917-4aee-ab5d-029ffcb4f032_Green Meditation Music YouTube Thumbnail (3).png"
     },
     {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\d751cfc4-8163-476c-9521-2d2a68055859_b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
