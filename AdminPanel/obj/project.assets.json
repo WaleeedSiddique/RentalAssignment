@@ -19348,11 +19348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
+      "projectUniqueName": "C:\\Users\\walee\\Desktop\\Rent\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
       "projectName": "AdminPanel",
-      "projectPath": "D:\\source\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
+      "projectPath": "C:\\Users\\walee\\Desktop\\Rent\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
       "packagesPath": "C:\\Users\\walee\\.nuget\\packages\\",
-      "outputPath": "D:\\source\\RentalAssignment\\AdminPanel\\obj\\",
+      "outputPath": "C:\\Users\\walee\\Desktop\\Rent\\RentalAssignment\\AdminPanel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -19374,8 +19374,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\source\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
-              "projectPath": "D:\\source\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj"
+            "C:\\Users\\walee\\Desktop\\Rent\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
+              "projectPath": "C:\\Users\\walee\\Desktop\\Rent\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj"
             }
           }
         }

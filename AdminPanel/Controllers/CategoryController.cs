@@ -28,11 +28,15 @@ namespace RentalAssignment.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(VehicleCategory category)
+        public IActionResult Create(VehicleCategoryViewModel category)
         {
             if (ModelState.IsValid)
             {
-                _vehicleCategory.AddCategory(category);
+                VehicleCategory vehicleCategory = new VehicleCategory()
+                {
+                    CategoryName = category.CategoryName,
+                };
+                _vehicleCategory.AddCategory(vehicleCategory);
                 return RedirectToAction("Index");
             }
             else {
