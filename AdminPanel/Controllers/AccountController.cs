@@ -48,7 +48,7 @@ namespace RentalAssignment.Controllers
                 var user = await  _userManager.FindByEmailAsync(model.Email);
                 if(user != null)
                 {
-                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, true);
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
 
                     if (result.Succeeded)
                     {

@@ -1,6 +1,7 @@
 using LibGit2Sharp;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using RentalAssignment.DatabaseContext;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
@@ -39,7 +40,14 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+//app.UseStaticFiles();
+
+app.UseStaticFiles(new StaticFileOptions()
+{
+    FileProvider = new PhysicalFileProvider(
+         Path.Combine(Directory.GetCurrentDirectory(), "../AdminPanel/wwwroot", @"Images")),
+    RequestPath = new PathString("/Images")
+});
 
 app.UseRouting();
 app.UseAuthentication();

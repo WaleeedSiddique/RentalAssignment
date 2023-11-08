@@ -51,15 +51,19 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("SearchPage");
         }
         [HttpGet]
+        public IActionResult SearchPage()
+        {
+            var availablecars = _vehicleInterface.GetAllVehicles();                             
+            return View(availablecars);
+        }
+        [HttpPost]
         public IActionResult SearchPage(DateTime pickup, DateTime dropoff)
         {
-            var availablecars = _vehicleInterface.GetAllVehicles();           
+            var availablecars = _vehicleInterface.GetAllVehicles();
             if (availablecars != null)
             {
                 availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
             }
-            var categories = _vehicleCategory.GetAllCategories();
-            ViewBag.category = new SelectList(categories, "CategoryId", "CategoryName");
             return View(availablecars);
         }
         //[HttpPost]
@@ -71,7 +75,7 @@ namespace RentalAssignment.Controllers
         //     availablecars = _vehicleInterface.GetNotRentedVehicles(pickup, dropoff);
         //    }
         //        return View(availablecars);
-            
+
         //}
         //[HttpPost]
         //public IActionResult Index(string SearchText)
@@ -120,9 +124,7 @@ namespace RentalAssignment.Controllers
                     {
                         ViewBag.message = "Car ImageFile Invalid file format. Only JPG, JPEG, and PNG files are allowed.";
                         return View(vehicle);
-
-                    }
-                    return Ok(hostingEnvironment.WebRootPath);
+                    }                    
                     string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath,"images");
                     uniqueFileName = Guid.NewGuid().ToString()+ "_" +vehicle.Photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
