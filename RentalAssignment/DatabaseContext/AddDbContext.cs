@@ -31,6 +31,16 @@ namespace RentalAssignment.DatabaseContext
                 EmailConfirmed = true,
                 IsApproved = true,
             };
+            var appuser2 = new ApplicationUser()
+            {
+                Id = "Test272932273937898-329332ndyvyuhvjjhf8e4",
+                UserName = "Test2User",
+                Email = "Test2@gmail.com",
+                NormalizedEmail = "Test2@gmail.com".ToUpper(),
+                NormalizedUserName = "Test2User".ToUpper(),
+                EmailConfirmed = true,
+                IsApproved = true,
+            };
             var admin = new ApplicationUser()
             {
                 Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
@@ -60,7 +70,7 @@ namespace RentalAssignment.DatabaseContext
             });
 
             builder.Entity<ApplicationUser>()
-                .HasData(appuser,admin);
+                .HasData(appuser,admin,appuser2);
         }
 
         public DbSet<Vehicle> vehicles { get; set; }
