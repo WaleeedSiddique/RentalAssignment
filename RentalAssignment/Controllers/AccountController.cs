@@ -96,6 +96,11 @@ namespace RentalAssignment.Controllers
                     {
                         if (!string.IsNullOrEmpty(returnUrl))
                         {
+                            if(returnUrl == "/Account/Pending")
+                            {
+                                var newreturn = "/Home/SearchPage";
+                                return Redirect(newreturn);
+                            }
                             return Redirect(returnUrl);
                         }
                         else

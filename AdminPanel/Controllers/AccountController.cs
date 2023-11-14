@@ -54,9 +54,7 @@ namespace RentalAssignment.Controllers
                     {
                         return RedirectToAction("Dashboard");
                     }
-                }
-              
-
+                }              
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
             }
             return View(model);
