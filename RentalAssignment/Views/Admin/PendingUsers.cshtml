@@ -3,6 +3,7 @@
     ViewBag.title = "Pending Users";
 }
 <h2 class="text-center text-danger">Pending Users</h2>
+
 <table class="table">
     <thead class="thead-dark">
         <tr>
@@ -30,4 +31,8 @@
     </tbody>
 
 </table>
+@if (Model.Count() < 1)
+{
+    <h4 class="text-warning text-center">No new user</h4>
+}
 

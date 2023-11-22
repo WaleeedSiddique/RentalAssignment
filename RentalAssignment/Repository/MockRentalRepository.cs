@@ -1,4 +1,5 @@
-﻿using RentalAssignment.Interfaces;
+﻿using RentalAssignment.Enums;
+using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 
 namespace RentalAssignment.Repository
@@ -63,6 +64,11 @@ namespace RentalAssignment.Repository
         }
 
         public IEnumerable<Rental> GetByMonth(int year, int month)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Rental> GetByMonth(MonthsEnum month, int year)
         {
             throw new NotImplementedException();
         }

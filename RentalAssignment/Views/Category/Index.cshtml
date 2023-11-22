@@ -10,7 +10,7 @@
             <th scope="col">Delete</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody>       
         @foreach (var category in Model)
         {
             <tr>
@@ -25,3 +25,7 @@
         }
     </tbody>
 </table>
+@if (Model.Count() < 1)
+{
+    <h5 class="text-success text-center">No Categories Currently</h5>
+}

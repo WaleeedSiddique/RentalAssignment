@@ -30,14 +30,16 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
+                var emailverification = IsEmailInUse(model.Email);
+                if (emailverification ==  null)
+                {                
                 var user = new ApplicationUser
                 {
                     NormalizedUserName = model.FirstName,
                     UserName = model.username,
                     Email = model.Email,
                     IsApproved = false
-
-                };
+                };               
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -48,10 +50,11 @@ namespace RentalAssignment.Controllers
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+                }
             }
+            ViewBag.Message = "This email is already registered";
             return View(model);
         }
-
         [AcceptVerbs("Get", "Post")]
         [AllowAnonymous]
         public async Task<IActionResult> IsEmailInUse(string email)

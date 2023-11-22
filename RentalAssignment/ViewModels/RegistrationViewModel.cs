@@ -8,17 +8,14 @@ namespace RentalAssignment.ViewModels
 {
     public class RegistrationViewModel
     {
-        
-       
+               
         [Required]
         public string FirstName { get; set; }
         [Required]
         public string username { get; set; }
         [Required]
         [EmailAddress]
-        [Remote(action:"IsEmailInUse",controller:"Account")]
-        
-
+        [Remote(action:"IsEmailInUse",controller:"Account")]        
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]

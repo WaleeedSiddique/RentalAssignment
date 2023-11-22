@@ -190,8 +190,6 @@ namespace RentalAssignment.Controllers
         {
 
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-
             IEnumerable<Rental> userBookings = _rentalInterface.GetUserBookings(userId);
             return View(userBookings);
         }
@@ -276,16 +274,13 @@ namespace RentalAssignment.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public IActionResult MonthlyReport(int? year, int? month)
+        public IActionResult MonthlyReport(MonthlySearchViewModel model)
         {
-            if (year.HasValue && month.HasValue)
+            if (model.Month != null && model.Year != null)
             {
-                var reservations = _rentalInterface.GetByMonth(year.Value, month.Value);
-                // Pass the reservations to the view
+                var reservations = _rentalInterface.GetByMonth(model.Month, model.Year);              
                 return View("MonthlyReport", reservations);
-            }
-
-            // If year and month are not provided, show an empty report
+            }           
             return View("MonthlyReport", Enumerable.Empty<Rental>());
         }
         [HttpGet]
@@ -294,12 +289,9 @@ namespace RentalAssignment.Controllers
         {
             if (date.HasValue)
             {
-                var reservations = _rentalInterface.GetByDay(date.Value);
-                // Pass the reservations to the view
+                var reservations = _rentalInterface.GetByDay(date.Value);                
                 return View("DailyReport", reservations);
-            }
-
-            // If date is not provided, show an empty report
+            }            
             return View("DailyReport", Enumerable.Empty<Rental>());
         }
        

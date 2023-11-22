@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using RentalAssignment.Enums;
 using RentalAssignment.Models;
 using static sun.security.provider.NativePRNG;
 
@@ -18,7 +19,7 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Rental> GetUnapprovedbookings();
         public IEnumerable<Rental> Getapprovedbookings();
         public void AssignDriverToBooking(int bookingId, int driverId);
-        public IEnumerable<Rental> GetByMonth(int year, int month);
+        public IEnumerable<Rental> GetByMonth(MonthsEnum month, int year);
         public IEnumerable<Rental> GetByDay(DateTime date);
      
 

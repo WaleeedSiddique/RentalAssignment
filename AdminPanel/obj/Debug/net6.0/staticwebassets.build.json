@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xtFiZUtJA9fMMnORTwobBx387Ix3FXQ/JvL/jRpBHyE=",
+  "Hash": "ioxXoLfsuM2QWbcZpSHtOG63IZN4N/zBX05dXzHQ/g8=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -563,6 +563,40 @@
       "OriginalItemSpec": "wwwroot\\images\\3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png"
+    },
+    {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
@@ -595,6 +629,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\52a0723e-f2bd-4ab3-ba3e-9e6f838374e0_2. Figma to html gig thumbnail.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
@@ -663,6 +714,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
+    },
+    {
+      "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png"
     },
     {
       "Identity": "D:\\source\\RentalAssignment\\AdminPanel\\wwwroot\\images\\9f20c3dc-7e0f-4dcd-b03c-f1126d730569_Psd to html.png",

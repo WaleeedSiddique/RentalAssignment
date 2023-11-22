@@ -1,8 +1,6 @@
-﻿<!-- MyBookings.cshtml -->
-@model IEnumerable<Rental>
+﻿@model IEnumerable<Rental>
 
 <h2 class="text-center">My Bookings</h2>
-
     <table class="table">
         @ViewBag.message
     <thead class="thead-dark">
@@ -13,15 +11,11 @@
                 <th>Status</th>
                 <th>Driver id</th>
                 <th>Delete Booking</th>
-                
-                <!-- Other columns as needed -->
             </tr>
         </thead>
-        <tbody>
-      
+        <tbody>      
             @foreach (var booking in Model)
-            {
-                
+            {                
                 <tr>
                     <td>@booking.RentalName</td>
                     <td>@booking.VehicleID</td>
@@ -42,15 +36,16 @@
                 }
                       @if(booking.DriverId == null)
                       {
-
-
                     <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
-                      }else{
-                          <td>No Action</td>
                       }
-                     
-                    <!-- Other columns as needed -->
+                      else{
+                          <td>No Action</td>
+                      }                                      
                 </tr>
             }
         </tbody>
     </table>
+@if (Model.Count() < 1)
+{
+    <h5 class="text-success text-center">No Confimed Or Pending Bookings </h5>
+}

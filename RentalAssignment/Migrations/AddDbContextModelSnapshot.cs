@@ -243,16 +243,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b606a05-b7ec-4049-97df-64f532b48c20",
+                            ConcurrencyStamp = "d0c8bc31-699a-4b6b-976b-4dbfd342b61b",
                             Email = "Test@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "TEST@GMAIL.COM",
                             NormalizedUserName = "TESTUSER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJfYdShfVOfze9ZGiXUSd1KRMjG1UjEqk4upbLV86qXMcwsF7j44BmsRfmGlDk9ycA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDHdbUQDQWZHLpNMTxyDvQ5RdDbTEysotLXTOizLipFQ8XuPi+hUGAIODofUZ8ioug==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "661ae0f2-302b-42a4-a21a-94ee5d2b02b9",
+                            SecurityStamp = "f8d0722f-9209-4f59-a3d4-f8c999066148",
                             TwoFactorEnabled = false,
                             UserName = "TestUser"
                         },
@@ -260,16 +260,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1d89969c-bb53-473d-8ed1-a814dcb6a9bc",
+                            ConcurrencyStamp = "e007b8bc-739c-4fa9-85e3-c2afcce63990",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJEUUdoz6tWqDBqIuinwtBkeN/fvTm9QbN4ExiW+s3ucNpD2dkMCnL2l57SORa81Xg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEN/0hjEslHi1uAku77bWC63dT4IN9NKEOGgR2KtOQdj336gssykDiWTUihDQKz9Svw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8ac28d8a-4c12-4855-976a-739a0462e026",
+                            SecurityStamp = "eb56e1e6-780a-4524-a8a6-6a3024b911dc",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         },
@@ -277,7 +277,7 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Test272932273937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "72e27b62-657b-41f0-9dd0-d4f9d8c3b75b",
+                            ConcurrencyStamp = "8f5f31f6-264b-47af-a14c-939757b88f81",
                             Email = "Test2@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
@@ -285,7 +285,7 @@ namespace RentalAssignment.Migrations
                             NormalizedEmail = "TEST2@GMAIL.COM",
                             NormalizedUserName = "TEST2USER",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a8405508-9ef0-49bb-97fa-55383b575dbe",
+                            SecurityStamp = "f3a79fc5-614b-4354-a75b-7cddc3381330",
                             TwoFactorEnabled = false,
                             UserName = "Test2User"
                         });

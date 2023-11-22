@@ -78,7 +78,6 @@ namespace RentalAssignment.Controllers
             await _userManager.DeleteAsync(user);
             return RedirectToAction("Dashboard");
         }
-
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Pending()
@@ -89,7 +88,6 @@ namespace RentalAssignment.Controllers
         public async Task<IActionResult> MyAccount()
         {
             var user = await _userManager.GetUserAsync(User);
-
             //var user = _userManager.FindByIdAsync(id);
             if(user != null) { 
             EditUserViewModel model = new EditUserViewModel
@@ -118,13 +116,11 @@ namespace RentalAssignment.Controllers
                 if (result.Succeeded)
                 {
                       return RedirectToAction("Index", "Home");
-                }
-                 
+                }                 
             }            
             ViewBag.message = "Something went wrong";
             return View();
         }
-
         public async Task<IActionResult> DeleteUser(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -141,13 +137,5 @@ namespace RentalAssignment.Controllers
             return View();
 
         }
-
-
-
-
-
-
-
-
     }
 }

@@ -3,11 +3,11 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container-fluid">
+<div class="container">
     <h4 class="text-center">Our Employees</h4>
 </div>
 
-<div class="container">
+<div>
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -17,12 +17,12 @@
                 <th>Employee Occupation</th>
                 <th>Employee Age</th>
                 <th>Employee Experience</th>
-                <th>Vehicle Details</th>
-                <th>Edit Vehicle Details</th>
-                <th>Delete Vehicle</th>
+                <th>Employee Details</th>
+                <th>Edit Employee Details</th>
+                <th>Delete Employee</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody>          
             @foreach (var employee in Model)
             {
 
@@ -40,7 +40,9 @@
                 </tr>
             }
         </tbody>
-
     </table>
-
 </div>
+@if (Model.Count() < 1)
+{
+    <h5 class="text-success text-center">No Employee Currently</h5>
+}

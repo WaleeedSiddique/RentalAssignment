@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RentalAssignment.DatabaseContext;
+using RentalAssignment.Enums;
 using RentalAssignment.Interfaces;
 using RentalAssignment.Models;
 
@@ -94,12 +95,10 @@ namespace RentalAssignment.Repository
                 _context.SaveChanges();
             }
         }
-
-        public IEnumerable<Rental> GetByMonth(int year, int month)
+        public IEnumerable<Rental> GetByMonth(MonthsEnum month, int year)
         {
-            return _context.rentals.Where(x => x.Pickup.Year == year && x.Pickup.Month == month);   
+            return _context.rentals.Where(x => x.Pickup.Month==(int)month && x.Pickup.Year == year);   
         }
-
         public IEnumerable<Rental> GetByDay(DateTime date)
         {
             return _context.rentals.Where(x => x.Pickup.Date == date.Date);

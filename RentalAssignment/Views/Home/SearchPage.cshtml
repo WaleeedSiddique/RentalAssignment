@@ -2,8 +2,6 @@
 @{
     ViewBag.title = "Searched";
 }
-
-
  <div class="container mt-3">
         <div class="booking-container">
         <form asp-controller="Home" asp-action="SearchPage" method="post">
@@ -31,8 +29,12 @@
     </div>
 @if (Model.Count() < 1)
 {
-    <h1 class="text-center text-warning">No Cars To Show</h1>
+    <h1 style="color:#f77d0a;" class="text-center">No Cars To Show</h1>
+    <div class="text-center">
+        <i style="color:#f77d0a;" class="fas fa-car-side fa-3x animation slide-out-right"></i>
+    </div>
 }
+
 <div class="container-fluid my-5">
     <div class="row">
        

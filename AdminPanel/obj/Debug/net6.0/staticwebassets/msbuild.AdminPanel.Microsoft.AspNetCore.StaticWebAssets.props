@@ -480,6 +480,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminPanel</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminPanel</BasePath>
+      <RelativePath>images/465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\465a3fa8-7547-4b65-99a1-f9ae302044d8_6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminPanel</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminPanel</BasePath>
+      <RelativePath>images/48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\48d87a8f-7d56-4d57-855f-ba77bd39ab9c_e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png))">
       <SourceType>Package</SourceType>
       <SourceId>AdminPanel</SourceId>
@@ -511,6 +543,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\52a0723e-f2bd-4ab3-ba3e-9e6f838374e0_2. Figma to html gig thumbnail.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminPanel</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminPanel</BasePath>
+      <RelativePath>images/53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\53849c99-fdd8-44e8-9ef2-f5254284bf48_7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png))">
       <SourceType>Package</SourceType>
@@ -575,6 +623,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminPanel</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminPanel</BasePath>
+      <RelativePath>images/8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\8255a11f-a38d-4fbe-b74f-015bd7e7f2fb_Screenshot 2023-11-20 150917.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\9f20c3dc-7e0f-4dcd-b03c-f1126d730569_Psd to html.png))">
       <SourceType>Package</SourceType>
