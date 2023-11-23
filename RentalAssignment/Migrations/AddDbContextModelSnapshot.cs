@@ -243,16 +243,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d0c8bc31-699a-4b6b-976b-4dbfd342b61b",
+                            ConcurrencyStamp = "8a4f9ea0-bc4a-4b9b-9a49-594875eb364b",
                             Email = "Test@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "TEST@GMAIL.COM",
                             NormalizedUserName = "TESTUSER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDHdbUQDQWZHLpNMTxyDvQ5RdDbTEysotLXTOizLipFQ8XuPi+hUGAIODofUZ8ioug==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHUPT6OEEk3xIunhJir3dUSQTKXrleafggBlG4hLXVvNwWgOrVVJXHKSKpUqrvdGXg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f8d0722f-9209-4f59-a3d4-f8c999066148",
+                            SecurityStamp = "2ed73faa-b325-49c1-b1a6-bc8044191621",
                             TwoFactorEnabled = false,
                             UserName = "TestUser"
                         },
@@ -260,34 +260,18 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e007b8bc-739c-4fa9-85e3-c2afcce63990",
+                            ConcurrencyStamp = "a67eb88a-da4d-4c08-94f8-0dbaff5cf26b",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEN/0hjEslHi1uAku77bWC63dT4IN9NKEOGgR2KtOQdj336gssykDiWTUihDQKz9Svw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEL3NxJZS6qpN8ZC0yZ8pleOx9Ihn2XoMXqwn3N+G++Mxqqe6pdqV0LDAPvwWj0iQqg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "eb56e1e6-780a-4524-a8a6-6a3024b911dc",
+                            SecurityStamp = "448e60ee-9edb-4361-bd05-9f74fb31a3d1",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
-                        },
-                        new
-                        {
-                            Id = "Test272932273937898-329332ndyvyuhvjjhf8e4",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "8f5f31f6-264b-47af-a14c-939757b88f81",
-                            Email = "Test2@gmail.com",
-                            EmailConfirmed = true,
-                            IsApproved = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "TEST2@GMAIL.COM",
-                            NormalizedUserName = "TEST2USER",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "f3a79fc5-614b-4354-a75b-7cddc3381330",
-                            TwoFactorEnabled = false,
-                            UserName = "Test2User"
                         });
                 });
 

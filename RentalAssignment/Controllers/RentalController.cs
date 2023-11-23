@@ -180,7 +180,7 @@ namespace RentalAssignment.Controllers
             };
 
             Review newReview = _rentalInterface.AddReview(result);
-            return RedirectToAction("Home", new { newReview.Id });
+            return RedirectToAction("MyBookings");
 
         }
         [HttpGet]

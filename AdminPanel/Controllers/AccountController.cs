@@ -77,13 +77,7 @@ namespace RentalAssignment.Controllers
             }
             await _userManager.DeleteAsync(user);
             return RedirectToAction("Dashboard");
-        }
-        [HttpGet]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Pending()
-        {
-            return View();
-        }
+        }       
         [HttpGet]
         public async Task<IActionResult> MyAccount()
         {

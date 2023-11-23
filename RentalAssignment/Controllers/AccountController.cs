@@ -30,9 +30,8 @@ namespace RentalAssignment.Controllers
         {
             if (ModelState.IsValid)
             {
-                var emailverification = IsEmailInUse(model.Email);
-                if (emailverification ==  null)
-                {                
+                
+                              
                 var user = new ApplicationUser
                 {
                     NormalizedUserName = model.FirstName,
@@ -44,15 +43,15 @@ namespace RentalAssignment.Controllers
                 if (result.Succeeded)
                 {
                     //await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Pending");
+                    return RedirectToAction("Pending","Account");
                 }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
-                }
+                
             }
-            ViewBag.Message = "This email is already registered";
+         
             return View(model);
         }
         [AcceptVerbs("Get", "Post")]
@@ -138,7 +137,6 @@ namespace RentalAssignment.Controllers
             {
                 return View("Error");
             }
-
             var model = new EditUserViewModel
             {
                 Id = userId.ToString(),
@@ -197,7 +195,7 @@ namespace RentalAssignment.Controllers
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Pending()
+        public IActionResult Pending()
         {
             return View();
         }
