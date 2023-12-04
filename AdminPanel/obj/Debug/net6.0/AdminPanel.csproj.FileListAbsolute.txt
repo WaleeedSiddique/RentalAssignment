@@ -4350,3 +4350,4 @@ C:\Users\walee\Desktop\Rent\RentalAssignment\AdminPanel\obj\Debug\net6.0\refint\
 C:\Users\walee\Desktop\Rent\RentalAssignment\AdminPanel\obj\Debug\net6.0\AdminPanel.pdb
 C:\Users\walee\Desktop\Rent\RentalAssignment\AdminPanel\obj\Debug\net6.0\AdminPanel.genruntimeconfig.cache
 C:\Users\walee\Desktop\Rent\RentalAssignment\AdminPanel\obj\Debug\net6.0\ref\AdminPanel.dll
+D:\source\RentalAssignment\AdminPanel\obj\Debug\net6.0\AdminPanel.sourcelink.json

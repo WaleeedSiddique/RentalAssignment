@@ -243,16 +243,16 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Test2729373937898-329332ndyvyuhvjjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8a4f9ea0-bc4a-4b9b-9a49-594875eb364b",
+                            ConcurrencyStamp = "bbae899a-a1f5-41e9-b001-c4e6e0cf38fa",
                             Email = "Test@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "TEST@GMAIL.COM",
                             NormalizedUserName = "TESTUSER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHUPT6OEEk3xIunhJir3dUSQTKXrleafggBlG4hLXVvNwWgOrVVJXHKSKpUqrvdGXg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMl0QCdtRdiq4yj63mEZA3s1sY1B9fCv+kAGnp/ylisbVXoZ2YJoQfy6zzvvkZlprQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2ed73faa-b325-49c1-b1a6-bc8044191621",
+                            SecurityStamp = "7acdd99c-2b57-4fd7-81ac-020a5569db1c",
                             TwoFactorEnabled = false,
                             UserName = "TestUser"
                         },
@@ -260,18 +260,34 @@ namespace RentalAssignment.Migrations
                         {
                             Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a67eb88a-da4d-4c08-94f8-0dbaff5cf26b",
+                            ConcurrencyStamp = "f47b5232-056f-4ced-94ec-fef749f7fea9",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = true,
                             IsApproved = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEL3NxJZS6qpN8ZC0yZ8pleOx9Ihn2XoMXqwn3N+G++Mxqqe6pdqV0LDAPvwWj0iQqg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDOZV1raA1951perNueWS91bDUXtDHg6evV2KFADWtFxSA+DdYgoLxhDccAgtjUQ6A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "448e60ee-9edb-4361-bd05-9f74fb31a3d1",
+                            SecurityStamp = "7a9e0fdb-5399-4204-933a-23f4b4787595",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
+                        },
+                        new
+                        {
+                            Id = "Test27293wdqwdqw73937898-329332ndyvyuhvjjhf8e4",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "c1077a7e-2d5a-4d6e-9a9f-f63a6c033ad5",
+                            Email = "Test2@gmail.com",
+                            EmailConfirmed = true,
+                            IsApproved = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "TEST2@GMAIL.COM",
+                            NormalizedUserName = "TESTUSER2",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "e9ed9e6e-9cf5-4697-a9be-449e949c0fb2",
+                            TwoFactorEnabled = false,
+                            UserName = "TestUser2"
                         });
                 });
 
@@ -361,6 +377,9 @@ namespace RentalAssignment.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("EmployeeId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Pickup")
                         .HasColumnType("datetime2");
 
@@ -389,6 +408,8 @@ namespace RentalAssignment.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("RentalID");
+
+                    b.HasIndex("EmployeeId");
 
                     b.HasIndex("VehicleID");
 
@@ -546,11 +567,17 @@ namespace RentalAssignment.Migrations
 
             modelBuilder.Entity("RentalAssignment.Models.Rental", b =>
                 {
+                    b.HasOne("RentalAssignment.Models.Employee", "employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId");
+
                     b.HasOne("RentalAssignment.Models.Vehicle", null)
                         .WithMany("Bookings")
                         .HasForeignKey("VehicleID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("employee");
                 });
 
             modelBuilder.Entity("RentalAssignment.Models.Vehicle", b =>

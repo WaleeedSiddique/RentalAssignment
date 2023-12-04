@@ -171,24 +171,19 @@ namespace RentalAssignment.Controllers
         [Authorize]
         public IActionResult Review(ReviewViewModel model)
         {
-
             Review result = new Review
             {
                 Rating = model.Rating,
                 Comment = model.Comment,
                 userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier)
             };
-
             Review newReview = _rentalInterface.AddReview(result);
             return RedirectToAction("MyBookings");
-
         }
         [HttpGet]
         [Authorize]
-
         public IActionResult MyBookings()
         {
-
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             IEnumerable<Rental> userBookings = _rentalInterface.GetUserBookings(userId);
             return View(userBookings);
@@ -210,9 +205,7 @@ namespace RentalAssignment.Controllers
                 ViewBag.message = "Could not be deleted";
                 return RedirectToAction("MyBookings");
             }
-
-        }
-        
+        }        
         [HttpGet]
         [Authorize]
         public IActionResult ConfirmBooking(int id)
@@ -221,16 +214,13 @@ namespace RentalAssignment.Controllers
             var drivers = _employeeInterface.GetAllEmployee();
             
             var availableDrivers = new SelectList(drivers, "EmployeeId", "EmployeeName");
-
             var viewModel = new BookingConfirmViewModel
             {RentalID= booking.RentalID,
                 Booking = booking,
                 AvailableDrivers = availableDrivers
             };
-
             return View(viewModel);
-        }
-        
+        }        
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public IActionResult AssignDriver(int RentalID, int SelectedDriverId)
@@ -241,22 +231,17 @@ namespace RentalAssignment.Controllers
                 _rentalInterface.GetBookingById(RentalID).BookingStatus = true;
                 return RedirectToAction("BookingConfirmed", new { bookingId = RentalID });
             }
-
             var booking = _rentalInterface.GetBookingById(RentalID);
             var drivers = _employeeInterface.GetAllEmployee();
-
             var availableDrivers = new SelectList(drivers, "EmployeeId", "EmployeeName");
-
             var viewModel = new BookingConfirmViewModel
             {
                 Booking = booking,
                 AvailableDrivers = availableDrivers
             };
-
             viewModel.AvailableDrivers = new SelectList(_employeeInterface.GetAllEmployee(), "EmployeeId", "EmployeeName");
             return View("ConfirmBooking", viewModel);
         }
-
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public IActionResult BookingConfirmed()

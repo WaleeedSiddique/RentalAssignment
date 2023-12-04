@@ -117,6 +117,11 @@ namespace RentalAssignment.Controllers
 
             if (ModelState.IsValid)
             {
+                if (vehicle.OwnerPhone.Contains("-"))
+                {
+                    ViewBag.message = "Phone number should not contain dash";
+                    return View();
+                }
                 string uniqueFileName = null;
                 if (vehicle.Photo != null)
                 {
@@ -156,6 +161,7 @@ namespace RentalAssignment.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
+
             Vehicle result = _vehicleInterface.GetVehicle(id);
             EditVehicleViewModel editVehicleViewModel = new EditVehicleViewModel
             {
@@ -178,20 +184,38 @@ namespace RentalAssignment.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Edit(EditVehicleViewModel model)
         {
-
-            Vehicle result = _vehicleInterface.GetVehicle(model.id);
-            if (result != null )
+            if (ModelState.IsValid)
             {
-                result.OwnerName = model.OwnerName;
-                result.VehicleColour = model.VehicleColour;
-                result.VehicleModel = model.VehicleModel;
-                result.sittingCapacity = model.sittingCapacity;
-                result.VehicleNumberPlate = model.VehicleNumberPlate;
-                result.VehicleType = model.VehicleType;
-                result.RentPerDay = model.RentPerDay;
-                result.ChassisNumber = model.ChassisNumber;
-                Vehicle UpdatedVehicle = _vehicleInterface.Update(result);
-                return RedirectToAction("Index");
+                string uniqueFileName = null;
+                if (model.Photopath != null)
+                {
+                    if (!IsImageFileValid(model.Photopath))
+                    {
+                        ViewBag.message = "Car ImageFile Invalid file format. Only JPG, JPEG, and PNG files are allowed.";
+                        return View(model);
+                    }
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photopath.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    model.Photopath.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+
+                Vehicle result = _vehicleInterface.GetVehicle(model.id);
+                if (result != null)
+                {
+                    result.OwnerName = model.OwnerName;
+                    result.VehicleColour = model.VehicleColour;
+                    result.VehicleModel = model.VehicleModel;
+                    result.sittingCapacity = model.sittingCapacity;
+                    result.VehicleNumberPlate = model.VehicleNumberPlate;
+                    result.VehicleType = model.VehicleType;
+                    result.RentPerDay = model.RentPerDay;
+                    result.ChassisNumber = model.ChassisNumber;
+                    result.Photopath = uniqueFileName;
+                    Vehicle UpdatedVehicle = _vehicleInterface.Update(result);
+                    return RedirectToAction("Details", new { id = UpdatedVehicle.VehicleId });
+                }
+                return View(model);
             }
             return View(model);
 

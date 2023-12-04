@@ -21,12 +21,6 @@ builder.Services.AddScoped<IContactInterface, SqlContactRepository>();
 builder.Services.AddScoped<ICarBookingInterface, CarBookingService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IVehicleCategoryInterface, SqlVehicleCategoryRepository>();
-builder.Services.AddAuthentication().AddGoogle(options =>
-{
-    options.ClientId = "806082718120-i4qecnuq5nc8qib1pq36cqimj0u5cjdh.apps.googleusercontent.com";
-    options.ClientSecret = "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";
-});
-
 
 
 var app = builder.Build();

@@ -23,6 +23,7 @@ namespace RentalAssignment.Models
         public string DropoffLocation { get; set; }
         public bool BookingStatus { get; set; }
         public int? DriverId { get; set; }
+        public Employee? employee { get; set; }
 
         public Rental()
         {

@@ -6,7 +6,7 @@
     ViewBag.Title = "Edit Vehicle Details";
 }
 <form asp-controller="Home" asp-action="Edit" method="post" class="form-group" enctype="multipart/form-data">
-    <input hidden asp-for="VehicleId" />
+    <input hidden asp-for="id" />
     <div class="container-fluid pb-5">
         <div class="container">
             <div class="row">
@@ -56,6 +56,10 @@
                         <div class="row">
                             <div class="col-6 form-group">
                                 <input asp-for="sittingCapacity" class="form-control" placeholder="Sitting Capacity" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label asp-for="Photopath">Vehicle Image</label>
+                                <input asp-for="Photopath" class="form-control" required="required">
                             </div>
 
                         </div>

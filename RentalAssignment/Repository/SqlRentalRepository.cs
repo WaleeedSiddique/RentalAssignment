@@ -37,11 +37,11 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Rental> GetUserBookings(string userId)
         {
-            return _context.rentals.Where(x => x.userId == userId);
+            return _context.rentals.Include(x => x.employee).Where(x => x.userId == userId);
         }
         public IEnumerable<Rental> GetAllBookings()
         {
-            return _context.rentals.ToList();
+            return _context.rentals.Include(x => x.employee).ToList();
         }
 
         public IEnumerable<Rental> GetAllRentalVehicles()

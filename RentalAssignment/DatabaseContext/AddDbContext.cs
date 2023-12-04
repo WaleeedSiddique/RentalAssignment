@@ -30,7 +30,18 @@ namespace RentalAssignment.DatabaseContext
                 NormalizedUserName = "TestUser".ToUpper(),
                 EmailConfirmed = true,
                 IsApproved = true,
-            };           
+            };
+
+            var appuser2 = new ApplicationUser()
+            {
+                Id = "Test27293wdqwdqw73937898-329332ndyvyuhvjjhf8e4",
+                UserName = "TestUser2",
+                Email = "Test2@gmail.com",
+                NormalizedEmail = "Test2@gmail.com".ToUpper(),
+                NormalizedUserName = "TestUser2".ToUpper(),
+                EmailConfirmed = true,
+                IsApproved = true,
+            };
             var admin = new ApplicationUser()
             {
                 Id = "Admin2729083033937898-329332nduyvugjvjhf8e4",
@@ -43,6 +54,8 @@ namespace RentalAssignment.DatabaseContext
             };
             PasswordHasher<ApplicationUser> ph = new PasswordHasher<ApplicationUser>();
             appuser.PasswordHash = ph.HashPassword(appuser, "Test@123");
+            PasswordHasher<ApplicationUser> ph2 = new PasswordHasher<ApplicationUser>();
+            appuser.PasswordHash = ph.HashPassword(appuser2, "Test@123");
             PasswordHasher<ApplicationUser> ad = new PasswordHasher<ApplicationUser>();
             admin.PasswordHash = ad.HashPassword(admin, "Admin@123");
             builder.Entity<IdentityRole>().HasData(new IdentityRole
@@ -60,7 +73,7 @@ namespace RentalAssignment.DatabaseContext
             });
 
             builder.Entity<ApplicationUser>()
-                .HasData(appuser,admin);
+                .HasData(appuser,admin,appuser2);
         }
 
         public DbSet<Vehicle> vehicles { get; set; }

@@ -9228,3 +9228,4 @@ C:\Users\walee\Desktop\Rent\RentalAssignment\RentalAssignment\obj\Debug\net6.0\r
 C:\Users\walee\Desktop\Rent\RentalAssignment\RentalAssignment\obj\Debug\net6.0\RentalAssignment.pdb
 C:\Users\walee\Desktop\Rent\RentalAssignment\RentalAssignment\obj\Debug\net6.0\RentalAssignment.genruntimeconfig.cache
 C:\Users\walee\Desktop\Rent\RentalAssignment\RentalAssignment\obj\Debug\net6.0\ref\RentalAssignment.dll
+D:\source\RentalAssignment\RentalAssignment\obj\Debug\net6.0\RentalAssignment.sourcelink.json

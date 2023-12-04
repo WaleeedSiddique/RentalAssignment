@@ -22,7 +22,7 @@ namespace RentalAssignment.Models
         public string Photopath { get; set; }
         [DataType(DataType.Currency)]
         public int RentPerDay { get; set; }
-        public ICollection<Rental> Bookings { get; set; }
+        public ICollection<Rental>? Bookings { get; set; }
         public int VehicleCategoryId { get; set; }
         public VehicleCategory VehicleCategory { get; set; }    
 

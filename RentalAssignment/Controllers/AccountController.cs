@@ -75,6 +75,7 @@ namespace RentalAssignment.Controllers
             return RedirectToAction("Index", "Home");
         }
         [HttpGet]
+        
         public async Task<IActionResult> Login()
         {
             return View(); 

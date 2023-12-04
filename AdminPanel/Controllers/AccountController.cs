@@ -20,7 +20,7 @@ namespace RentalAssignment.Controllers
             this._userManager = userManager;
             this._signInManager = signInManager;
         }
-        
+        [Authorize(AuthenticationSchemes = "AdminCookieAuthenticationScheme")]
         [HttpPost]
         public async Task<IActionResult> AdminLogout()
         {
