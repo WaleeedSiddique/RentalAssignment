@@ -261,12 +261,13 @@ namespace RentalAssignment.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult MonthlyReport(MonthlySearchViewModel model)
         {
-            if (model.Month != null && model.Year != null)
+            if (model.Month != 0 && model.Year != 0)
             {
                 var reservations = _rentalInterface.GetByMonth(model.Month, model.Year);              
                 return View("MonthlyReport", reservations);
-            }           
-            return View("MonthlyReport", Enumerable.Empty<Rental>());
+            }
+            var bookings = _rentalInterface.GetAllBookings();
+            return View(bookings);
         }
         [HttpGet]
         [Authorize(Roles = "Admin")]
@@ -276,8 +277,9 @@ namespace RentalAssignment.Controllers
             {
                 var reservations = _rentalInterface.GetByDay(date.Value);                
                 return View("DailyReport", reservations);
-            }            
-            return View("DailyReport", Enumerable.Empty<Rental>());
+            }
+            var bookings = _rentalInterface.GetAllBookings();
+            return View(bookings);
         }
        
 

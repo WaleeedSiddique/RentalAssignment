@@ -5,11 +5,11 @@
         @ViewBag.message
     <thead class="thead-dark">
             <tr>
-                <th>Booking ID</th>
-                <th>Car ID</th>
+                <th>Rental</th>
+                <th>Vehicle</th>
                 <th>Booking Date</th>
                 <th>Status</th>
-                <th>Driver id</th>
+                <th>Driver</th>
                 <th>Delete Booking</th>
             </tr>
         </thead>
@@ -18,7 +18,7 @@
             {                
                 <tr>
                     <td>@booking.RentalName</td>
-                    <td>@booking.VehicleID</td>
+                    <td>@booking.vehicle.VehicleModel</td>
                     <td>@booking.Pickup</td>
                 @if (booking.employeeid != null)
                 {

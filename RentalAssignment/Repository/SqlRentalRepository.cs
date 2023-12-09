@@ -37,11 +37,11 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Rental> GetUserBookings(string userId)
         {
-            return _context.rentals.Include(x => x.employee).Where(x => x.userId == userId);
+            return _context.rentals.Include(x => x.employee).Include(v => v.vehicle).Where(x => x.userId == userId);
         }
         public IEnumerable<Rental> GetAllBookings()
         {
-            return _context.rentals.Include(x => x.employee).ToList();
+            return _context.rentals.Include(x => x.employee).Include(v => v.vehicle).ToList();
         }
 
         public IEnumerable<Rental> GetAllRentalVehicles()
@@ -82,7 +82,7 @@ namespace RentalAssignment.Repository
         }
         public IEnumerable<Rental> Getapprovedbookings()
         {
-            return _context.rentals.Include(x => x.employee).Where(x => x.employeeid != null);
+            return _context.rentals.Include(x => x.employee).Include(v => v.vehicle).Where(x => x.employeeid != null);
         }
         public void AssignDriverToBooking(int bookingId, int driverId)
         {
@@ -97,11 +97,11 @@ namespace RentalAssignment.Repository
         }
         public IEnumerable<Rental> GetByMonth(MonthsEnum month, int year)
         {
-            return _context.rentals.Where(x => x.Pickup.Month==(int)month && x.Pickup.Year == year);   
+            return _context.rentals.Include(e => e.employee).Include(v => v.vehicle).Where(x => x.Pickup.Month==(int)month && x.Pickup.Year == year);   
         }
         public IEnumerable<Rental> GetByDay(DateTime date)
         {
-            return _context.rentals.Where(x => x.Pickup.Date == date.Date);
+            return _context.rentals.Include(e => e.employee).Include(v => v.vehicle).Where(x => x.Pickup.Date == date.Date);
         }
     }
 }

@@ -19,8 +19,10 @@
         <tr>
             <th>Reservation ID</th>
             <th>Reservation Date</th>
-            <th>Vehicle ID</th>
-            <th>Driver ID</th>        
+            <th>Vehicle</th>
+            <th>Driver</th>
+            <th>Rental Name</th>
+            <th>Rental Phone</th>
         </tr>
     </thead>
     <tbody>
@@ -29,8 +31,10 @@
             <tr>
                 <td>@reservation.RentalID</td>
                 <td>@reservation.Pickup.ToString("MM/dd/yyyy")</td>
-                <td>@reservation.VehicleID</td>
-                <td>@reservation.employeeid</td>
+                <td>@reservation.vehicle.VehicleModel</td>
+                <td>@reservation.employee.EmployeeName</td>
+                <td>@reservation.RentalName</td>
+                <td>@reservation.RentalPhone</td>
                 <!-- Add other reservation-related data here -->
             </tr>
         }

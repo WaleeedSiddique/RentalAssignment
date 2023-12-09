@@ -9,6 +9,7 @@ namespace RentalAssignment.Models
         public int RentalID { get; set; }
         public string userId { get; set; }
         public int VehicleID { get; set; }
+        public Vehicle vehicle { get; set; }
         [Required]
         public string RentalName { get; set; } = "Waleed";
         [Required]

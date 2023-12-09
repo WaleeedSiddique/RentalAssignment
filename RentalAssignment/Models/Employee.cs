@@ -13,6 +13,7 @@ namespace RentalAssignment.Models
         [Required]
         public string EmployeeCNIC { get; set; }
         public string EmployeeFatherName { get; set; }
+        public ICollection<Rental> bookings { get; set; }
 
     }
 }

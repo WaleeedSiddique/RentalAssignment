@@ -9,6 +9,7 @@
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th>Vehicle</th>
             <th>Booking Date</th>
             <th>Driver</th>
             <th>Delete</th>
@@ -21,6 +22,7 @@
                 <td>@booking.RentalName</td>
                 <td>@booking.RentalPhone</td>
                 <td>@booking.RentalEmail</td>
+                <td>@booking.vehicle.VehicleModel</td>
                 <td>@booking.Pickup</td>
                 <td>@booking.employee.EmployeeName</td>
                 <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
