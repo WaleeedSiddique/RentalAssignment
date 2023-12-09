@@ -78,11 +78,11 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Rental> GetUnapprovedbookings()
         {
-            return _context.rentals.Where(x => x.DriverId == null);
+            return _context.rentals.Where(x => x.employeeid == null);
         }
         public IEnumerable<Rental> Getapprovedbookings()
         {
-            return _context.rentals.Where(x => x.DriverId != null);
+            return _context.rentals.Include(x => x.employee).Where(x => x.employeeid != null);
         }
         public void AssignDriverToBooking(int bookingId, int driverId)
         {
@@ -91,7 +91,7 @@ namespace RentalAssignment.Repository
 
             if (booking != null && driver != null)
             {
-                booking.DriverId = driver.EmployeeId;
+                booking.employeeid = driver.EmployeeId;
                 _context.SaveChanges();
             }
         }

@@ -43,6 +43,12 @@ namespace RentalAssignment.Repository
             return _context.vehicles.Include(x => x.VehicleCategory).ToList();
         }
 
+        public IEnumerable<Vehicle> GetAllVehiclesWithCategory()
+        {
+            var vehicles = _context.vehicles.Include(x => x.VehicleCategory).ToList();
+            return vehicles;
+        }
+
         public List<Vehicle> GetAvailableVehicles()
         {
             return _context.vehicles.Where(c => !c.IsRented).ToList();

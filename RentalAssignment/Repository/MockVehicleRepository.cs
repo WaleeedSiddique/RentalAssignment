@@ -42,6 +42,11 @@ namespace RentalAssignment.Repository
             return _VehicleList.ToList();
         }
 
+        public IEnumerable<Vehicle> GetAllVehiclesWithCategory()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Vehicle> GetAvailableVehicles()
         {
             throw new NotImplementedException();

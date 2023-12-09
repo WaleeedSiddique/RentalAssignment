@@ -9,6 +9,7 @@ namespace RentalAssignment.Interfaces
         public IEnumerable<Vehicle> SearchVehicles(string VehicleName);
         public Vehicle CreateVehicle(Vehicle vehicle);
         public IEnumerable<Vehicle> GetAllVehicles();
+        public IEnumerable<Vehicle> GetAllVehiclesWithCategory();
         public Vehicle Update(Vehicle VehicleChanges);
         public Vehicle Delete(int VehicleId);
         public List<Vehicle> GetAvailableVehicles();

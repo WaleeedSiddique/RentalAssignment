@@ -19,22 +19,23 @@
                 <tr>
                     <td>@booking.RentalName</td>
                     <td>@booking.VehicleID</td>
-                    <td>@booking.Pickup</td>                
-                      @if(booking.DriverId != null){
+                    <td>@booking.Pickup</td>
+                @if (booking.employeeid != null)
+                {
                           <td>Booking Confirmed</td>
                       }else{
                           <td>Pending</td>
                       }
-                @if (booking.DriverId != null)
+                @if (booking.employeeid != null)
                 {
                     <td>
-                        @booking.DriverId
+                        @booking.employee.EmployeeName
                     </td>
                 }
                 else{
                     <td>Pending </td>
                 }
-                      @if(booking.DriverId == null)
+                @if (booking.employeeid == null)
                       {
                     <td><a class="btn btn-danger" asp-controller="Rental" asp-action="DeleteBooking" asp-route-id="@booking.RentalID">Delete Booking</a></td>
                       }

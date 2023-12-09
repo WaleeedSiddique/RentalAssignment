@@ -19444,16 +19444,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
+      "projectUniqueName": "C:\\Users\\walee\\Desktop\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
       "projectName": "AdminPanel",
-      "projectPath": "D:\\source\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
+      "projectPath": "C:\\Users\\walee\\Desktop\\RentalAssignment\\AdminPanel\\AdminPanel.csproj",
       "packagesPath": "C:\\Users\\walee\\.nuget\\packages\\",
-      "outputPath": "D:\\source\\RentalAssignment\\AdminPanel\\obj\\",
+      "outputPath": "C:\\Users\\walee\\Desktop\\RentalAssignment\\AdminPanel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+        "C:\\Users\\walee\\NuGet.Config",
         "C:\\Users\\walee\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -19470,8 +19471,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\source\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
-              "projectPath": "D:\\source\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj"
+            "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj": {
+              "projectPath": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\RentalAssignment.csproj"
             }
           }
         }

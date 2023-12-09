@@ -243,7 +243,7 @@ namespace RentalAssignment.Controllers
         [HttpGet]
         public IActionResult GetAllVehicles()
         {
-            var Vehicles = _vehicleInterface.GetAllVehicles();
+            var Vehicles = _vehicleInterface.GetAllVehiclesWithCategory();
             return View(Vehicles);
         }
         [HttpGet]

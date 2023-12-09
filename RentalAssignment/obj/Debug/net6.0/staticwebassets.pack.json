@@ -1,483 +1,483 @@
 {
   "Files": [
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RentalAssignment.bundle.scp.css",
       "PackagePath": "staticwebassets\\RentalAssignment.bundle.scp.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\NewDesign.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\NewDesign.css",
       "PackagePath": "staticwebassets\\css\\NewDesign.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\animate.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\animate.css",
       "PackagePath": "staticwebassets\\css\\animate.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\aos.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\aos.css",
       "PackagePath": "staticwebassets\\css\\aos.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap-datepicker.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap-datepicker.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-datepicker.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\flaticon.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\flaticon.css",
       "PackagePath": "staticwebassets\\css\\flaticon.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\icomoon.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\icomoon.css",
       "PackagePath": "staticwebassets\\css\\icomoon.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\ionicons.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\ionicons.min.css",
       "PackagePath": "staticwebassets\\css\\ionicons.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\jquery.timepicker.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\jquery.timepicker.css",
       "PackagePath": "staticwebassets\\css\\jquery.timepicker.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\magnific-popup.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\css\\magnific-popup.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.carousel.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.theme.default.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\1feed5ff-b6f0-42a4-8262-56bfdaaec4c6_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\1feed5ff-b6f0-42a4-8262-56bfdaaec4c6_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
       "PackagePath": "staticwebassets\\images\\1feed5ff-b6f0-42a4-8262-56bfdaaec4c6_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\242732b6-71dd-48a2-b4ab-d60699a2cb50_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\242732b6-71dd-48a2-b4ab-d60699a2cb50_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png",
       "PackagePath": "staticwebassets\\images\\242732b6-71dd-48a2-b4ab-d60699a2cb50_21073729-751b-4888-8b04-e5453837cd2d_TOYOTA_Land-Cruiser.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\2e3bee66-666e-4901-8b23-6ef997411f1f_e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\2e3bee66-666e-4901-8b23-6ef997411f1f_e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png",
       "PackagePath": "staticwebassets\\images\\2e3bee66-666e-4901-8b23-6ef997411f1f_e15455c4-a420-4209-8aad-22e20a3e95ae_Mira.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\371ff168-e2be-453c-b382-64ae188b3545_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\371ff168-e2be-453c-b382-64ae188b3545_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "PackagePath": "staticwebassets\\images\\371ff168-e2be-453c-b382-64ae188b3545_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3adc2486-e494-4be0-a367-58d18b25bcc0_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3adc2486-e494-4be0-a367-58d18b25bcc0_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg",
       "PackagePath": "staticwebassets\\images\\3adc2486-e494-4be0-a367-58d18b25bcc0_7c0bfe65-376d-4f12-bd5a-d033c1d5e187_7c219080-c04b-4ac4-b2c2-11b0f16a36bf_Cover.jpg"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "PackagePath": "staticwebassets\\images\\3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png",
       "PackagePath": "staticwebassets\\images\\4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png",
       "PackagePath": "staticwebassets\\images\\6320f17a-5ec1-4d0f-af62-1eaf7667387c_3f4dfbc1-4631-404d-a745-543929ddc2d9_civic2022.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\636ea81d-7fd5-4480-af34-9b53429c7817_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\636ea81d-7fd5-4480-af34-9b53429c7817_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png",
       "PackagePath": "staticwebassets\\images\\636ea81d-7fd5-4480-af34-9b53429c7817_b02ce485-4ed6-4392-9718-b4582c6b4e4a_1669809547343-CLA200.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\67062249-296b-4e79-ab6f-315c3a673e7e_f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\67062249-296b-4e79-ab6f-315c3a673e7e_f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png",
       "PackagePath": "staticwebassets\\images\\67062249-296b-4e79-ab6f-315c3a673e7e_f70d5ef1-59dd-4231-9c39-9788a9a40f5b_hilux.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "PackagePath": "staticwebassets\\images\\7310127b-321b-43c6-ac36-65caa28c495d_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-1.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-1.png",
       "PackagePath": "staticwebassets\\images\\Car-1.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-2.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-2.png",
       "PackagePath": "staticwebassets\\images\\Car-2.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-3.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-3.png",
       "PackagePath": "staticwebassets\\images\\Car-3.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-4.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\Car-4.png",
       "PackagePath": "staticwebassets\\images\\Car-4.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\ac5a6788-2e06-4e60-b1f0-e90921c48401_82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\ac5a6788-2e06-4e60-b1f0-e90921c48401_82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png",
       "PackagePath": "staticwebassets\\images\\ac5a6788-2e06-4e60-b1f0-e90921c48401_82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-left.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-left.png",
       "PackagePath": "staticwebassets\\images\\banner-left.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-right.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\banner-right.png",
       "PackagePath": "staticwebassets\\images\\banner-right.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c6cc9537-c666-4286-9013-49fb9c810e34_adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\c6cc9537-c666-4286-9013-49fb9c810e34_adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png",
       "PackagePath": "staticwebassets\\images\\c6cc9537-c666-4286-9013-49fb9c810e34_adeb868c-22dd-4c8f-8a97-26aa184cde0c_Toyota-Hilux-Revo.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-1.jpg",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\images\\carousel-1.jpg"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-2.jpg",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\carousel-2.jpg",
       "PackagePath": "staticwebassets\\images\\carousel-2.jpg"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\d751cfc4-8163-476c-9521-2d2a68055859_b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\d751cfc4-8163-476c-9521-2d2a68055859_b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png",
       "PackagePath": "staticwebassets\\images\\d751cfc4-8163-476c-9521-2d2a68055859_b9c5fc82-88ed-4f65-a6f5-6576987d4095_1669808792380-coaster.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png",
       "PackagePath": "staticwebassets\\images\\e1fe5c2e-6add-4f24-ac25-1e50c622d312_0ad8f13b-92d5-4b62-a8f3-956305bd0d8b_saloon-coaster.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\fd65d9db-29a6-4c14-8042-674b4440558e_3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\fd65d9db-29a6-4c14-8042-674b4440558e_3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png",
       "PackagePath": "staticwebassets\\images\\fd65d9db-29a6-4c14-8042-674b4440558e_3ecc6582-501d-4711-9169-be8e8d7df0dc_0e7d67af-4875-42c7-a7d3-595d9bf567b2_7f0f6826-9bf8-4041-bd0e-a88eabdca1bb_cultus.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\signup-image.png",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\signup-image.png",
       "PackagePath": "staticwebassets\\images\\signup-image.png"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-2.jpg",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-2.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial-2.jpg"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-3.jpg",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\images\\testimonial-3.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial-3.jpg"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\aos.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\aos.js",
       "PackagePath": "staticwebassets\\js\\aos.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap-datepicker.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap-datepicker.js",
       "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\google-map.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\google-map.js",
       "PackagePath": "staticwebassets\\js\\google-map.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-3.2.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-migrate-3.0.1.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.animateNumber.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.animateNumber.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.animateNumber.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.easing.1.3.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.easing.1.3.js",
       "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.magnific-popup.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.stellar.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.stellar.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.stellar.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.timepicker.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.timepicker.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.timepicker.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.waypoints.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\main.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\owl.carousel.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\popper.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\range.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\range.js",
       "PackagePath": "staticwebassets\\js\\range.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\scrollax.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\scrollax.min.js",
       "PackagePath": "staticwebassets\\js\\scrollax.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\source\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\walee\\Desktop\\RentalAssignment\\RentalAssignment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
