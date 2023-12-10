@@ -8,6 +8,7 @@
                 <th>Rental</th>
                 <th>Vehicle</th>
                 <th>Booking Date</th>
+                <th>DropOff Date</th>
                 <th>Status</th>
                 <th>Driver</th>
                 <th>Delete Booking</th>
@@ -19,7 +20,8 @@
                 <tr>
                     <td>@booking.RentalName</td>
                     <td>@booking.vehicle.VehicleModel</td>
-                    <td>@booking.Pickup</td>
+                <td>@booking.Pickup.ToString("dd/MM/yyyy")</td>
+                <td>@booking.Dropoff.ToString("dd/MM/yyyy")</td>
                 @if (booking.employeeid != null)
                 {
                           <td>Booking Confirmed</td>

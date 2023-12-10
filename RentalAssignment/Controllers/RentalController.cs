@@ -68,7 +68,7 @@ namespace RentalAssignment.Controllers
         public IActionResult Booking(BookingDto bookingDto)
         {
             if (ModelState.IsValid) {
-                if (bookingDto.Pickup < DateTime.Now && bookingDto.Dropoff < DateTime.Now)
+                if (bookingDto.Pickup < DateTime.Today && bookingDto.Dropoff < DateTime.Today)
                 {
                     ViewBag.Message = "Cannot do bookings for past date";
                     return View();
@@ -97,7 +97,7 @@ namespace RentalAssignment.Controllers
                     var car = _vehicleInterface.GetVehicle(bookingDto.VehicleId);
                     car.IsRented = true;
                     Rental model = _rentalInterface.RentVehicle(rental);
-                    return RedirectToAction("Index", new { model.RentalID });
+                    return RedirectToAction("MyBookings", new { model.RentalID });
                 }
                 else
                 {

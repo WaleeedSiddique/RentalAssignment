@@ -736,6 +736,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\a17990bd-af18-4e80-8f5c-3e7e3a96f36b_Screenshot 2023-12-02 230602.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\a9cba77b-50ec-4d9f-bbbc-59d401fdf7e6_4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminPanel</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminPanel</BasePath>
+      <RelativePath>images/a9cba77b-50ec-4d9f-bbbc-59d401fdf7e6_4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\a9cba77b-50ec-4d9f-bbbc-59d401fdf7e6_4d53a0dc-831f-48a0-9f59-c6e9f099f495_084234b0-b05d-4140-b6ac-0d3216f382aa_1669809095641-Corolla Gli.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\ac5a6788-2e06-4e60-b1f0-e90921c48401_82b25b0b-0867-4a3d-be26-e06a92418266_Alto.png))">
       <SourceType>Package</SourceType>
       <SourceId>AdminPanel</SourceId>

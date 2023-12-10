@@ -78,7 +78,7 @@ namespace RentalAssignment.Repository
 
         public IEnumerable<Rental> GetUnapprovedbookings()
         {
-            return _context.rentals.Where(x => x.employeeid == null);
+            return _context.rentals.Include(v => v.vehicle).Where(x => x.employeeid == null);
         }
         public IEnumerable<Rental> Getapprovedbookings()
         {
